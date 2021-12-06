@@ -1,5 +1,8 @@
 {
   "sections": {
+    "video_banner": {
+      "type": "main-video-banner"
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -186,6 +189,7 @@
     }
   },
   "order": [
+    "video_banner",
     "image_banner",
     "rich_text",
     "featured_products",
