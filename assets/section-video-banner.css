@@ -1,0 +1,7 @@
+h1.bannerHeading{
+  font-family: Bebas Neue;
+font-style: normal;
+font-weight: normal;
+font-size: 96px;
+line-height: var(--font-line-height);
+}
