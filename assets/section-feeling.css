@@ -1,0 +1,13 @@
+
+@media screen and (max-width:1210px){
+.feeling-section-wrapper{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+}
+@media screen and (min-width:1211px){
+  .feeling-section-wrapper{
+  padding-left: 140px;
+  padding-right: 140px;
+  }
+}
