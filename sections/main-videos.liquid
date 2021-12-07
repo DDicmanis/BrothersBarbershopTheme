@@ -1,0 +1,47 @@
+{{ 'section-videos.css' | asset_url | stylesheet_tag }}
+
+<div class="videos-section-wrapper">
+  <h2 class="videos-title">YOUS SAID IT BEST</h2>
+  <div class="video-grid">
+    <div class="video-div1">
+      <div class="video-wrapper">
+        <video id="video1" muted>
+          <source src="{{'placeholder.mp4' | asset_url }}" type="video/mp4" id="vid">
+        </video>
+        <div class="video-controll-overlay" id="overlay1">
+          <p class="video-length">2:35</p>
+          <img src="{{'play.svg'| asset_url }}" id="play1" class="play-button" alt="play button">
+        </div>
+      </div>
+      <h3 class="video-div-title">TITLE TITLE TITLE</h3>
+      <p class="video-description">Short description  Short description</p>
+    </div>
+    <div class="video-div2">
+      <div class="video-wrapper">
+        <video id="video2" muted>
+          <source src="{{'placeholder.mp4' | asset_url }}" type="video/mp4" id="vid">
+        </video>
+        <div class="video-controll-overlay" id="overlay2">
+          <p class="video-length">1:05</p>
+          <img src="{{'play.svg'| asset_url }}" id="play2" class="play-button" alt="play button">
+        </div>
+      </div>
+      <h3 class="video-div-title">TITLE TITLE TITLE</h3>
+      <p class="video-description">Short description  Short description</p>
+    </div>
+    <div class="video-div3">
+      <div class="video-wrapper">
+        <video id="video3" muted>
+          <source src="{{'placeholder.mp4' | asset_url }}" type="video/mp4" id="vid">
+        </video>
+        <div class="video-controll-overlay" id="overlay3">
+          <p class="video-length">1:00</p>
+          <img src="{{'play.svg'| asset_url }}" id="play3" class="play-button" alt="play button">
+        </div>
+      </div>
+      <h3 class="video-div-title">TITLE TITLE TITLE</h3>
+      <p class="video-description">Short description  Short description</p>
+    </div>
+  </div>
+</div>
+{{ 'video-controll.js'  | asset_url | script_tag     }}

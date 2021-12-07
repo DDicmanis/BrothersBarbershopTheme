@@ -1,13 +1,149 @@
+.feeling-section-wrapper{
+  text-align: center;
+}
+.feeling-title{
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 150%;
+  text-align: center;
+  color: #444444;
+}
+.feeling-text{
+  font-family: Archivo Narrow;
+font-style: normal;
+font-weight: normal;
+line-height: 150%;
+text-align: center;
+color: #444444;
+}
+.icon-grid{
+  display: grid;
+grid-template-columns: repeat(12, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: 20px;
+}
 
+.icon{
+  width: 100%;
+  height: 100%;
+}
+.icon-text{
+  font-family: Archivo Narrow;
+font-style: normal;
+font-weight: normal;
+line-height: 150%;
+text-transform: uppercase;
+color: #444444;
+}
+.icon-div1:after {
+  content: " ";
+  position: absolute;
+  border-left: 1px #E8E8E8 solid;
+  top: 10%;
+  right: 0;
+  height: 55%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.icon-div2:after {
+  content: " ";
+  position: absolute;
+  border-left: 1px #E8E8E8 solid;
+  top: 10%;
+  right: 0;
+  height: 55%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.icon-div3:after {
+  content: " ";
+  position: absolute;
+  border-left: 1px #E8E8E8 solid;
+  top: 10%;
+  right: 0;
+  height: 55%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.icon-div1 { 
+  grid-area: 1 / 1 / 2 / 4; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.icon-div2 { 
+  grid-area: 1 / 4 / 2 / 7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.icon-div3 {
+   grid-area: 1 / 7 / 2 / 10;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative; 
+  }
+.icon-div4 {
+   grid-area: 1 / 10 / 2 / 13;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative; 
+  }
+  .icon-text{
+    font-size: 20px;
+  }
 @media screen and (max-width:1210px){
 .feeling-section-wrapper{
   padding-left: 20px;
   padding-right: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
+.feeling-title{
+font-size: 30px;
+margin-bottom:15px;
+}
+.feeling-text{
+  font-size: 22px;
+  margin-bottom: 70px;
+}
+.icon-wrapper{
+  width: 40px;
+  height: 40px;
+}
+.icon-text{
+  font-size: 11px;
+}
+.icon-grid{
+  margin-bottom: 40px;
+}
+
 }
 @media screen and (min-width:1211px){
   .feeling-section-wrapper{
+  padding-top: 70px;
+  padding-bottom: 70px;
   padding-left: 140px;
   padding-right: 140px;
+  }
+  .feeling-title{
+  font-size: 45px;
+  margin-bottom: 20px;
+  }
+  .feeling-text{
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .icon-wrapper{
+    width: 100px;
+    height: 100px;
+  }
+  .icon-grid{
+    margin-bottom:50px;
   }
 }

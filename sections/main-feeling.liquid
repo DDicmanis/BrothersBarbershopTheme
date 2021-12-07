@@ -1,4 +1,34 @@
 {{ 'section-feeling.css' | asset_url | stylesheet_tag }}
+
 <div class="feeling-section-wrapper">
-  
+  <h2 class="feeling-title">Get ready for that “best cut ever” feeling.</h2>
+  <p class="feeling-text">As soon as you step foot inside one of our shops, you’re home. At Brothers’ Barbershop, we’re not satisfied until you are. Find a moment respite from city life, or simply a welcoming atmosphere to take a load off, while you get the best cut of your life. Kick back, and have a drink on us – we’re glad you’re here!</p>
+  <div class="icon-grid">
+    <div class="icon-div1">
+      <div class="icon-wrapper">
+        {{'icon-satisfaction.svg'| asset_url | img_tag:'satisfaction logo','icon'}}
+      </div>
+      
+      <p class="icon-text">Guaranteed satisfaction</p>
+    </div>
+    <div class="icon-div2">
+      <div class="icon-wrapper">
+      {{'icon-mustache.svg'| asset_url | img_tag:'service logo','icon'}}
+      </div>
+      <p class="icon-text">Outstanding service</p>
+    </div>
+    <div class="icon-div3">
+      <div class="icon-wrapper">
+      {{'icon-handshake.svg'| asset_url | img_tag:'environment logo','icon'}}
+      </div>
+      <p class="icon-text">Welcoming environment</p>
+    </div>
+    <div class="icon-div4">
+      <div class="icon-wrapper">
+      {{'icon-confidence.svg'| asset_url | img_tag:'confidence logo','icon'}}
+      </div>
+      <p class="icon-text">Renewed confidence</p>
+    </div>
+  </div>
+  <a href="#" class="button button-primary" style="text-align: center;">BOOK AN APPOINTMENT</a>
 </div>

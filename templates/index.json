@@ -9,6 +9,12 @@
     "feeling": {
       "type": "main-feeling"
     },
+    "videos": {
+      "type": "main-videos"
+    },
+    "awards": {
+      "type": "main-awards"
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -198,6 +204,8 @@
     "video_banner",
     "counter",
     "feeling",
+    "videos",
+    "awards",
     "image_banner",
     "rich_text",
     "featured_products",
