@@ -1,11 +1,24 @@
 {{ 'section-video-banner.css' | asset_url | stylesheet_tag }}
-<div>
+<div class="banner-text-wrapper">
+  <div><h1 class="banner-heading-h1">GREAT CUTS. BIG SMILES.</h1></div>
   
-  <h1 class="bannerHeading">GREAT CUTS. BIG SMILES</h1>
-  <video autoplay muted loop id="myVideo">
-    <source src="rain.mp4" type="video/mp4">
-  </video>
+  <h3 class="banner-heading-h3">Look and feel like your best self.</h3>
+  <a class="button button-primary banner-button" href="#" target="blank">BOOK AN APPOINTMENT</a>
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+  <div class="circle3"></div>
+  <p class="banner-text-small">SCROLL</p>
 </div>
+<div class="video-section-wrapper">
+  
+  <div class="frame-container">
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/668nUCeBHyY?playlist=668nUCeBHyY&controls=0&autoplay=1&loop=1&disablekb=1" allow="autoplay">
+    </iframe>
+    
+  </div>
+  
+</div> 
 {% schema %}
 {
   
@@ -17,13 +30,13 @@
     "label": "Video URL for Desktop",
     "accept": ["youtube", "vimeo"],
     "info": "Supports Youtube and Vimeo",
-    "default": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+    "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
     },
     {
     "id": "autoplay",
     "type": "checkbox",
     "label": "Autoplay",
-    "default": false
+    "default": true
     }
     ],
     "presets": [
@@ -31,7 +44,7 @@
     "name": "Video Module",
     "category": "Video",
     "settings": {
-    "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+    "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
     }
     }
     ]

@@ -3,6 +3,12 @@
     "video_banner": {
       "type": "main-video-banner"
     },
+    "counter": {
+      "type": "main-counter"
+    },
+    "feeling": {
+      "type": "main-feeling"
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -190,6 +196,8 @@
   },
   "order": [
     "video_banner",
+    "counter",
+    "feeling",
     "image_banner",
     "rich_text",
     "featured_products",
