@@ -15,6 +15,15 @@
     "awards": {
       "type": "main-awards"
     },
+    "transformation": {
+      "type": "main-transformation"
+    },
+    "expectations": {
+      "type": "main-expectations"
+    },
+    "values": {
+      "type": "main-values"
+    },
     "image_banner": {
       "type": "image-banner",
       "blocks": {
@@ -206,6 +215,9 @@
     "feeling",
     "videos",
     "awards",
+    "transformation",
+    "expectations",
+    "values",
     "image_banner",
     "rich_text",
     "featured_products",

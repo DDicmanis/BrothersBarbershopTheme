@@ -1,8 +1,8 @@
 
+
 document.getElementById('play1').onclick = function () {
   document.getElementById('overlay1').classList.add("hidden");
   document.getElementById('video1').play();
-
 };
 document.getElementById('play2').onclick = function () {
   document.getElementById('overlay2').classList.add("hidden");
