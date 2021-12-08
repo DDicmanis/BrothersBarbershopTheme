@@ -1,0 +1,122 @@
+.expectations-section-wrapper{
+  
+  background-color:#F5EDE6;
+
+}
+
+  .expectations-title{
+    font-family: Bebas Neue;
+font-style: normal;
+font-weight: normal;
+line-height: 150%;
+color: #242424;
+text-transform: uppercase;
+text-align: center;
+  }
+  .expectations-text{
+    font-family: Archivo Narrow;
+font-style: normal;
+font-weight: normal;
+line-height: 150%;
+text-align: center;
+color: #242424;
+  }
+  .icon-description{
+    font-family: Bebas Neue;
+font-style: normal;
+font-weight: normal;
+line-height: 150%;
+text-align: center;
+text-transform: uppercase;
+color: #6E6D6D;
+  }
+  .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+@media screen and (min-width:1211px){
+  .expectations-section-wrapper{
+    padding:70px 140px 70px 140px;
+  }
+  .expectations-title{
+    font-size: 45px;
+    margin-bottom:20px;
+  }
+  .expectations-text{
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .expectation-icon-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
+    justify-items: center;
+    }
+  .expectations-div1 { grid-area: 1 / 1 / 2 / 2; }
+  .expectations-div2 { grid-area: 1 / 2 / 2 / 3; }
+  .expectations-div3 { grid-area: 1 / 3 / 2 / 4; }
+  .expectations-div4 { grid-area: 1 / 4 / 2 / 5; }
+  .icon-border{
+    width: 200px;
+    height: 200px;
+    margin-bottom:20px;
+    border-radius: 100%;
+    border: 22px solid #A99797;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .expectation-icon{
+    width: 100px;
+    height: 100px;
+  }
+  .icon-description{
+    font-size: 34px;
+    margin-top: 0;
+  }
+}
+@media screen and (max-width:1210px){
+  .expectations-section-wrapper{
+    padding:40px 20px 40px 20px;
+  }
+  .expectations-title{
+    font-size: 30px;
+    margin-bottom:15px;
+  }
+  .expectations-text{
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .expectation-icon-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 30px;
+    justify-items: center;
+    }
+    .icon-border{
+      width: 140px;
+      height: 140px;
+      margin-bottom:13px;
+      border-radius: 100%;
+      border: 16px solid #A99797;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .expectation-icon{
+      width: 55px;
+      height: 55px;
+    }
+    .icon-description{
+      font-size: 22px;
+      margin-top:0;
+    }
+}

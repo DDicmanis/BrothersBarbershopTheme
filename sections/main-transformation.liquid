@@ -1,0 +1,65 @@
+{{ 'section-transformation.css' | asset_url | stylesheet_tag }}
+<div class="container">
+  <div class="slider-overlay">
+    <div class="overlay-row">
+      <div class="overlay-col1">
+        <h2 class="transform-heading">the brothers experience</h2>
+        <p class="transform-text">Sure, you come to our shops for a great cut. But, it’s our mission to be even more than that. We believe that when you look your best, you feel and do your best, too. So, when we say “how can I help?”, we mean it. </p>    
+      </div>
+      <div class="overlay-col2">
+        <div class="desktop-controlls">
+          <div class="points">
+            <div class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></div>
+            <div class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></div>
+            <div class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></div>
+          </div>
+          <div class="arrows">
+            <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)"><img src="{{'arrow.svg' | asset_url }}" class="prev-arrow"></div>
+            <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)"><img src="{{'arrow.svg' | asset_url }}" class="next-arrow"></div>
+          </div>
+        </div>
+        
+        <div class="mobile-controlls">
+          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)"><img src="{{'arrow.svg' | asset_url }}" class="prev-arrow"></div>
+          <div class="points">
+            <div class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></div>
+            <div class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></div>
+            <div class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></div>
+          </div>  
+          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)"><img src="{{'arrow.svg' | asset_url }}" class="next-arrow"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="before-after-slider" class="mySlides slides">
+    <div id="before-image" class="beforeImage">
+      <img src="{{'background.jpg'| asset_url }}" alt="before" class="object-fit-cover"/>
+    </div>
+    <div id="after-image" class="afterImage">
+      
+      <img src="{{'foreground.jpg'| asset_url }}" alt="After" class="object-fit-cover"/>
+    </div>
+    <div id="resizer" class="resizer"></div>
+  </div>
+  <div id="before-after-slider" class="mySlides slides">
+    <div id="before-image" class="beforeImage">
+      <img src="{{'background1.jpg'| asset_url }}" alt="before" class="object-fit-cover"/>
+    </div>
+    <div id="after-image" class="afterImage">
+      
+      <img src="{{'foreground1.jpg'| asset_url }}" alt="After" class="object-fit-cover"/>
+    </div>
+    <div id="resizer" class="resizer"></div>
+  </div>
+  <div id="before-after-slider" class="mySlides slides">
+    <div id="before-image" class="beforeImage">
+      <img src="{{'background.jpg'| asset_url }}" alt="before" class="object-fit-cover"/>
+    </div>
+    <div id="after-image" class="afterImage">
+      
+      <img src="{{'foreground.jpg'| asset_url }}" alt="After" class="object-fit-cover"/>
+    </div>
+    <div id="resizer" class="resizer"></div>
+  </div>
+</div>
+{{ 'main-transform.js'  | asset_url | script_tag     }}
