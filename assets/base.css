@@ -1217,8 +1217,6 @@ deferred-media {
   background-color: rgba(var(--color-button-text), 0.3);
 }
 
-.button,
-.button-label,
 .shopify-challenge__button,
 .customer button {
   font-size: 1.5rem;
