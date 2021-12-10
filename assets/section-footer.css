@@ -1,5 +1,7 @@
 .footer {
   background-color: #736565;
+  display: flex;
+  justify-content: center;
 }
 .social-wrapper {
   display: flex;
@@ -18,13 +20,13 @@
 .footer-nav {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .footer-list {
   list-style: none;
   padding-left: 0;
   margin-top: 0;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .footer-list.horizontal {
   display: flex;
@@ -76,6 +78,7 @@
   margin-bottom: 48px;
   width: 100%;
   border: 1px solid transparent;
+  max-width: 420px;
 }
 .input-field:focus {
   border: 1px solid white;
@@ -175,6 +178,9 @@
   .footer{
     padding: 40px 20px 40px 20px;
   }
+  .footer-nav{
+    justify-content: space-between;
+  }
   .footer-grid{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -231,6 +237,7 @@
   }
   .footer-list {
     text-align: left;
+    justify-content: space-between;
   }
   .footer-list.horizontal{
     margin-bottom: 30px;
@@ -253,6 +260,7 @@
   .input-field{
     font-size:16px;
     margin-bottom: 40px;
+    max-width: 335px;
   }
   .newsletter-heading{
     font-size: 30px;

@@ -3,6 +3,7 @@
 <link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
+{{ 'component-header.css' | asset_url | stylesheet_tag }}
 {%- if settings.predictive_search_enabled -%}
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
   <link rel="stylesheet" href="{{ 'component-loading-overlay.css' | asset_url }}" media="print" onload="this.media='all'">
@@ -69,8 +70,57 @@
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
+<header>
+  <div class="header" id="myHeader">
+    <div class="container-main" id="header-div">
+      <div class="header-div1">
+        <h4 class="language-heading">EN</h4><span></span>
+      </div>
+      <div class="header-div2">
+        <img src="{{'logo-white.svg'| asset_url }}" alt="Brothers barbershop logo" class="header-logo">
+      </div>
+      
+      <div class="header-nav-inline header-div3">
+        <ul class="header-inline">
+          {% for link in linklists.header-inline.links %}
+          <li >
+            <a href="{{ link.url }}" class="link header-link">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+        </ul>
+        <img src="{{'burger-menu.svg'| asset_url }}" alt="Open menu" class="burger-icon" onclick="openNav()">
+      </div>
+    </div>
+    
+    
 
-<svg xmlns="http://www.w3.org/2000/svg" class="hidden">
+  </div>
+</header>
+<div class="header-drawer" id="drawer">
+  <img src="{{'cancel.svg'| asset_url }}" alt="Close menu" class="close-icon" onclick="closeNav()">
+  <ul class="header-drawer-list border-bottom">
+    {% for link in linklists.header-drawer-main.links %}
+    <li class="drawer-li">
+      <a href="{{ link.url }}" class="link drawer-link">{{ link.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+  <ul class="header-drawer-list giftcards">
+    {% for link in linklists.header-drawer-giftcards.links %}
+    <li class="drawer-li">
+      <a href="{{ link.url }}" class="link drawer-link">{{ link.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+  <ul class="header-drawer-list drawer-last">
+    {% for link in linklists.header-inline.links %}
+    <li class="drawer-li">
+      <a href="{{ link.url }}" class="link drawer-link">{{ link.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
+<!-- <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
   <symbol id="icon-search" viewbox="0 0 18 19" fill="none">
     <path fill-rule="evenodd" clip-rule="evenodd" d="M11.03 11.68A5.784 5.784 0 112.85 3.5a5.784 5.784 0 018.18 8.18zm.26 1.12a6.78 6.78 0 11.72-.7l5.4 5.4a.5.5 0 11-.71.7l-5.41-5.4z" fill="currentColor"/>
   </symbol>
@@ -78,8 +128,8 @@
   <symbol id="icon-close" class="icon icon-close" fill="none" viewBox="0 0 18 17">
     <path d="M.865 15.978a.5.5 0 00.707.707l7.433-7.431 7.579 7.282a.501.501 0 00.846-.37.5.5 0 00-.153-.351L9.712 8.546l7.417-7.416a.5.5 0 10-.707-.708L8.991 7.853 1.413.573a.5.5 0 10-.693.72l7.563 7.268-7.418 7.417z" fill="currentColor">
   </symbol>
-</svg>
-<{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %} class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
+</svg> -->
+<!-- <sticky-header class="header-wrapper">
   <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}">
     {%- if section.settings.menu != blank -%}
       <header-drawer data-breakpoint="tablet">
@@ -510,10 +560,13 @@
     </div>
   </header>
 </{% if section.settings.enable_sticky_header %}sticky-header{% else %}div{% endif %}>
-
-{%- render 'cart-notification', color_scheme: section.settings.color_scheme -%}
-
+{{ 'video-controll.js'  | asset_url | script_tag     }}
+{%- render 'cart-notification', color_scheme: section.settings.color_scheme -%} -->
+{{ 'header-controll.js'  | asset_url | script_tag     }}
 {% javascript %}
+document.addEventListener("ready",function(){
+  document.getElementById("shopify-section-header").classList.add("header-absolute");
+})
   class StickyHeader extends HTMLElement {
     constructor() {
       super();
@@ -568,7 +621,7 @@
 
           requestAnimationFrame(this.hide.bind(this));
         }
-      } else if (scrollTop <= this.headerBounds.top) {
+      } else if (scrollTop <= 0) {
         requestAnimationFrame(this.reset.bind(this));
       }
 
@@ -578,6 +631,7 @@
 
     hide() {
       this.header.classList.add('shopify-section-header-hidden', 'shopify-section-header-sticky');
+      this.header.classList.remove('header-absolute');
       this.closeMenuDisclosure();
       this.closeSearchModal();
     }
@@ -589,6 +643,7 @@
 
     reset() {
       this.header.classList.remove('shopify-section-header-hidden', 'shopify-section-header-sticky', 'animate');
+      this.header.classList.add('header-absolute');
     }
 
     closeMenuDisclosure() {

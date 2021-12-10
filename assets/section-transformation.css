@@ -52,18 +52,20 @@ img {
 margin-right: 20px;
 }
 .transform-heading{
-  font-family: Bebas Neue;
+  font-family: Bebas Neue,sans-serif;
   font-style: normal;
   font-weight: normal;
   text-transform: uppercase;
   line-height: 150%;
   color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .transform-text{
-  font-family: Archivo Narrow;
+  font-family: Archivo Narrow,cursive;
   font-style: normal;
   font-weight: normal;
-  
+  margin-top: 0;
   line-height: 150%;
   color: #FFFFFF;
 }

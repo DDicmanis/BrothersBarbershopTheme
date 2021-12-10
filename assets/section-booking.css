@@ -1,6 +1,8 @@
 .booking-section-wrapper{
   background-color: #F5EDE6;
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .booking-title{
   font-family: Bebas Neue;

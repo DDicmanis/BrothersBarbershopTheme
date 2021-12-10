@@ -1,3 +1,7 @@
+.counter-section{
+  display: flex;
+  justify-content: center;
+}
 .section-grid{
   
   width: 100%;
@@ -10,15 +14,15 @@ border-radius: 30px;
 text-align: center;
 }
 .counter-text-big{
-  font-family: Bebas Neue;
+  font-family: Bebas Neue,sans-serif;
   font-style: normal;
   font-weight: normal;
-  line-height: 150%;
+  line-height: 100%;
   color: #444444;
   margin-bottom: 10px;
 }
 .counter-text-small{
-  font-family: Bebas Neue;
+  font-family: Bebas Neue,sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 150%;
@@ -52,8 +56,8 @@ text-align: center;
     font-size: 20px;
   }
   .counter-section{
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 40px;
     padding-bottom: 40px;
   }
@@ -66,6 +70,7 @@ text-align: center;
     grid-column-gap: 40px;
     grid-row-gap: 0px;
     width: 100%;
+    max-width: 1160px;
   }
   .div1 { 
     grid-area: 1 / 1 / 2 / 4;
@@ -91,6 +96,7 @@ text-align: center;
     padding-right: 140px;
     padding-top: 70px;
     padding-bottom: 70px;
+    
   }
 }
 .counter-section{
