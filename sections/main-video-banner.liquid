@@ -2,7 +2,7 @@
 <div class="banner-text-wrapper">
   <div><h1 class="banner-heading-h1">{{ section.settings.banner-title }}</h1></div>
   
-  <h3 class="banner-heading-h3">Look and feel like your best self.</h3>
+  <h3 class="banner-heading-h3">{{ section.settings.banner-subtitle }}</h3>
   <a class="button button-primary banner-button" href="#" target="blank">BOOK AN APPOINTMENT</a>
   <div class="circle1"></div>
   <div class="circle2"></div>
@@ -20,36 +20,25 @@
 </div> 
 {% schema %}
   {
-    "name": "Video Module",
+    "name": "Banner",
     "settings": [
-      {
-        "id": "video_url",
-        "type": "video_url",
-        "label": "Video URL for Desktop",
-        "accept": ["youtube", "vimeo"],
-        "info": "Supports Youtube and Vimeo",
-        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
-      },
-      {
-        "id": "autoplay",
-        "type": "checkbox",
-        "label": "Autoplay",
-        "default": true
-      },
       {
         "id": "banner-title",
         "type": "text",
         "label": "Banner title",
         "default":"GREAT CUTS. BIG SMILES."
-      }
+      },
+      {
+        "id": "banner-subtitle",
+        "type": "text",
+        "label": "Banner subtitle",
+        "default":"Look and feel like your best self."
+      },
     ],
     "presets": [
       {
-        "name": "Video Module",
-        "category": "Video",
-        "settings": {
-          "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
-        }
+        "name": "Banner",
+        "category": "Video"
       }
     ]
   }
