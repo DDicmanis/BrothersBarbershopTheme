@@ -1,6 +1,6 @@
 {{ 'section-video-banner.css' | asset_url | stylesheet_tag }}
 <div class="banner-text-wrapper">
-  <div><h1 class="banner-heading-h1">GREAT CUTS. BIG SMILES.</h1></div>
+  <div><h1 class="banner-heading-h1">{{ section.settings.banner-title }}</h1></div>
   
   <h3 class="banner-heading-h3">Look and feel like your best self.</h3>
   <a class="button button-primary banner-button" href="#" target="blank">BOOK AN APPOINTMENT</a>
@@ -19,33 +19,38 @@
   
 </div> 
 {% schema %}
-{
-  
+  {
     "name": "Video Module",
     "settings": [
-    {
-    "id": "video_url",
-    "type": "video_url",
-    "label": "Video URL for Desktop",
-    "accept": ["youtube", "vimeo"],
-    "info": "Supports Youtube and Vimeo",
-    "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
-    },
-    {
-    "id": "autoplay",
-    "type": "checkbox",
-    "label": "Autoplay",
-    "default": true
-    }
+      {
+        "id": "video_url",
+        "type": "video_url",
+        "label": "Video URL for Desktop",
+        "accept": ["youtube", "vimeo"],
+        "info": "Supports Youtube and Vimeo",
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+      },
+      {
+        "id": "autoplay",
+        "type": "checkbox",
+        "label": "Autoplay",
+        "default": true
+      },
+      {
+        "id": "banner-title",
+        "type": "text",
+        "label": "Banner title",
+        "default":"GREAT CUTS. BIG SMILES."
+      }
     ],
     "presets": [
-    {
-    "name": "Video Module",
-    "category": "Video",
-    "settings": {
-    "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
-    }
-    }
+      {
+        "name": "Video Module",
+        "category": "Video",
+        "settings": {
+          "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+        }
+      }
     ]
-    }
+  }
 {% endschema %}
