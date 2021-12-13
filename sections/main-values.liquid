@@ -3,16 +3,16 @@
   <div class="main-container">
     <div class="values-grid">
       <div class="values-div1">
-        <img src="{{ 'kurier.png'| asset_url }}" alt="Kurier logo" class="values-icon">
+        <img src="{{section.settings.icon-1| img_url: 'medium'}}" alt="Kurier logo" class="values-icon">
       </div>
       <div class="values-div2">
-        <img src="{{ 'derstandard.png'| asset_url }}" alt="DerStandard logo" class="values-icon">
+        <img src="{{section.settings.icon-2| img_url: 'medium'}}" alt="DerStandard logo" class="values-icon">
       </div>
       <div class="values-div3">
-        <img src="{{ '1000things.png'| asset_url }}" alt="1000 things logo" class="values-icon">
+        <img src="{{section.settings.icon-3| img_url: 'medium'}}" alt="1000 things logo" class="values-icon">
       </div>
       <div class="values-div4">
-        <img src="{{ 'diepresse.png'| asset_url }}" alt="Die Presse logo" class="values-icon">
+        <img src="{{section.settings.icon-4| img_url: 'medium'}}" alt="Die Presse logo" class="values-icon">
       </div>
     </div>
     <div class="values-video-wrapper">
@@ -30,3 +30,39 @@
   
 </div>
 {{ 'values-video-controll.js'  | asset_url | script_tag     }}
+{% schema %}
+  {
+    "name": "Values",
+    "settings": [
+      {
+        "id": "icon-1",
+        "type": "image_picker",
+        "label": "1st icon"
+        
+      },
+      {
+        "id": "icon-2",
+        "type": "image_picker",
+        "label": "2nd icon"
+        
+      },
+      {
+        "id": "icon-3",
+        "type": "image_picker",
+        "label": "3rd icon"
+        
+      },
+      {
+        "id": "icon-4",
+        "type": "image_picker",
+        "label": "4th icon"
+        
+      }
+    ],
+    "presets": [
+      {
+        "name": "Values"
+      }
+    ]
+  }
+{% endschema %}
