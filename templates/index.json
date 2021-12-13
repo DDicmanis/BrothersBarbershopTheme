@@ -3,9 +3,8 @@
     "video_banner": {
       "type": "main-video-banner",
       "settings": {
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "autoplay": true,
-        "banner-title": "GREAT CUTS. BIG SMILEs."
+        "banner-title": "GREAT CUTS. BIG SMILEs.",
+        "banner-subtitle": "Look and feel like your best sel."
       }
     },
     "counter": {
