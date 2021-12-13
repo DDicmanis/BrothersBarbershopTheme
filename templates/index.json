@@ -1,37 +1,62 @@
 {
   "sections": {
     "video_banner": {
-      "type": "main-video-banner"
+      "type": "main-video-banner",
+      "settings": {
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "autoplay": true,
+        "banner-title": "GREAT CUTS. BIG SMILEs."
+      }
     },
     "counter": {
-      "type": "main-counter"
+      "type": "main-counter",
+      "settings": {
+      }
     },
     "feeling": {
-      "type": "main-feeling"
+      "type": "main-feeling",
+      "settings": {
+      }
     },
     "videos": {
-      "type": "main-videos"
+      "type": "main-videos",
+      "settings": {
+      }
     },
     "awards": {
-      "type": "main-awards"
+      "type": "main-awards",
+      "settings": {
+      }
     },
     "transformation": {
-      "type": "main-transformation"
+      "type": "main-transformation",
+      "settings": {
+      }
     },
     "expectations": {
-      "type": "main-expectations"
+      "type": "main-expectations",
+      "settings": {
+      }
     },
     "values": {
-      "type": "main-values"
+      "type": "main-values",
+      "settings": {
+      }
     },
     "guarantee": {
-      "type": "main-guarantee"
+      "type": "main-guarantee",
+      "settings": {
+      }
     },
     "booking": {
-      "type": "main-booking"
+      "type": "main-booking",
+      "settings": {
+      }
     },
     "faq": {
-      "type": "main-faq"
+      "type": "main-faq",
+      "settings": {
+      }
     }
   },
   "order": [
