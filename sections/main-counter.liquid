@@ -2,17 +2,47 @@
 <div class="counter-section">
   <div class="section-grid">
     <div class="div1">
-      <p class="counter-text-big">50'00</p>
+      <p class="counter-text-big">{{ section.settings.counter-clients }}</p>
       <p class="counter-text-small">happy clients</p>
     </div>
     <div class="div2">
-      <p class="counter-text-big">2500</p>
+      <p class="counter-text-big">{{ section.settings.counter-reviews }}</p>
       <p class="counter-text-small">5-STAR REVIEWS</p>
     </div>
     <div class="div3">
-      <p class="counter-text-big">6000</p>
+      <p class="counter-text-big">{{ section.settings.counter-votes }}</p>
       <p class="counter-text-small">VOTES FOR VIENNA'S #1 BARBERSHOP</p>
     </div>
   </div>
 </div>
 
+{% schema %}
+  {
+    "name": "Banner",
+    "settings": [
+      {
+        "id": "counter-clients",
+        "type": "text",
+        "label": "Client count",
+        "default":"50'00"
+      },
+      {
+        "id": "counter-reviews",
+        "type": "text",
+        "label": "Review count",
+        "default":"2500"
+      },
+      {
+        "id": "counter-votes",
+        "type": "text",
+        "label": "Votes count",
+        "default":"6000"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Counters"
+      }
+    ]
+  }
+{% endschema %}
