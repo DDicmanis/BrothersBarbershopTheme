@@ -29,3 +29,57 @@
   </div>
   
 </div>
+{% schema %}
+  {
+    "name": "Booking",
+    "settings": [
+      {
+        "id": "booking-title",
+        "type": "text",
+        "label": "Booking title",
+        "default":"how it works"
+      },
+      {
+        "id": "booking-heading-1",
+        "type": "text",
+        "label": "Step 1 heading",
+        "default":"CHOOSE A LOCATION"
+      },
+      {
+        "id": "booking-description-1",
+        "type": "textarea",
+        "label": "Step 1 description",
+        "default":"Multiple shops. Consistent quality experience."
+      },
+      {
+        "id": "booking-heading-2",
+        "type": "text",
+        "label": "Step 2 heading",
+        "default":"CHOOSE A SERVICE"
+      },
+      {
+        "id": "booking-description-2",
+        "type": "textarea",
+        "label": "Step 2 description",
+        "default":"What do you like? We’ll make it happen."
+      },
+      {
+        "id": "booking-heading-3",
+        "type": "text",
+        "label": "Step 3 heading",
+        "default":"ENJOY YOUR LOOK"
+      },
+      {
+        "id": "booking-description-3",
+        "type": "textarea",
+        "label": "Step 3 description",
+        "default":"Trust us, you’re gonna look amazing."
+      }
+    ],
+    "presets": [
+      {
+        "name": "Booking"
+      }
+    ]
+  }
+{% endschema %}
