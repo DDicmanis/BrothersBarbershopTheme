@@ -1,29 +1,32 @@
 {{ 'section-values.css' | asset_url | stylesheet_tag }}
 <div class="values-section-container">
-  <div class="values-grid">
-    <div class="values-div1">
-      <img src="{{ 'kurier.png'| asset_url }}" alt="Kurier logo" class="values-icon">
-    </div>
-    <div class="values-div2">
-      <img src="{{ 'derstandard.png'| asset_url }}" alt="DerStandard logo" class="values-icon">
-    </div>
-    <div class="values-div3">
-      <img src="{{ '1000things.png'| asset_url }}" alt="1000 things logo" class="values-icon">
-    </div>
-    <div class="values-div4">
-      <img src="{{ 'diepresse.png'| asset_url }}" alt="Die Presse logo" class="values-icon">
-    </div>
-  </div>
-  <div class="values-video-wrapper">
-    <video id="valuesVideo" muted>
-      <source src="{{'placeholder.mp4' | asset_url }}" type="video/mp4" id="valuesVid">
-    </video>
-    <div class="video-controll-overlay" id="valuesOverlay">
-      <div class="play-icon-wrapper" id="values-play">
-        <img src="{{'playIcon.svg'| asset_url }}" id="play3" class="values-play-button" alt="play button">
+  <div class="main-container">
+    <div class="values-grid">
+      <div class="values-div1">
+        <img src="{{ 'kurier.png'| asset_url }}" alt="Kurier logo" class="values-icon">
+      </div>
+      <div class="values-div2">
+        <img src="{{ 'derstandard.png'| asset_url }}" alt="DerStandard logo" class="values-icon">
+      </div>
+      <div class="values-div3">
+        <img src="{{ '1000things.png'| asset_url }}" alt="1000 things logo" class="values-icon">
+      </div>
+      <div class="values-div4">
+        <img src="{{ 'diepresse.png'| asset_url }}" alt="Die Presse logo" class="values-icon">
       </div>
     </div>
+    <div class="values-video-wrapper">
+      <video id="valuesVideo" muted>
+        <source src="{{'placeholder.mp4' | asset_url }}" type="video/mp4" id="valuesVid">
+      </video>
+      <div class="video-controll-overlay" id="valuesOverlay">
+        <div class="play-icon-wrapper" id="values-play">
+          <img src="{{'playIcon.svg'| asset_url }}" id="play3" class="values-play-button" alt="play button">
+        </div>
+      </div>
+    </div>
+    <a href="#" target="blank" class="button button-primary" style="text-align: center;">BOOK AN APPOINTMENT</a>
   </div>
-  <a href="#" target="blank" class="button button-primary" style="text-align: center;">BOOK AN APPOINTMENT</a>
+  
 </div>
 {{ 'values-video-controll.js'  | asset_url | script_tag     }}

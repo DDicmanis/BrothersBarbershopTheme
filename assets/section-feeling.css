@@ -1,5 +1,7 @@
 .feeling-section-wrapper{
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .feeling-title{
   font-family: Bebas Neue;
@@ -8,6 +10,7 @@
   line-height: 150%;
   text-align: center;
   color: #444444;
+  margin-top: 0;
 }
 .feeling-text{
   font-family: Archivo Narrow;
@@ -16,6 +19,7 @@ font-weight: normal;
 line-height: 150%;
 text-align: center;
 color: #444444;
+margin-top: 0;
 }
 .icon-grid{
   display: grid;
@@ -35,6 +39,8 @@ font-weight: normal;
 line-height: 150%;
 text-transform: uppercase;
 color: #444444;
+margin-top: 10px;
+margin-bottom: 0;
 }
 .icon-div1:after {
   content: " ";
@@ -111,6 +117,7 @@ margin-bottom:15px;
 .feeling-text{
   font-size: 22px;
   margin-bottom: 70px;
+  text-align: justify;
 }
 .icon-wrapper{
   width: 40px;

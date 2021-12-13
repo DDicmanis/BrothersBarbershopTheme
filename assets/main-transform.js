@@ -11,7 +11,7 @@ let active = false;
 document.addEventListener("DOMContentLoaded", function () {
   let width = slider[slideIndex - 1].offsetWidth;
   let height = slider[slideIndex - 1].offsetHeight;
-  console.log(width);
+
   for (let i = 0; i <= 2; i++) {
     var beforeImage = before[i].getElementsByTagName('img')[0];
     var afterImage = after[i].getElementsByTagName('img')[0];
@@ -23,13 +23,13 @@ document.addEventListener("DOMContentLoaded", function () {
     afterImage.style.height = '100%';
   }
 
-});
+}, { passive: false });
 
 //Adjust width of image on resize 
 window.addEventListener('resize', function () {
   let width = slider[slideIndex - 1].offsetWidth;
   let height = slider[slideIndex - 1].offsetHeight;
-  console.log(width);
+
   for (let i = 0; i <= 2; i++) {
     var beforeImage = before[i].getElementsByTagName('img')[0];
     var afterImage = after[i].getElementsByTagName('img')[0];
@@ -40,36 +40,36 @@ window.addEventListener('resize', function () {
     // afterImage.style.height = height + 'px';
     beforeImage.style.height = '100%';
   }
-})
+}, { passive: false })
 
 resizer[0].addEventListener('mousedown', function () {
   active = true;
   resizer[0].classList.add('resize');
 
-});
+}, { passive: false });
 resizer[1].addEventListener('mousedown', function () {
   active = true;
   resizer[1].classList.add('resize');
 
-});
+}, { passive: false });
 resizer[2].addEventListener('mousedown', function () {
   active = true;
   resizer[2].classList.add('resize');
 
-});
+}, { passive: false });
 document.body.addEventListener('mouseup', function () {
   active = false;
   resizer[0].classList.remove('resize');
   resizer[1].classList.remove('resize');
   resizer[2].classList.remove('resize');
-});
+}, { passive: false });
 
 document.body.addEventListener('mouseleave', function () {
   active = false;
   resizer[0].classList.remove('resize');
   resizer[1].classList.remove('resize');
   resizer[2].classList.remove('resize');
-});
+}, { passive: false });
 
 
 document.body.addEventListener('mousemove', function (e) {
@@ -78,34 +78,34 @@ document.body.addEventListener('mousemove', function (e) {
   x -= slider[slideIndex - 1].getBoundingClientRect().left;
   slideIt(x);
   pauseEvent(e);
-});
+}, { passive: false });
 
 resizer[0].addEventListener('touchstart', function () {
   active = true;
   resizer[0].classList.add('resize');
-});
+}, { passive: false });
 resizer[1].addEventListener('touchstart', function () {
   active = true;
   resizer[1].classList.add('resize');
-});
+}, { passive: false });
 resizer[2].addEventListener('touchstart', function () {
   active = true;
   resizer[2].classList.add('resize');
-});
+}, { passive: false });
 
 document.body.addEventListener('touchend', function () {
   active = false;
   resizer[0].classList.remove('resize');
   resizer[1].classList.remove('resize');
   resizer[2].classList.remove('resize');
-});
+}, { passive: false });
 
 document.body.addEventListener('touchcancel', function () {
   active = false;
   resizer[0].classList.remove('resize');
   resizer[1].classList.remove('resize');
   resizer[2].classList.remove('resize');
-});
+}, { passive: false });
 
 //calculation for dragging on touch devices
 document.body.addEventListener('touchmove', function (e) {
@@ -120,7 +120,7 @@ document.body.addEventListener('touchmove', function (e) {
   x -= slider[slideIndex - 1].getBoundingClientRect().left;
   slideIt(x);
   pauseEvent(e);
-});
+}, { passive: false });
 
 function slideIt(x) {
   let transform = Math.max(0, (Math.min(x, slider[slideIndex - 1].offsetWidth)));
@@ -214,7 +214,7 @@ function showDivs(n) {
 //   afterImage.style.height = height + 'px';
 // });
 
-// //Adjust width of image on resize 
+// //Adjust width of image on resize
 // window.addEventListener('resize', function () {
 //   let width = slider.offsetWidth;
 //   let height = slider.offsetHeight;

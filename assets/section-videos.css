@@ -1,5 +1,7 @@
 .videos-section-wrapper{
-  background-color:#FAFAFA
+  background-color:#FAFAFA;
+  display: flex;
+  justify-content: center;
 }
 .hidden{
   display: none;
@@ -11,6 +13,7 @@ font-weight: normal;
 line-height: 150%;
 text-align: center;
 color: #444444;
+margin-top: 0;
 }
 .video-div-title{
 font-family: Bebas Neue;
@@ -26,6 +29,8 @@ font-style: normal;
 font-weight: normal;
 line-height: 150%;
 color: rgba(68, 68, 68, 0.7);
+margin-top: 0;
+margin-bottom: 0;
 }
 
 .video-wrapper{
@@ -40,6 +45,11 @@ video{
   height: 360px;
   object-fit: cover;
   
+}
+.video-section{
+  position: absolute;
+  left:35%;
+  top: 35%;
 }
 .video-controll-overlay{
   background-color: rgba(108, 108, 108, 0.6);
@@ -59,11 +69,8 @@ color: #FFFFFF;
 margin:0;
 }
 .play-button{
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top:36%;
-  left:36%;
+  width: 25px;
+  height:28px;
 }
 @media screen and (max-width:1210px){
   .videos-section-wrapper{
@@ -98,6 +105,10 @@ justify-items: center;
   top:20px;
     left:20px;
 }
+video{
+  width: 300px;
+  height: 300px;
+}
 }
 @media screen and (min-width:1211px){
   .videos-section-wrapper{
@@ -108,11 +119,11 @@ justify-items: center;
   }
   .videos-title{
     font-size: 45px;
-    margin-bottom: 40;
+    margin-bottom: 40px;
   }
   .video-div-title{
     font-size: 34px;
-    margin-bottom:20px;
+    margin-bottom:10px;
   }
   .video-description{
     font-size: 22px;
@@ -122,6 +133,7 @@ justify-items: center;
 grid-template-columns: repeat(12, 1fr);
 grid-template-rows: 1fr;
 grid-column-gap: 40px;
+max-width: 1160px;
 }
 .video-div1 { grid-area: 1 / 1 / 2 / 5; }
 .video-div2 { grid-area: 1 / 5 / 2 / 9; }

@@ -1,28 +1,31 @@
 .expectations-section-wrapper{
-  
+  display: flex;
+  justify-content: center;
   background-color:#F5EDE6;
 
 }
 
   .expectations-title{
-    font-family: Bebas Neue;
+    font-family: Bebas Neue,sans-serif;
 font-style: normal;
 font-weight: normal;
 line-height: 150%;
 color: #242424;
 text-transform: uppercase;
 text-align: center;
+margin-top: 0;
   }
   .expectations-text{
-    font-family: Archivo Narrow;
+    font-family: Archivo Narrow,cursive;
 font-style: normal;
 font-weight: normal;
 line-height: 150%;
 text-align: center;
 color: #242424;
+margin-top: 0;
   }
   .icon-description{
-    font-family: Bebas Neue;
+    font-family: Bebas Neue,sans-serif;
 font-style: normal;
 font-weight: normal;
 line-height: 150%;
@@ -91,6 +94,7 @@ color: #6E6D6D;
   .expectations-text{
     font-size: 16px;
     margin-bottom: 30px;
+    text-align: justify;
   }
   .expectation-icon-grid {
     display: grid;

@@ -29,11 +29,8 @@ a.banner-button{
 
 .frame-container {
   position: relative;
-  padding-bottom: 56.25%; /* 16:9 */  
-  padding-top: 25px;
-  min-height: 577px;
-  width: 300%; /* enlarge beyond browser width */
-  left: -100%; /* center */
+  width: 100%; /* enlarge beyond browser width */
+  height: 100%;
 }
 
 .frame-container iframe {
@@ -45,8 +42,11 @@ a.banner-button{
   z-index: 11;
 }
 .video-section-wrapper{
-  overflow-x: hidden;
   position: relative;
+  max-height: 680px;
+}
+h1.banner-heading-h1{
+  margin-top: 0;
 }
 .banner-text-wrapper{
   position: absolute;
@@ -61,6 +61,15 @@ a.banner-button{
   flex-direction: column;
   overflow-wrap: break-word;
 }
+#bannerVid{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#shopify-section-template--14326481584264__video_banner{
+  position: relative;
+  overflow: hidden;
+}
 @media screen and (max-width:1210px){
   h1.banner-heading-h1{
     
@@ -69,9 +78,10 @@ a.banner-button{
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
-  line-height: var(--font-line-height);
+  line-height: 150%;
   margin-bottom: 10px;
   text-align: center;
+  margin-top:170px;
   }
   h3.banner-heading-h3{
     font-family: Archivo Narrow;
@@ -80,7 +90,7 @@ a.banner-button{
   font-size: 18px;
   line-height: 150%;
   margin-top:0;
-  margin-bottom: 70px;
+  margin-bottom: 76px;
   color: white;
   }
   .banner-text-small{
@@ -88,10 +98,16 @@ a.banner-button{
   font-style: normal;
   font-weight: normal;
   font-size: 14;
-  line-height: 150%;
-    color: white;
+  color: white;
+  margin-top:0;
   }
+  .video-section-wrapper{
+    max-height: 577px;
+    height: 577px;
+  }
+  
 }
+
 @media screen and (min-width:1211px){
   h1.banner-heading-h1{
     font-family: Bebas Neue;
@@ -99,18 +115,19 @@ a.banner-button{
   font-style: normal;
   font-weight: normal;
   font-size: 96px;
-  line-height: var(--font-line-height);
+  line-height: 100%;
   margin-bottom: 10px;
   text-align: center;
+  margin-top:90px;
   }
   h3.banner-heading-h3{
     font-family: Archivo Narrow;
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
-  line-height: 150%;
+  line-height: 100%;
   margin-top:0;
-  margin-bottom: 70px;
+  margin-bottom: 76px;
   color: white;
   }
   .banner-text-small{
@@ -120,5 +137,6 @@ a.banner-button{
   font-size: 18px;
   line-height: 150%;
     color: white;
+    margin-top:0;
   }
 }
