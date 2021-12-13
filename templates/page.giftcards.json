@@ -3,15 +3,12 @@
     "main": {
       "type": "main-page"
     },
-    "form": {
-      "type": "contact-form",
-      "settings": {
-        "heading": ""
-      }
+    "videos": {
+      "type": "main-videos"
     }
   },
   "order": [
     "main",
-    "form"
+    "videos"
   ]
 }

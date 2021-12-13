@@ -121,16 +121,16 @@ margin-right: 20px;
 }
 
 #resizer:after {
-  /* background:linear-gradient(62deg,#c93072 5%,#3365c0);
+  background-color:white;
   font-family: "Font Awesome 5 Free";
-  content:"<>"; */
+  content:"\f337";
   font-weight:900;
   display:flex;
   justify-content:center;
   align-items:center;
-  color:white;
+  color:black;
   position:absolute;
-  margin: 0 0 0 -22px;
+  margin: 0 0 0 -18px;
   width:40px;
   height:40px;
   border-radius:50%;
@@ -179,6 +179,12 @@ margin-right: 20px;
     width: 100%;
     align-items: center;
     justify-content: space-between;
+  }
+  .beforeImage{
+    display:none;
+  }
+  .resizer{
+    display: none!important;
   }
 }
 @media screen and (min-width:1211px){
