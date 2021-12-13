@@ -1,9 +1,26 @@
 {{ 'section-awards.css' | asset_url | stylesheet_tag }}
 <div class="awards-section-wrapper">
   <div class="awards-content-wrapper">
-    <h2 class="award-text">we know you’re a superhero.<br> 
-      We’ll help you look like one, too.</h2>
+    <h2 class="award-text">{{ section.settings.awards-title }}</h2>
       <div class="award-badge"></div>
   </div>
   
 </div>
+{% schema %}
+  {
+    "name": "Awards",
+    "settings": [
+      {
+        "id": "awards-title",
+        "type": "textarea",
+        "label": "Award block title",
+        "default":"we know you’re a superhero.<br> We’ll help you look like one, too."
+      }
+    ],
+    "presets": [
+      {
+        "name": "Awards"
+      }
+    ]
+  }
+{% endschema %}
