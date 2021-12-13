@@ -2,31 +2,33 @@
 
 <div class="feeling-section-wrapper">
   <div class="container-main">
-    <h2 class="feeling-title">Get ready for that “best cut ever” feeling.</h2>
-    <p class="feeling-text">As soon as you step foot inside one of our shops, you’re home. At Brothers’ Barbershop, we’re not satisfied until you are. Find a moment respite from city life, or simply a welcoming atmosphere to take a load off, while you get the best cut of your life. Kick back, and have a drink on us – we’re glad you’re here!</p>
+    <h2 class="feeling-title">{{ section.settings.feeling-title }}</h2>
+    <p class="feeling-text">{{ section.settings.feeling-text }}</p>
     <div class="icon-grid">
       <div class="icon-div1">
         <div class="icon-wrapper">
-          {{'icon-satisfaction.svg'| asset_url | img_tag:'satisfaction logo','icon'}}
+          <img class="icon" src="{{section.settings.feeling-icon-1| img_url: 'medium'}}"alt="Guaranteed satisfaction">
+          <!-- {{'icon-satisfaction.svg'| asset_url | img_tag:'satisfaction logo','icon'}} -->
         </div>
         
         <p class="icon-text">Guaranteed satisfaction</p>
       </div>
       <div class="icon-div2">
         <div class="icon-wrapper">
-        {{'icon-mustache.svg'| asset_url | img_tag:'service logo','icon'}}
+          <img class="icon" src="{{section.settings.feeling-icon-2| img_url: 'medium'}}"alt="Outstanding service">
         </div>
         <p class="icon-text">Outstanding service</p>
       </div>
       <div class="icon-div3">
         <div class="icon-wrapper">
-        {{'icon-handshake.svg'| asset_url | img_tag:'environment logo','icon'}}
+          <img class="icon" src="{{section.settings.feeling-icon-3| img_url: 'medium'}}"alt="Welcoming environment">
         </div>
         <p class="icon-text">Welcoming environment</p>
       </div>
       <div class="icon-div4">
         <div class="icon-wrapper">
-        {{'icon-confidence.svg'| asset_url | img_tag:'confidence logo','icon'}}
+          <img class="icon" src="{{section.settings.feeling-icon-4| img_url: 'medium'}}"alt="Renewed confidence">
+
         </div>
         <p class="icon-text">Renewed confidence</p>
       </div>
@@ -35,3 +37,51 @@
   </div>
   
 </div>
+{% schema %}
+  {
+    "name": "Feeling",
+    "settings": [
+      {
+        "id": "feeling-title",
+        "type": "text",
+        "label": "Feeling block title",
+        "default":"Get ready for that “best cut ever” feeling."
+      },
+      {
+        "id": "feeling-text",
+        "type": "textarea",
+        "label": "Feeling block text",
+        "default":"As soon as you step foot inside one of our shops, you’re home. At Brothers’ Barbershop, we’re not satisfied until you are. Find a moment respite from city life, or simply a welcoming atmosphere to take a load off, while you get the best cut of your life. Kick back, and have a drink on us – we’re glad you’re here!"
+      },
+      {
+        "id": "feeling-icon-1",
+        "type": "image_picker",
+        "label": "Feeling block icon 1"
+        
+      },
+      {
+        "id": "feeling-icon-2",
+        "type": "image_picker",
+        "label": "Feeling block icon 2"
+        
+      },
+      {
+        "id": "feeling-icon-3",
+        "type": "image_picker",
+        "label": "Feeling block icon 3"
+        
+      },
+      {
+        "id": "feeling-icon-4",
+        "type": "image_picker",
+        "label": "Feeling block icon 4"
+        
+      }
+    ],
+    "presets": [
+      {
+        "name": "Counters"
+      }
+    ]
+  }
+{% endschema %}
