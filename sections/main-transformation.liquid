@@ -4,8 +4,8 @@
   <div class="slider-overlay">
     <div class="overlay-row">
       <div class="overlay-col1">
-        <h2 class="transform-heading">the brothers experience</h2>
-        <p class="transform-text">Sure, you come to our shops for a great cut. But, it’s our mission to be even more than that. We believe that when you look your best, you feel and do your best, too. So, when we say “how can I help?”, we mean it. </p>    
+        <h2 class="transform-heading">{{ section.settings.transformation-title }}</h2>
+        <p class="transform-text">{{ section.settings.transformation-text }} </p>    
       </div>
       <div class="overlay-col2">
         <div class="desktop-controlls">
@@ -34,33 +34,93 @@
   </div>
   <div id="before-after-slider" class="mySlides slides">
     <div id="before-image" class="beforeImage">
-      <img src="{{'background.jpg'| asset_url }}" alt="before" class="object-fit-cover"/>
+      <img src="{{section.settings.beforeimage-1| img_url: 'large'}}" alt="before" class="object-fit-cover"/>
     </div>
     <div id="after-image" class="afterImage">
       
-      <img src="{{'foreground.jpg'| asset_url }}" alt="After" class="object-fit-cover"/>
+      <img src="{{section.settings.afterimage-1| img_url: 'large'}}" alt="After" class="object-fit-cover"/>
     </div>
     <div id="resizer" class="resizer"></div>
   </div>
   <div id="before-after-slider" class="mySlides slides">
     <div id="before-image" class="beforeImage">
-      <img src="{{'background1.jpg'| asset_url }}" alt="before" class="object-fit-cover"/>
+      <img src="{{section.settings.beforeimage-2| img_url: 'large'}}" alt="before" class="object-fit-cover"/>
     </div>
     <div id="after-image" class="afterImage">
       
-      <img src="{{'foreground1.jpg'| asset_url }}" alt="After" class="object-fit-cover"/>
+      <img src="{{section.settings.afterimage-2| img_url: 'large'}}" alt="After" class="object-fit-cover"/>
     </div>
     <div id="resizer" class="resizer"></div>
   </div>
   <div id="before-after-slider" class="mySlides slides">
     <div id="before-image" class="beforeImage">
-      <img src="{{'background.jpg'| asset_url }}" alt="before" class="object-fit-cover"/>
+      <img src="{{section.settings.beforeimage-3| img_url: 'large'}}" alt="before" class="object-fit-cover"/>
     </div>
     <div id="after-image" class="afterImage">
       
-      <img src="{{'foreground.jpg'| asset_url }}" alt="After" class="object-fit-cover"/>
+      <img src="{{section.settings.afterimage-3| img_url: 'large'}}" alt="After" class="object-fit-cover"/>
     </div>
     <div id="resizer" class="resizer"></div>
   </div>
 </div>
 {{ 'main-transform.js'  | asset_url | script_tag     }}
+{% schema %}
+  {
+    "name": "Transformation",
+    "settings": [
+      {
+        "id": "Transformation-title",
+        "type": "text",
+        "label": "Transformation title",
+        "default":"THE BROTHERS EXPERIENCE"
+      },
+      {
+        "id": "Transformation-text",
+        "type": "textarea",
+        "label": "Transformation text",
+        "default":"Sure, you come to our shops for a great cut. But, it’s our mission to be even more than that. We believe that when you look your best, you feel and do your best, too. So, when we say “how can I help?”, we mean it."
+      },
+      {
+        "id": "beforeimage-1",
+        "type": "image_picker",
+        "label": "1st slider before image"
+        
+      },
+      {
+        "id": "afterimage-1",
+        "type": "image_picker",
+        "label": "1st slider after image"
+        
+      },
+      {
+        "id": "beforeimage-2",
+        "type": "image_picker",
+        "label": "2nd slider before image"
+        
+      },
+      {
+        "id": "afterimage-2",
+        "type": "image_picker",
+        "label": "2nd slider after image"
+        
+      },
+      {
+        "id": "beforeimage-3",
+        "type": "image_picker",
+        "label": "3rd slider before image"
+        
+      },
+      {
+        "id": "afterimage-3",
+        "type": "image_picker",
+        "label": "3rd slider after image"
+        
+      }
+    ],
+    "presets": [
+      {
+        "name": "Transformation"
+      }
+    ]
+  }
+{% endschema %}
