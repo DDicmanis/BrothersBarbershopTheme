@@ -1,34 +1,106 @@
 {{ 'section-expectations.css' | asset_url | stylesheet_tag }}
 <div class="expectations-section-wrapper">
   <div class="container-main">
-    <h2 class="expectations-title">what to expect</h2>
-    <p class="expectations-text">So, you’re ready to book an appointment. What next? Once you take that step toward looking and feeling your best, then you can rest assured that we’ll take care of the rest. We promise, you’re making a great choice. Here are a few things you can expect when you come for a cut at one of our shops.</p>
+    <h2 class="expectations-title">{{ section.settings.expectations-title }}</h2>
+    <p class="expectations-text">{{ section.settings.expectations-text }}</p>
     <div class="expectation-icon-grid">
       <div class="expectation-div1 center">
         <div class="icon-border">
-          <img src="{{'icon-cut2.svg'| asset_url }}" alt="Great cut icon" class="expectation-icon">
+          <img src="{{section.settings.icon-1| img_url: 'medium'}}" alt="Great cut icon" class="expectation-icon">
         </div>
-        <h3 class="icon-description">A great cut</h3>
+        <h3 class="icon-description">{{ section.settings.expectations-1 }}</h3>
       </div>
       <div class="expectation-div2 center">
         <div class="icon-border">
-          <img src="{{'icon-drink2.svg'| asset_url }}" alt="Favorite drink icon" class="expectation-icon">
+          <img src="{{section.settings.icon-2| img_url: 'medium'}}" alt="Favorite drink icon" class="expectation-icon">
         </div>
-        <h3 class="icon-description">Your favorite drink</h3>
+        <h3 class="icon-description">{{ section.settings.expectations-2 }}</h3>
       </div>
       <div class="expectation-div3 center">
         <div class="icon-border">
-          <img src="{{'icon-chat2.svg'| asset_url }}" alt="Good conversation icon" class="expectation-icon">
+          <img src="{{section.settings.icon-3| img_url: 'medium'}}" alt="Good conversation icon" class="expectation-icon">
         </div>
-        <h3 class="icon-description">Good conversation</h3>
+        <h3 class="icon-description">{{ section.settings.expectations-3 }}</h3>
       </div>
       <div class="expectation-div4 center">
         <div class="icon-border">
-          <img src="{{'icon-chair2.svg'| asset_url }}" alt="Relax icon" class="expectation-icon">
+          <img src="{{section.settings.icon-4| img_url: 'medium'}}" alt="Relax icon" class="expectation-icon">
         </div>
-        <h3 class="icon-description">A place to relax</h3>
+        <h3 class="icon-description">{{ section.settings.expectations-4 }}</h3>
       </div>
     </div>
   </div>
   
 </div>
+{% schema %}
+  {
+    "name": "Expectations",
+    "settings": [
+      {
+        "id": "expectations-title",
+        "type": "text",
+        "label": "Expectations title",
+        "default":"WHAT TO EXPECT"
+      },
+      {
+        "id": "expectations-text",
+        "type": "textarea",
+        "label": "expectations text",
+        "default":"So, you’re ready to book an appointment. What next? Once you take that step toward looking and feeling your best, then you can rest assured that we’ll take care of the rest. We promise, you’re making a great choice. Here are a few things you can expect when you come for a cut at one of our shops."
+      },
+      {
+        "id": "icon-1",
+        "type": "image_picker",
+        "label": "1st icon"
+        
+      },
+      {
+        "id": "expectation-1",
+        "type": "text",
+        "label": "1st Expectation",
+        "default":"A GREAT CUT"
+      },
+      {
+        "id": "icon-2",
+        "type": "image_picker",
+        "label": "2nd icon"
+        
+      },
+      {
+        "id": "expectation-2",
+        "type": "text",
+        "label": "2nd Expectation",
+        "default":"YOUR FAVORITE DRINK"
+      },
+      {
+        "id": "icon-3",
+        "type": "image_picker",
+        "label": "3rd icon"
+        
+      },
+      {
+        "id": "expectation-3",
+        "type": "text",
+        "label": "3rd Expectation",
+        "default":"GOOD CONVERSATION"
+      },
+      {
+        "id": "icon-4",
+        "type": "image_picker",
+        "label": "4th icon"
+        
+      },
+      {
+        "id": "expectation-4",
+        "type": "text",
+        "label": "4th Expectation",
+        "default":"A PLACE TO RELAX"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Expectations"
+      }
+    ]
+  }
+{% endschema %}
