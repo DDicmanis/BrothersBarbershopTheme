@@ -72,7 +72,7 @@ text-decoration: none;
 color: #FFFFFF;
 }
 .header-inline>li>a:hover{
-  text-decoration: underline;
+  color: #3798DB;
 }
 .burger-icon{
   width: 55px;
@@ -130,7 +130,7 @@ color: #FFFFFF;
  
 }
 .drawer-li>a:hover{
-  text-decoration: underline;
+  color: #3798DB;
 }
 
 @media screen and (max-width:914px){
