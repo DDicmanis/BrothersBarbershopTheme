@@ -119,6 +119,7 @@
   font-size: 22px;
   line-height: 26px;
   color: #736565;
+  max-width: 210px;
 }
 .button-white:hover{
   opacity: 0.8;
