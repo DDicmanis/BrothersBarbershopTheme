@@ -160,7 +160,7 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
+    dots[i].className = dots[i].className.replace(" background-white", "");
   }
   if (slideIndex == 1) {
     prev[0].className += " blured";
@@ -181,6 +181,6 @@ function showDivs(n) {
     prev[1].className = prev[1].className.replace(" blured", "");
   }
   x[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " w3-white";
-  dots[slideIndex - 1 + 3].className += " w3-white";
+  dots[slideIndex - 1].className += " background-white";
+  dots[slideIndex - 1 + 3].className += " background-white";
 }
