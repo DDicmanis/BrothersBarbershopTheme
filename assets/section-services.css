@@ -1,0 +1,348 @@
+.services-controlls-wrapper{
+  margin-top:80px;
+  padding: 50px 140px 50px 140px;
+  display: flex;
+  justify-content: space-between;
+}
+.services-title{
+  font-family: Bebas Neue,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 150%;
+  color: #444444;
+  margin: 0;
+}
+.service-controll{
+  font-family: Bebas Neue,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: rgba(36, 36, 36, 0.2);
+  outline: none;
+  border-top: none;
+  border-bottom: none;
+  border-left:none ;
+  background-color: transparent;
+  border-right: 0.5px solid #E8E8E8;
+  font-size: 22px;
+  padding-right: 35px;
+  padding-left: 35px;
+  cursor: pointer;
+}
+.service-controll.selected{
+  color: #FFFFFF;
+  padding:16px 30px;
+  background-color: #978D8D;
+  border-radius: 46.5px;
+  border:none;
+}
+
+.service-card{
+  width: 100%;
+  margin-bottom: 40px;
+  background-color: #C2DAEB;
+  padding:0px 0px 0px 140px;
+  height: 400px;
+  max-height:400px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.service-card-mobile{
+  width: 100%;
+  margin-bottom: 55px;
+  background-color: #C2DAEB;
+  padding:0px 20px 40px 20px;
+  height: 529px;
+  max-height:529px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.service-image-wrapper{
+  margin-right: 40px;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.service-image{
+  width: 300px;
+  height: 300px;
+}
+.service-icon{
+  width: 50px;
+  height: 50px;
+}
+.service-description-wrapper{
+  padding-right: 50px;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.service-heading{
+  font-family: Bebas Neue,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom:20px;
+  margin-top: 30px;
+}
+.service-description{
+  font-family: Archivo Narrow,cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: justify;
+  color: #FFFFFF;
+  margin: 0;
+}
+.service-cost-wrapper{
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 55px;
+  padding-top:50px;
+  padding-bottom:50px;
+}
+.cost-inline{
+  display: flex;
+  align-items: center;
+}
+.cost-inline:first-child{
+  margin-bottom: 25px;
+}
+.service-cost-icons{
+  display: flex;
+  flex-direction: column;
+}
+.service-time-icon{
+  width: 36px;
+  height: 36px;
+  margin-right: 20px;
+}
+.service-cost-span{
+  font-family: Bebas Neue,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 150%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin:0;
+}
+.circle-wrapper{
+  display: flex;
+  flex-direction: column;
+  padding-top:25px;
+  padding-bottom:25px;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.circle-small{
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background-color: white;
+  display: block;
+  transform: translate(50%);
+}
+
+.circle-big{
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  background-color: white;
+  display: block;
+  transform: translate(50%);
+}
+.custom-select {
+  position: relative;
+  min-width: 300px;
+  height: 50px;
+  display: none;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+  background-color:#A99797;
+  border-radius: 46px;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  right: 30px;
+  content: url(optionArrowMobile.svg);
+}
+.select-selected.select-arrow-active:after{
+  transform: rotate(180deg);
+}
+.select-selected.select-arrow-active{
+  border-radius: 28px 28px 0px 0px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-family: Bebas Neue,cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  background-color:#A99797;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  
+}
+.select-items div{
+  color: rgba(255, 255, 255, 0.5);
+}
+.select-items div:last-child{
+  border-radius:0px 0px 28px 28px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  color: white;
+}
+
+
+
+
+@media screen and (min-width:1211px){
+  .services-wrapper{
+    padding:0px 140px 70px 0px;
+  }
+  .service-card{
+    display: flex;
+  }
+  .service-card-mobile{
+    display: none;
+  }
+}
+@media screen and (max-width:1510px){
+  .service-card{
+    padding-left: 100px;
+  }
+  .service-heading{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 100%;
+  }
+  .service-icon{
+    width: 30px;
+    height: 30px;
+  }
+  .service-cost-wrapper{
+    margin-right: 0;
+    margin-left: 25px;
+  }
+}
+@media screen and (max-width:1300px){
+  .services-wrapper{
+    padding:0px 0px 55px 0px;
+    overflow: hidden;
+  }
+  .services-controlls-wrapper{
+    flex-direction: column;
+    padding: 40px 20px 40px 20px;
+  }
+  .custom-select{
+    display: block;
+  }
+  .services-controlls{
+    display: none;
+  }
+  .services-title{
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 30px;
+  }
+  .service-card{
+    display: none;
+  }
+  .service-card-mobile{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+  .service-image-wrapper{
+    display: flex;
+    margin-right: 0;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+  .service-description-wrapper{
+    padding: 0;
+    border-right: none;
+  }
+  .service-image{
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+  }
+  .service-icon{
+    width: 35px;
+    height: 35px;
+  }
+  .service-heading{
+    font-size: 22px;
+    margin-top:20px;
+    margin-bottom: 15px;
+  }
+  .service-cost-span{
+    font-size: 22px;
+  }
+  .service-time-icon{
+    width: 26px;
+    height: 26px;
+    margin-right: 10px;
+  }
+  .service-description{
+    font-size: 16px;
+  }
+  .service-cost-wrapper{
+    padding-top: 40px;
+    margin: 0;
+    padding-bottom: 0;
+  }
+  .circle-wrapper{
+    flex-direction: row;
+    padding:0;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .circle-small{
+    transform: translate(0,-50%);
+  }
+  .circle-big{
+    transform: translate(0,-50%);
+  }
+}

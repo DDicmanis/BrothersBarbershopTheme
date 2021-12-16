@@ -94,22 +94,13 @@
         "enable_video_looping": false
       }
     },
-    "product-recommendations": {
-      "type": "product-recommendations",
-      "settings": {
-        "heading": "You may also like",
-        "image_ratio": "adapt",
-        "show_secondary_image": false,
-        "add_image_padding": false,
-        "show_image_outline": true,
-        "show_vendor": false,
-        "show_rating": false
-      }
+    "cupon-videos": {
+      "type": "cupon-videos"
     }
   },
   "order": [
     "16393893201e315466",
     "main",
-    "product-recommendations"
+    "cupon-videos"
   ]
 }

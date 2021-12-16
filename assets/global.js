@@ -724,7 +724,7 @@ class VariantRadios extends VariantSelects {
     this.options = fieldsets.map((fieldset) => {
       var e = document.getElementById("optionSelector");
       var strUser = e.options[e.selectedIndex].text;
-
+      console.log("fired")
       return strUser;
     });
   }

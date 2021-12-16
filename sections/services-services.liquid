@@ -1,0 +1,826 @@
+{{ 'section-services.css' | asset_url | stylesheet_tag }}
+<div class="services-controlls-wrapper">
+  <div>
+    <h2 class="services-title">
+      our treatments
+    </h2>
+  </div>
+  <div class="services-controlls">
+    <button class="service-controll" onclick="showServices(0)">HAIRCUTS</button>
+    <button class="service-controll" onclick="showServices(1)">BEARD TRIMS</button>
+    <button class="service-controll" onclick="showServices(2)">SHAVES</button>
+    <button class="service-controll" onclick="showServices(3)">COMBO SERVICES</button>
+    <button class="service-controll" onclick="showServices(4)">all</button>
+  </div>
+  <div class="custom-select" style="width:100%;">
+    <select>
+      <option value="-1">HAIRCUTS</option>
+      <option value="0">HAIRCUTS</option>
+      <option value="1">BEARD TRIMS</option>
+      <option value="2">SHAVES</option>
+      <option value="3">COMBO SERVICES</option>
+      <option value="4">all</option>
+    </select>
+  </div>
+</div>
+<div class="services-wrapper">
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{'service1.jpg' | asset_url }}" alt="service1" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">Service</h3>
+      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">30 min</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">€40</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{'service1.jpg' | asset_url }}" alt="service1" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">Service</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">30 min</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">€40</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{'service2.jpg' | asset_url }}" alt="service2" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">Service</h3>
+      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">30 min</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">€40</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{'service2.jpg' | asset_url }}" alt="service2" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">Service</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">30 min</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">€40</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{'service3.jpg' | asset_url }}" alt="service3" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">Service</h3>
+      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">30 min</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">€40</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{'service3.jpg' | asset_url }}" alt="service3" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">Service</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">30 min</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">€40</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+</div>
+<div class="services-wrapper">
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{'service1.jpg' | asset_url }}" alt="service1" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">Service</h3>
+      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">30 min</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">€40</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{'service1.jpg' | asset_url }}" alt="service1" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">Service</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">30 min</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">€40</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{'service2.jpg' | asset_url }}" alt="service2" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">Service</h3>
+      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">30 min</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">€40</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{'service2.jpg' | asset_url }}" alt="service2" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">Service</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">30 min</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">€40</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{'service3.jpg' | asset_url }}" alt="service3" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">Service</h3>
+      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">30 min</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">€40</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{'service3.jpg' | asset_url }}" alt="service3" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">Service</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">30 min</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">€40</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+</div>
+<div class="services-wrapper">
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{'service1.jpg' | asset_url }}" alt="service1" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">Service</h3>
+      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">30 min</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">€40</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{'service1.jpg' | asset_url }}" alt="service1" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">Service</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">30 min</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">€40</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{'service2.jpg' | asset_url }}" alt="service2" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">Service</h3>
+      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">30 min</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">€40</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{'service2.jpg' | asset_url }}" alt="service2" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">Service</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">30 min</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">€40</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{'service3.jpg' | asset_url }}" alt="service3" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">Service</h3>
+      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">30 min</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">€40</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{'service3.jpg' | asset_url }}" alt="service3" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">Service</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">30 min</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">€40</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+</div>
+<div class="services-wrapper">
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{'service1.jpg' | asset_url }}" alt="service1" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">Service</h3>
+      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">30 min</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">€40</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{'service1.jpg' | asset_url }}" alt="service1" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">Service</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">30 min</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">€40</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{'service2.jpg' | asset_url }}" alt="service2" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">Service</h3>
+      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">30 min</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">€40</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{'service2.jpg' | asset_url }}" alt="service2" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">Service</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">30 min</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">€40</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{'service3.jpg' | asset_url }}" alt="service3" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">Service</h3>
+      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">30 min</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">€40</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{'service3.jpg' | asset_url }}" alt="service3" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">Service</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">30 min</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">€40</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+</div>
+{{ 'services-controll.js'  | asset_url | script_tag     }}

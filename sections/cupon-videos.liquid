@@ -1,0 +1,112 @@
+{{ 'section-cupon-videos.css' | asset_url | stylesheet_tag }}
+
+<div class="videos-section-wrapper">
+  <div class="container-main">
+    <h2 class="videos-title">{{ section.settings.videos-title }}</h2>
+    <p class="videos-text">
+      Few juicy sentences why this is the best gift ever you can buy + why this is the best barbershop in the city to go. Little explanation how it works, in which barber shops they can redeem gift cards, etc Little explanation how it works, in which barber shops they can redeem gift cards, etc.
+    </p>
+    <div class="video-grid">
+      <div class="video-div1">
+        <div class="video-wrapper">
+          <video id="video1" muted>
+            <source src="{{'placeholder.mp4' | asset_url }}" type="video/mp4" id="vid">
+          </video>
+          <div class="video-controll-overlay" id="overlay1">
+            <p class="video-length">2:35</p>
+            <div class="play-icon-wrapper video-section"id="play1">
+              <img src="{{'playIcon.svg'| asset_url }}"  class="play-button" alt="play button">
+            </div>
+          </div>
+        </div>
+        <h3 class="video-div-title">{{ section.settings.videos-video-title-1 }}</h3>
+        <p class="video-description">{{ section.settings.videos-video-description-1 }}</p>
+      </div>
+      <div class="video-div2">
+        <div class="video-wrapper">
+          <video id="video2" muted>
+            <source src="{{'placeholder.mp4' | asset_url }}" type="video/mp4" id="vid">
+          </video>
+          <div class="video-controll-overlay" id="overlay2">
+            <p class="video-length">1:05</p>
+            <div class="play-icon-wrapper video-section"id="play2">
+              <img src="{{'playIcon.svg'| asset_url }}"  class="play-button" alt="play button">
+            </div>
+          </div>
+        </div>
+        <h3 class="video-div-title">{{ section.settings.videos-video-title-2 }}</h3>
+        <p class="video-description">{{ section.settings.videos-video-description-2 }}</p>
+      </div>
+      <div class="video-div3">
+        <div class="video-wrapper">
+          <video id="video3" muted>
+            <source src="{{'placeholder.mp4' | asset_url }}" type="video/mp4" id="vid">
+          </video>
+          <div class="video-controll-overlay" id="overlay3">
+            <p class="video-length">1:00</p>
+            <div class="play-icon-wrapper video-section"id="play3">
+              <img src="{{'playIcon.svg'| asset_url }}"  class="play-button" alt="play button">
+            </div>
+          </div>
+        </div>
+        <h3 class="video-div-title">{{ section.settings.videos-video-title-3 }}</h3>
+        <p class="video-description">{{ section.settings.videos-video-description-3 }}</p>
+      </div>
+    </div>
+  </div>
+</div>
+{{ 'video-controll.js'  | asset_url | script_tag     }}
+{% schema %}
+  {
+    "name": "videos",
+    "settings": [
+      {
+        "id": "videos-title",
+        "type": "text",
+        "label": "Videos block title",
+        "default":"YOUS SAID IT BEST"
+      },
+      {
+        "id": "videos-video-title-1",
+        "type": "text",
+        "label": "Video 1 title",
+        "default":"TITLE TITLE TITLE"
+      },
+      {
+        "id": "videos-video-description-1",
+        "type": "textarea",
+        "label": "Video 1 description",
+        "default":"Short description Short description"
+      },
+      {
+        "id": "videos-video-title-2",
+        "type": "text",
+        "label": "Video 2 title",
+        "default":"TITLE TITLE TITLE"
+      },
+      {
+        "id": "videos-video-description-2",
+        "type": "textarea",
+        "label": "Video 2 description",
+        "default":"Short description Short description"
+      },
+      {
+        "id": "videos-video-title-3",
+        "type": "text",
+        "label": "Video 3 title",
+        "default":"TITLE TITLE TITLE"
+      },
+      {
+        "id": "videos-video-description-3",
+        "type": "textarea",
+        "label": "Video 3 description",
+        "default":"Short description Short description"
+      }
+    ],
+    "presets": [
+      {
+        "name": "videos"
+      }
+    ]
+  }
+{% endschema %}
