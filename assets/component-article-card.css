@@ -1,3 +1,147 @@
+.article-meta{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.article-meta-text{
+  font-family: Archivo Narrow,cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #919191;
+  margin: 0;
+
+}
+.article-meta-text.date{
+  padding-right: 15px;
+  margin-right: 15px;
+  border-right:  3px solid #C2DAEB;
+}
+.author{
+  display: flex;
+  position: relative;
+  padding-left: 10px;
+}
+.author-line{
+  display: block;
+  width: 20px;
+  height: 1px;
+  background-color: rgba(37, 37, 37, 0.5);;
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateX(-100%);
+}
+.article-card__title {
+  text-decoration: none;
+  word-break: break-word;
+  font-family: Bebas Neue,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #444444;
+  margin: 0;
+}
+.article-card__header {
+  margin-bottom: 10px;
+}
+.article-card__excerpt {
+  width: 100%;
+  font-family: Archivo Narrow,cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 150%;
+  text-align: start;
+  color: rgba(68, 68, 68, 0.7);
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.article-link{
+  font-family: Archivo Narrow,cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 150%;
+  text-align: justify;
+  text-decoration-line: underline;
+  color: #3798DB;
+}
+.article-category{
+  background: rgba(33, 33, 33, 0.17);
+  padding:24px 0px 24px 40px;
+  margin-bottom: 20px;
+}
+.article-category-text{
+  font-family: Bebas Neue,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 26px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+@media screen and (max-width: 990px) {
+  .article-meta-text{
+    font-size: 10px;
+  }
+  .date{
+    padding-right: 8px;
+    margin-right: 8px;
+  }
+  .newest .author{
+    margin-top: 8px;
+  }
+  .author-line{
+    width: 12px;
+    transform: unset;
+  }
+  .author p{
+    padding-left: 5px;
+  }
+  .newest .article-meta{
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .article-card__title{
+    font-size: 22px;
+  }
+  .article-card__excerpt{
+    font-size: 16px;
+    max-height: 48px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .article-link{
+    font-size: 16px;
+  }
+  .article-category{
+    padding: 10px 0px 10px 20px;
+  }
+  .article-category-text{
+    font-size: 14px;
+  }
+  .newest .article-card{
+    max-width: unset;
+  }
+  .article-card{
+    max-width: 335px;
+  }
+  .newest .article-card__image--small{
+    padding-bottom: 162px;
+  }
+}
+
+
+
+
 .articles-wrapper.grid {
   margin: 0 0 5rem 0;
 }
@@ -24,11 +168,11 @@
 }
 
 .article-card {
-  background-color: rgba(var(--color-foreground), 0.04);
   align-self: flex-start;
   flex: 0 1 100%;
   display: flex;
   align-items: flex-start;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -37,7 +181,6 @@
 }
 
 .article-card__info {
-  padding: 3rem;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
@@ -73,10 +216,7 @@
   display: block;
 }
 
-.article-card__title {
-  text-decoration: none;
-  word-break: break-word;
-}
+
 
 .article-card__link.link {
   padding: 0;
@@ -90,22 +230,15 @@
   text-decoration-thickness: 0.2rem;
 }
 
-.article-card__header {
-  line-height: calc(0.8 / var(--font-body-scale));
-  margin-bottom: 1.2rem;
-}
 
-.article-card__header h2 {
-  margin: 0 0 0.6rem;
-}
+
+
 
 .article-card__header h2:only-child {
   margin: 0;
 }
 
-.article-card__header h2:not(:first-child) {
-  margin-top: 1rem;
-}
+
 
 .article-card__header h2 + span {
   display: inline-block;
@@ -125,9 +258,7 @@
   margin-top: auto;
 }
 
-.article-card__excerpt {
-  width: 100%;
-}
+
 
 .article-card__link:not(:only-child) {
   margin-right: 3rem;
@@ -161,8 +292,9 @@
   }
 
   .article-card__image--large {
-    padding-bottom: 27.5rem;
+    padding-bottom: 335px;
   }
+  
 }
 
 @media screen and (min-width: 990px) {
@@ -175,6 +307,6 @@
   }
 
   .article-card__image--large {
-    padding-bottom: 40.7rem;
+    padding-bottom: 560px;
   }
 }

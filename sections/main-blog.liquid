@@ -2,31 +2,123 @@
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-main-blog.css' | asset_url | stylesheet_tag }}
 
+<div class="filter-wrapper">
+  <div class="filter-bg"></div>
+  <div class="filter-overlay">
+    <h1 class="filter" onclick="showBlogs(0)">culture</h1>
+    <h1 class="filter" onclick="showBlogs(1)">innovations</h1>
+    <h1 class="filter" onclick="showBlogs(2)">about us</h1>
+    <h1 class="filter" onclick="showBlogs(3)">ALL</h1>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <p class="filter-small">scroll</p>
+  </div>
+</div>
+<div class="blogs-wrapper">
+  <div class="main-blog">
 
-{%- paginate blog.articles by 6 -%}
-
-  <div class="main-blog page-width">
-    <h1 class="title--primary">{{ blog.title | escape }}</h1>
-
-    <div class="blog-articles {% if section.settings.layout == 'collage' %}blog-articles--collage{% endif %}">
+    <div class="blog-articles">
       {%- for article in blog.articles -%}
         <div class="blog-articles__article article">
-          {%- render 'article-card', article: article, image_height: section.settings.image_height, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+          {% for tag in article.tags %}
+            {% if tag == "Culture" %}
+            {%- render 'article-card', article: article, image_height: "large", show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+            {% endif %}
+          {% endfor %}
         </div>
       {%- endfor -%}
+      <div class="newest">
+        <div class="newest-top">
+          <h2 class="newest-title">The last arcicles</h2>
+          <p class="newest-link" onclick="showBlogs(3)">See All</p>
+        </div>
+        {%- for article in blog.articles -%}
+          <div class="blog-articles__article article">
+            {% for tag in article.tags %}
+              {% if tag == "New" %}
+              {%- render 'article-card', article: article, image_height: "small", show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+              {% endif %}
+            {% endfor %}
+          </div>
+        {%- endfor -%}
+      </div>
     </div>
 
-    {%- if paginate.pages > 1 -%}
-      {%- render 'pagination', paginate: paginate -%}
-    {%- endif -%}
-  </div>
-{%- endpaginate -%}
+    <div class="blog-articles">
+      {%- for article in blog.articles -%}
+        <div class="blog-articles__article article">
+          {% for tag in article.tags %}
+            {% if tag == "Innovations" %}
+            {%- render 'article-card', article: article, image_height: "large", show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+            {% endif %}
+          {% endfor %}
+        </div>
+      {%- endfor -%}
+      <div class="newest">
+        <div class="newest-top">
+          <h2 class="newest-title">The last arcicles</h2>
+          <p class="newest-link" onclick="showBlogs(3)">See All</p>
+        </div>
+        {%- for article in blog.articles -%}
+          <div class="blog-articles__article article">
+            {% for tag in article.tags %}
+              {% if tag == "New" %}
+              {%- render 'article-card', article: article, image_height: "small", show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+              {% endif %}
+            {% endfor %}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
 
+    <div class="blog-articles">
+      {%- for article in blog.articles -%}
+        <div class="blog-articles__article article">
+          {% for tag in article.tags %}
+            {% if tag == "About us" %}
+            {%- render 'article-card', article: article, image_height: "large", show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+            {% endif %}
+          {% endfor %}
+        </div>
+      {%- endfor -%}
+      <div class="newest">
+        <div class="newest-top">
+          <h2 class="newest-title">The last arcicles</h2>
+          <p class="newest-link" onclick="showBlogs(3)">See All</p>
+        </div>
+        {%- for article in blog.articles -%}
+          <div class="blog-articles__article article">
+            {% for tag in article.tags %}
+              {% if tag == "New" %}
+              {%- render 'article-card', article: article, image_height: "small", show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+              {% endif %}
+            {% endfor %}
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="blog-articles">
+  {%- for article in blog.articles -%}
+    <div class="blog-articles__article article">
+      {% for tag in article.tags %}
+       
+        {%- render 'article-card', article: article, image_height: "large", show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+        
+      {% endfor %}
+    </div>
+  {%- endfor -%}
+</div>
+{{ 'blogs-controll.js'  | asset_url | script_tag     }}
 {% schema %}
 {
   "name": "t:sections.main-blog.name",
   "tag": "section",
-  "class": "spaced-section",
   "settings": [
     {
       "type": "header",

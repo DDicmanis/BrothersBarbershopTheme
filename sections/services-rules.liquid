@@ -1,0 +1,66 @@
+{{ 'section-rules.css' | asset_url | stylesheet_tag }}
+<div class="rules-wrapper">
+  <div class="rules-content">
+    <h2 class="rules-title">House rules </h2>
+    <div class="rules-grid">
+      <div class="rules-div1">
+        <div class="rule-icon-wrapper">
+          <img class="rule-icon" src="{{'stopwatch.svg' | asset_url }}" alt="Stopwatch">
+        </div>
+        <h3 class="rule-heading">
+          LATE POLICY
+        </h3>
+        <p class="rule-link" id="latebtn">Learn More</p>
+      </div>
+      <div class="rules-div2">
+        <div class="rule-icon-wrapper">
+          <img class="rule-icon" src="{{'calling.svg' | asset_url }}" alt="Calling">
+        </div>
+        <h3 class="rule-heading">
+          CANCELLATION POLICY
+        </h3>
+        <p class="rule-link" id="cancelbtn">Learn More</p>
+      </div>
+      <div class="rules-div3">
+        <div class="rule-icon-wrapper">
+          <img class="rule-icon" src="{{'calendar.svg' | asset_url }}" alt="Calendar">
+        </div>
+        <h3 class="rule-heading">
+          NO SHOW POLICY
+        </h3>
+        <p class="rule-link" id="noshowbtn">Learn More</p>
+      </div>
+    </div>
+
+    <div id="lateModal" class="rules-modal">
+      <div class="rules-modal-content">
+        <h3 class="rules-modal-title">LATE POLICY</h3>
+        <p class="rules-modal-text">If you are more then <strong>10 minutes late</strong> your appointment may be cancelled, as it’s not possible to give adequate service in the remaining time. If you are permanently late for your scheduled appointments, the Cancellation or No Show policies described below may be applied. </p>
+        <div class="close">
+          <img class="closeIcon" src="{{'close.svg'| asset_url }}" alt="close">
+        </div>
+      </div>
+    </div>
+
+    <div id="cancelModal" class="rules-modal">
+      <div class="rules-modal-content">
+        <h3 class="rules-modal-title">CANCELLATION POLICY</h3>
+        <p class="rules-modal-text">If you are more then <strong>10 minutes late</strong> your appointment may be cancelled, as it’s not possible to give adequate service in the remaining time. If you are permanently late for your scheduled appointments, the Cancellation or No Show policies described below may be applied. </p>
+        <div class="close">
+          <img class="closeIcon" src="{{'close.svg'| asset_url }}" alt="close">
+        </div>
+      </div>
+    </div>
+
+    <div id="noshowModal" class="rules-modal">
+      <div class="rules-modal-content">
+        <h3 class="rules-modal-title">NO SHOW POLICY</h3>
+        <p class="rules-modal-text">If you are more then <strong>10 minutes late</strong> your appointment may be cancelled, as it’s not possible to give adequate service in the remaining time. If you are permanently late for your scheduled appointments, the Cancellation or No Show policies described below may be applied. </p>
+        <div class="close">
+          <img class="closeIcon" src="{{'close.svg'| asset_url }}" alt="close">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{{ 'rules-controll.js'  | asset_url | script_tag     }}

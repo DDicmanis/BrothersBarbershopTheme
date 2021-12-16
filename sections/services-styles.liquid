@@ -1,0 +1,96 @@
+{{ 'section-cuts.css' | asset_url | stylesheet_tag }}
+<div class="cuts-wrapper">
+  <div class="cuts-content">
+    <h2 class="cuts-title">our styles</h2>
+    <div class="slides-wrapper">
+      <div class="card-wrapper">
+        <div class="video-card">
+          <div class="video-wrapper">
+            <video id="video1" muted>
+              <source src="{{'placeholder.mp4' | asset_url }}" type="video/mp4" id="vid">
+            </video>
+            <div class="video-controll-overlay" id="overlay1">
+              <div class="play-icon-wrapper video-section"id="play1">
+                <img src="{{'playIcon.svg'| asset_url }}"  class="play-button" alt="play button">
+              </div>
+            </div>
+          </div>
+          <h3 class="video-title">The style1</h3>
+          <p class="video-description">Short description  Short description</p>
+          <p class="video-link">Learn More</p>
+        </div>
+  
+        <div class="video-card">
+          <div class="video-wrapper">
+            <video id="video2" muted>
+              <source src="{{'placeholder.mp4' | asset_url }}" type="video/mp4" id="vid">
+            </video>
+            <div class="video-controll-overlay" id="overlay2">
+              <div class="play-icon-wrapper video-section"id="play2">
+                <img src="{{'playIcon.svg'| asset_url }}"  class="play-button" alt="play button">
+              </div>
+            </div>
+          </div>
+          <h3 class="video-title">The style2</h3>
+          <p class="video-description">Short description  Short description</p>
+          <p class="video-link">Learn More</p>
+        </div>
+  
+        <div class="video-card">
+          <div class="video-wrapper">
+            <video id="video3" muted>
+              <source src="{{'placeholder.mp4' | asset_url }}" type="video/mp4" id="vid">
+            </video>
+            <div class="video-controll-overlay" id="overlay3">
+              <div class="play-icon-wrapper video-section"id="play3">
+                <img src="{{'playIcon.svg'| asset_url }}"  class="play-button" alt="play button">
+              </div>
+            </div>
+          </div>
+          <h3 class="video-title">The style3</h3>
+          <p class="video-description">Short description  Short description</p>
+          <p class="video-link">Learn More</p>
+        </div>
+  
+        <div class="video-card">
+          <div class="video-wrapper">
+            <video id="video4" muted>
+              <source src="{{'placeholder.mp4' | asset_url }}" type="video/mp4" id="vid">
+            </video>
+            <div class="video-controll-overlay" id="overlay4">
+              <div class="play-icon-wrapper video-section"id="play4">
+                <img src="{{'playIcon.svg'| asset_url }}"  class="play-button" alt="play button">
+              </div>
+            </div>
+          </div>
+          <h3 class="video-title">The style4</h3>
+          <p class="video-description">Short description  Short description</p>
+          <p class="video-link">Learn More</p>
+        </div>
+  
+        <div class="video-card">
+          <div class="video-wrapper">
+            <video id="video5" muted>
+              <source src="{{'placeholder.mp4' | asset_url }}" type="video/mp4" id="vid">
+            </video>
+            <div class="video-controll-overlay" id="overlay5">
+              <div class="play-icon-wrapper video-section"id="play5">
+                <img src="{{'playIcon.svg'| asset_url }}"  class="play-button" alt="play button">
+              </div>
+            </div>
+          </div>
+          <h3 class="video-title">The style5</h3>
+          <p class="video-description">Short description  Short description</p>
+          <p class="video-link">Learn More</p>
+        </div>
+      </div>
+      
+
+      
+        <button id="prev" class="slider-controll-icons prev" onclick="plusDivs(-1)">&#10094;</button>
+        <button id="next" class="slider-controll-icons next" onclick="plusDivs(1)">&#10095;</button>
+      
+    </div>
+  </div>
+</div>
+{{ 'cuts-controll.js'  | asset_url | script_tag     }}

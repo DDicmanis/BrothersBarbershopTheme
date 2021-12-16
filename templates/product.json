@@ -51,12 +51,12 @@
         "share"
       ]
     },
-    "product-recommendations": {
-      "type": "product-recommendations"
+    "cupon-videos": {
+      "type": "cupon-videos"
     }
   },
   "order": [
     "main",
-    "product-recommendations"
+    "cupon-videos"
   ]
 }
