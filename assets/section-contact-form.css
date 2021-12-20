@@ -1,3 +1,138 @@
+.contact-form-wrapper{
+  padding: 70px 140px 70px 140px;
+  background-color:#FAFAFA ;
+  display: flex;
+  justify-content: center;
+}
+.contact-form-content{
+  max-width: 1160px;
+  width: 100%;
+}
+.form-title{
+  font-family: Bebas Neue;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 150%;
+  color: #444444;
+  margin-top: 0;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.contact-form-row{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.contact-form-col{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+
+.field__input{
+  background-color: #FFFFFF;
+  border-radius: 46.5px;
+  border: none;
+  outline: none;
+  font-family: Archivo Narrow,cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 100%;
+  color: rgba(68, 68, 68, 0.4);
+  margin-bottom: 25px;
+  padding-left: 40px;
+}
+.field__label{
+  top: 15px;
+  left: 40px;
+}
+.field__label,
+.form__label{
+  font-family: Archivo Narrow;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 150%;
+  color: rgba(68, 68, 68, 0.4);
+}
+.form-button{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  width: 235px;
+  height: 65px;
+  font-family: Bebas Neue,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height:100%;
+  color: #FFFFFF;
+  background-color: #A99797;
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.12);
+  border-radius: 46.5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 990px) {
+  .contact-form-wrapper{
+    padding: 40px 20px 40px 20px;
+    background-color:#FAFAFA ;
+    display: flex;
+    justify-content: center;
+  }
+  .form-title{
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+  .contact-form-row{
+    flex-direction: column;
+    gap: 15px;
+  }
+  .contact-form-col{
+    width: 100%;
+  }
+  .field__input{
+    font-size: 16px;
+    margin-bottom: 15px;
+    padding-left: 30px;
+  }
+  .field__label{
+    top: 15px;
+    left: 30px;
+  }
+  .field__label,
+  .form__label{
+    font-family: Archivo Narrow;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(68, 68, 68, 0.4);
+  }
+  .form-button{
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.12);
+    transform: translateX(-50%);
+  }
+  textarea{
+    height: 237px;
+  }
+}
+
+
+
+
+
+
 .contact img {
   max-width: 100%;
 }

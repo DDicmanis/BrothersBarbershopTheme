@@ -22,7 +22,12 @@ document.addEventListener("DOMContentLoaded", function () {
 window.addEventListener('resize', function () {
   let width = slider[slideIndex - 1].offsetWidth;
   let height = slider[slideIndex - 1].offsetHeight;
-
+  resizer[0].style.left = width / 2 + "px";
+  before[0].style.width = width / 2 + "px";
+  resizer[1].style.left = width / 2 + "px";
+  before[1].style.width = width / 2 + "px";
+  resizer[2].style.left = width / 2 + "px";
+  before[2].style.width = width / 2 + "px";
   for (let i = 0; i <= 2; i++) {
     var beforeImage = before[i].getElementsByTagName('img')[0];
     var afterImage = after[i].getElementsByTagName('img')[0];

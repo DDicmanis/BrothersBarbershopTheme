@@ -13,67 +13,39 @@
     {% render 'article-card' blog: blog, article: article, show_image: section.settings.show_image %}
 {% endcomment %}
 
-<article class="article-card{% if article.image == blank or show_image == false %} article-card--no-image{% endif %}" aria-labelledby="Article-{{ article.id }}">
-  <a href="{{ article.url }}" class="article-content motion-reduce">
-    {%- if show_image == true and article.image -%}
-      <div class="article-card__image-wrapper">
-        <div class="article-card__image media {% if image_height %}article-card__image--{{ image_height }}{% else %}media--landscape{% endif %}">
-          <img
-            srcset="{%- if article.image.src.width >= 165 -%}{{ article.image.src | img_url: '165x' }} 165w,{%- endif -%}
-              {%- if article.image.src.width >= 360 -%}{{ article.image.src | img_url: '360x' }} 360w,{%- endif -%}
-              {%- if article.image.src.width >= 533 -%}{{ article.image.src | img_url: '533x' }} 533w,{%- endif -%}
-              {%- if article.image.src.width >= 720 -%}{{ article.image.src | img_url: '720x' }} 720w,{%- endif -%}
-              {%- if article.image.src.width >= 1000 -%}{{ article.image.src | img_url: '1000x' }} 1000w,{%- endif -%}
-              {%- if article.image.src.width >= 1500 -%}{{ article.image.src | img_url: '1500x' }} 1500w,{%- endif -%}
-              {{ article.image.src | img_url: 'master' }} {{ article.image.src.width }}w"
-            src="{{ article.image.src | img_url: '560x' }}"
-            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+<article class="article-card">
+      <div class="barber-wrapper">
+        <div class="article-card__image">
+          <div class="barber-image-wrapper">
+            <img
+            src="{{ article.image.src | img_url }}"
             alt="{{ article.image.src.alt | escape }}"
-            width="{{ article.image.width }}"
-            height="{{ article.image.height }}"
             loading="lazy"
-            class="motion-reduce"
+            class="barber-image"
           >
-        </div>
-        <div class="article-category">
-          <p class="article-category-text">
-            {% for tag in article.tags %}
-              {% if tag != "New" %}
-                {{ tag }}
-              {% endif %}
-            {% endfor %}
-          </p>
-        </div>
-      </div>
-    {%- endif -%}
-
-    <div class="article-card__info">
-      <header class="article-card__header">
-        <div class="article-meta">
-          <div style="display: flex;">
-            <p class="article-meta-text date">
-              {{- article.published_at | date: "%b %d" -}}
-            </p>
-            <p class="article-meta-text">5 min read</p>
           </div>
-          
-          <div class="author"><div class="author-line"></div><p class="article-meta-text">{{ article.author -}}</p></div>
         </div>
-        <h2 class="article-card__title" id="Article-{{ article.id }}">
-          {{ article.title | escape }}
-        </h2>
-          
-      </header>
-      {%- if article.excerpt.size > 0 or article.content.size > 0 -%}
-        <p class="article-card__excerpt">
-          {%- if article.excerpt.size > 0 -%}
-            {{ article.excerpt | strip_html | truncatewords: 30 }}
-          {%- else -%}
-            {{ article.content | strip_html | truncatewords: 30 }}
-          {%- endif -%}
-        </p>
-      {%- endif -%}
-      <a href="{{ article.url }}" class="article-link">Read more</a>
-    </div>
-  </a>
+      <div class="barber-content">
+        <div class="barber-heading-wrapper">
+          <h3 class="barber-heading-gray before1">Barber:</h3>
+          <h2 class="barber-heading" id="Article-{{ article.id }}">
+            {{ article.title | escape }}
+          </h2>
+        </div>
+        
+  
+        <div class="barber-location-wrapper">
+          <h3 class="barber-heading-gray before2">Location:</h3>
+          <h2 class="barber-heading">
+            {% for tag in article.tags %}
+              
+                {{ tag }}
+              
+            {% endfor %}
+          </h2>
+        </div>
+        <a href="{{ article.url }}" class="button button-brown">Read more</a>
+      </div>
+      
+      </div>  
 </article>
