@@ -1,6 +1,13 @@
 {{ 'component-barber-card.css' | asset_url | stylesheet_tag }}
 {{ 'section-barbers.css' | asset_url | stylesheet_tag }}
-<div style="padding-top: 200px;">
-Hello world
+<div class="barbers-wrapper">
+  <h2 class="barbers-title">our barbers</h2>
+  <div class="barbers-grid">
+    {%- for article in blog.articles -%}
+        <div class="article-card">
+          {%- render 'article-barber', article: article, image_height: "medium", show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+        </div>
+      {%- endfor -%}
+  </div>
 </div>
 {{ 'barbers-controll.js'  | asset_url | script_tag     }}

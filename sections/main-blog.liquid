@@ -103,17 +103,7 @@
 </div>
 
 
-<div class="blog-articles">
-  {%- for article in blog.articles -%}
-    <div class="blog-articles__article article">
-      {% for tag in article.tags %}
-       
-        {%- render 'article-card', article: article, image_height: "large", show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
-        
-      {% endfor %}
-    </div>
-  {%- endfor -%}
-</div>
+
 {{ 'blogs-controll.js'  | asset_url | script_tag     }}
 {% schema %}
 {

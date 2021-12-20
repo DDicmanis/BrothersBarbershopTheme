@@ -1,0 +1,177 @@
+{{ 'section-contact-info.css' | asset_url | stylesheet_tag }}
+<div class="contact-wrapper">
+  <div class="contact-content">
+    <h2 class="contact-title">OUR BARBERSHOPS in vienna</h2>
+    <div class="contact-controll-wrapper">
+      <button class="contact-button" onclick="showConact(0)">barbershop 1070</button>
+      <button class="contact-button-inactive" onclick="showConact(1)">barbershop 1220</button>
+    </div>
+    <div class="contact-info-div">
+      <div class="contact-grid">
+        <div class="contact-div1">
+          <div id="map">
+
+          </div>
+        </div>
+        <div class="contact-div2">
+          <div class="info-icons">
+            <div class="icon-wrapper">
+              <img class="info-icon" src="{{'pin.svg' | asset_url }}" alt="Pin icon">
+              <p class="icon-text">
+                Location:
+              </p>
+            </div>
+            <div>
+                <p class="info-text">
+                  Neubaugasse 81, 1070
+                </p>
+            </div>
+          </div>
+          <div class="info-icons">
+            <div class="icon-wrapper">
+              <img class="info-icon" src="{{'calendarIcon.svg' | asset_url }}" alt="Calendar icon">
+              <ul class="icon-list">
+                <li>Tu & We:</li>
+                <li>Th & Fr:</li>
+                <li>Sa:</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="icon-list-2">
+                <li>10:00-19:00 </li>
+                <li>09:30-19:00</li>
+                <li>09:30-17:00</li>
+              </ul>
+            </div>
+            
+            
+          </div>
+          <div class="info-icons">
+            <div class="icon-wrapper">
+              <img class="info-icon" src="{{'clock.svg' | asset_url }}" alt="Clock icon">
+            <p class="icon-text">
+              Closed for Lunch:
+            </p>
+            </div>
+            <div>
+              <p class="info-text">
+                14:00-15:00
+              </p>
+            </div>
+            
+
+          </div>
+          <div class="info-icons">
+            <div class="icon-wrapper">
+              <img class="info-icon" src="{{'phone.svg' | asset_url }}" alt="Phone icon">
+              <p class="icon-text">
+                Contact Phone:
+              </p>
+            </div>
+            <div>
+              <p class="info-text">
+                019908304 
+              </p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="contact-div3">
+          <button class="button-small">book now</button>
+        </div>
+        <div class="contact-div4">
+          <p class="info-text">
+            All Bank Cards Are Accepted
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="contact-info-div">
+      <div class="contact-grid">
+        <div class="contact-div1">
+          <div id="map2">
+
+          </div>
+        </div>
+        <div class="contact-div2">
+          <div class="info-icons">
+            <div class="icon-wrapper">
+              <img class="info-icon" src="{{'pin.svg' | asset_url }}" alt="Pin icon">
+              <p class="icon-text">
+                Location:
+              </p>
+            </div>
+            <div>
+                <p class="info-text">
+                  Neubaugasse 81, 1070
+                </p>
+            </div>
+          </div>
+          <div class="info-icons">
+            <div class="icon-wrapper">
+              <img class="info-icon" src="{{'calendarIcon.svg' | asset_url }}" alt="Calendar icon">
+              <ul class="icon-list">
+                <li>Tu & We:</li>
+                <li>Th & Fr:</li>
+                <li>Sa:</li>
+              </ul>
+            </div>
+            <div>
+              <ul class="icon-list-2">
+                <li>10:00-19:00 </li>
+                <li>09:30-19:00</li>
+                <li>09:30-17:00</li>
+              </ul>
+            </div>
+            
+            
+          </div>
+          <div class="info-icons">
+            <div class="icon-wrapper">
+              <img class="info-icon" src="{{'clock.svg' | asset_url }}" alt="Clock icon">
+            <p class="icon-text">
+              Closed for Lunch:
+            </p>
+            </div>
+            <div>
+              <p class="info-text">
+                14:00-15:00
+              </p>
+            </div>
+            
+
+          </div>
+          <div class="info-icons">
+            <div class="icon-wrapper">
+              <img class="info-icon" src="{{'phone.svg' | asset_url }}" alt="Phone icon">
+              <p class="icon-text">
+                Contact Phone:
+              </p>
+            </div>
+            <div>
+              <p class="info-text">
+                019908304 
+              </p>
+            </div>
+            
+          </div>
+        </div>
+        <div class="contact-div3">
+          <button class="button-small">book now</button>
+        </div>
+        <div class="contact-div4">
+          <p class="info-text">
+            All Bank Cards Are Accepted
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap2">
+</script>
+{{ 'contact-controll.js'  | asset_url | script_tag     }}

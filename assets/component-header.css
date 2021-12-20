@@ -39,7 +39,7 @@
   font-size: 24px;
   line-height: 150%;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: black;
   margin:0
 }
 .header-logo{
@@ -69,7 +69,7 @@ font-size: 24px;
 line-height: 150%;
 text-transform: uppercase;
 text-decoration: none;
-color: #FFFFFF;
+color: black;
 }
 .header-inline>li>a:hover{
   color: #3798DB;
@@ -81,7 +81,14 @@ color: #FFFFFF;
 .sticky {
   position: fixed;
   top: 0;
-  width: 100%
+  width: 100%;
+  
+}
+.sticky .language-heading{
+  color: black;
+}
+.sticky .header-inline li a{
+  color: black;
 }
 .sticky + #MainContent {
   padding-top: 102px;

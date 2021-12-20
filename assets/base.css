@@ -477,7 +477,6 @@ blockquote {
 .caption-large,
 .customer .field input,
 .customer select,
-.field__input,
 .form__label,
 .select__select {
   font-size: 1.3rem;
@@ -732,12 +731,12 @@ summary::-webkit-details-marker {
   box-shadow: none;
 }
 
-*:focus-visible {
+/* *:focus-visible {
   outline: 0.2rem solid rgba(var(--color-foreground), 0.5);
   outline-offset: 0.3rem;
   box-shadow: 0 0 0 0.3rem rgb(var(--color-background)),
     0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
-}
+} */
 
 /* Fallback - for browsers that don't support :focus-visible, a fallback is set for :focus */
 .focused,
@@ -1187,11 +1186,11 @@ deferred-media {
 .button:hover{
   border: none;
 }
-.button:focus-visible {
+/* .button:focus-visible {
   box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border)),
     0 0 0 0.3rem rgb(var(--color-background)),
     0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
-}
+} */
 
 .button:focus {
   box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border)),
@@ -1199,9 +1198,9 @@ deferred-media {
     0 0 0.5rem 0.4rem rgba(var(--color-foreground), 0.3);
 }
 
-.button:focus:not(:focus-visible) {
+/* .button:focus:not(:focus-visible) {
   box-shadow: 0 0 0 0.1rem rgba(var(--color-button), var(--alpha-button-border));
-}
+} */
 
 .button::selection,
 .shopify-challenge__button::selection,
@@ -1356,12 +1355,7 @@ details[open] > .share-button__fallback {
   color: rgb(var(--color-foreground));
 }
 
-.share-button__fallback .field__input {
-  box-shadow: none;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
-}
+
 
 .share-button__fallback .icon {
   width: 1.5rem;
@@ -1388,16 +1382,9 @@ details[open] > .share-button__fallback {
 .customer select {
   -webkit-appearance: none;
   appearance: none;
-  background-color: transparent;
-  border: 0.1rem solid transparent;
-  border-radius: 0;
-  color: rgb(var(--color-foreground));
-  font-size: 1.6rem;
+
   width: 100%;
-  box-shadow: 0 0 0 0.1rem rgba(var(--color-foreground), 0.55);
-  height: 4.5rem;
-  box-sizing: border-box;
-  transition: box-shadow var(--duration-short) ease;
+
 }
 
 .select__select {
@@ -1477,17 +1464,10 @@ details[open] > .share-button__fallback {
 
 .field__label,
 .customer .field label {
-  font-size: 1.6rem;
-  left: 1.5rem;
-  top: 1rem;
   margin-bottom: 0;
   pointer-events: none;
   position: absolute;
-  transition: top var(--duration-short) ease,
-    font-size var(--duration-short) ease;
-  color: rgba(var(--color-foreground), 0.75);
-  letter-spacing: 0.1rem;
-  line-height: 1.5;
+  transition: top var(--duration-short) ease,font-size var(--duration-short) ease;
 }
 
 .field__input:focus ~ .field__label,

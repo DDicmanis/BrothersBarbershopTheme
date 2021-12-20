@@ -1,0 +1,76 @@
+{{ 'barber-article.css' | asset_url | stylesheet_tag }}
+<div class="article-wrapper">
+  <div class="article-content">
+    <div class="article-title-wrapper">
+      <a href="{{blog.url}}" class="return-button">Back to barbers</a>
+      <h2 class="article-title">{{article.title}}'s gallery</h2>
+    </div>
+    <div class="article-grid">
+      <div class="article-image-div">
+        <div class="article-image-wrapper">
+          <img
+            src="{{ article.image.src | img_url }}"
+            alt="{{ article.image.src.alt | escape }}"
+            class="barber-headshot"
+          >
+        </div>
+      </div>
+      <div class="article-info-div">
+
+        <div class="article-info">
+          <div class="info-category">
+            <img src="{{'razor.svg'| asset_url }}" alt="razor icon" class="category-icon">
+            <p class="info-gray">
+              Does:
+            </p>
+          </div>
+          <div class="info-does">
+            {{article.content}}
+          </div>
+        </div>
+
+        <div class="article-info">
+          <div class="info-category">
+            <img src="{{'chat.svg'| asset_url }}" alt="chat icon" class="category-icon">
+            <p class="info-gray">
+              Speaks:
+            </p>
+          </div>
+          <div class="info-speaks">
+            {{article.content}}
+          </div>
+        </div>
+
+        <div class="article-info">
+          <div class="info-category">
+            <img src="{{'pin.svg'| asset_url }}" alt="pin icon" class="category-icon">
+            <p class="info-gray">
+              Location:
+            </p>
+          </div>
+          <div class="info-location">
+            {% for tag in article.tags %}
+              <p class="location">{{tag}}</p>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="image-grid">
+      {{ article.content }}
+    </div>
+    <p class="morelink" onclick="expand()">See All</p>
+    <a href="{{blog.url}}" class="return-button bottom-button">Back to barbers</a>
+  </div>
+</div>
+<!-- <div class="barbers-wrapper">
+  <h2 class="barbers-title">our barbers</h2>
+  <div class="barbers-grid">
+    {%- for article in blog.articles -%}
+        <div class="article-card">
+          {%- render 'article-barber', article: article, image_height: "medium", show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+        </div>
+      {%- endfor -%}
+  </div>
+</div> -->
+{{ 'barber-article-controll.js'  | asset_url | script_tag     }}
