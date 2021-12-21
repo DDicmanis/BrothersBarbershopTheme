@@ -49,7 +49,7 @@
       "settings": {
         "Transformation-title": "THE BROTHERS EXPERIENCe",
         "Transformation-text": "Sure, you come to our shops for a great cut. But, it’s our mission to be even more than that. We believe that when you look your best, you feel and do your best, too. So, when we say “how can I help?”, we mean it.",
-        "beforeimage-1": "shopify:\/\/shop_images\/background.jpg",
+        "beforeimage-1": "shopify:\/\/shop_images\/beforeResized.jpg",
         "afterimage-1": "shopify:\/\/shop_images\/foreground.jpg",
         "beforeimage-2": "shopify:\/\/shop_images\/background.jpg",
         "afterimage-2": "shopify:\/\/shop_images\/foreground.jpg",
@@ -84,16 +84,38 @@
     "guarantee": {
       "type": "main-guarantee",
       "settings": {
+        "guarantee-title": "our satisfaction guarantee",
+        "guarantee-text": "Your satisfaction is our priority! If for any reason you are not 100% thrilled with your service, you can come back again, and we’ll make it right."
       }
     },
     "booking": {
       "type": "main-booking",
       "settings": {
+        "booking-title": "how it works",
+        "booking-heading-1": "CHOOSE A LOCATION",
+        "booking-description-1": "Multiple shops. Consistent quality experience.",
+        "booking-heading-2": "CHOOSE A SERVICE",
+        "booking-description-2": "What do you like? We’ll make it happen.",
+        "booking-heading-3": "ENJOY YOUR LOOK",
+        "booking-description-3": "Trust us, you’re gonna look amazing."
       }
     },
     "faq": {
       "type": "main-faq",
       "settings": {
+        "faq-title": "FREQUENTLY ASKED QUESTIONS",
+        "faq-question-1": "QUESTION?",
+        "faq-answer-1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+        "faq-question-2": "QUESTION?",
+        "faq-answer-2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+        "faq-question-3": "QUESTION?",
+        "faq-answer-3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+        "faq-question-4": "QUESTION?",
+        "faq-answer-4": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+        "faq-question-5": "QUESTION?",
+        "faq-answer-5": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+        "faq-question-6": "QUESTION?",
+        "faq-answer-6": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever."
       }
     }
   },
