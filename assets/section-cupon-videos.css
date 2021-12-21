@@ -106,6 +106,7 @@ margin:0;
   .videos-text{
     font-size: 16px;
     margin-bottom: 25px;
+    margin-top: 0;
   }
   .video-div-title{
     font-size: 22px;
@@ -148,6 +149,7 @@ video{
   .videos-text{
     font-size: 22px;
     margin-bottom: 40px;
+    margin-top: 0;
   }
   .video-div-title{
     font-size: 34px;
