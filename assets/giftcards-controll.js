@@ -1,22 +1,20 @@
 function currentDiv(n) {
-  showDivs(slideIndex = n);
+  slideIndex = n
+  showDivs(slideIndex);
 }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("slide-preview-image");
-  if (n > x.length) { slideIndex = 1 }
-  if (n < 1) { slideIndex = x.length }
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" opacity-off", "");
-  }
-  x[slideIndex - 1].style.display = "block";
-  dots[slideIndex - 1].className += " opacity-off";
-}
+// function showDivs(n) {
+//   var i;
+//   var k;
+
+//   console.log(dots[slideIndex - 1].className)
+//   if (n > x.length) { slideIndex = 1 }
+//   if (n < 1) { slideIndex = x.length }
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";
+//   }
+
+// }
 
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -37,11 +35,19 @@ function showDivs(n) {
   var next = document.getElementById('next')
   var prev2 = document.getElementById('prev2')
   var next2 = document.getElementById('next2')
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("slide-preview-image");
+
   if (n > x.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = x.length }
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
+  for (k = 0; k < dots.length; k++) {
+    dots[k].className = dots[k].className.replace(" opacity-off", "");
+  }
+  x[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " opacity-off";
   if (slideIndex == 1) {
     prev.className += " nav-disaebled";
     next.className = next.className.replace(" nav-disaebled", "");
