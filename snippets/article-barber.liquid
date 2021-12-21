@@ -18,10 +18,12 @@
         <div class="article-card__image">
           <div class="barber-image-wrapper">
             <img
-            src="{{ article.image.src | img_url }}"
+            src="{{ article.image | img_url: '208x208', scale: 1.5  }}"
             alt="{{ article.image.src.alt | escape }}"
             loading="lazy"
             class="barber-image"
+            width="208px"
+            height="208px"
           >
           </div>
         </div>
