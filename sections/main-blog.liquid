@@ -20,13 +20,15 @@
 
     <div class="blog-articles">
       {%- for article in blog.articles -%}
-        <div class="blog-articles__article article">
+        
           {% for tag in article.tags %}
             {% if tag == "Culture" %}
+            <div class="blog-articles__article article">
             {%- render 'article-card', article: article, image_height: "large", show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+            </div>
             {% endif %}
           {% endfor %}
-        </div>
+        
       {%- endfor -%}
       <div class="newest">
         <div class="newest-top">
@@ -47,13 +49,15 @@
 
     <div class="blog-articles">
       {%- for article in blog.articles -%}
-        <div class="blog-articles__article article">
+        
           {% for tag in article.tags %}
             {% if tag == "Innovations" %}
+            <div class="blog-articles__article article">
             {%- render 'article-card', article: article, image_height: "large", show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+            </div>
             {% endif %}
           {% endfor %}
-        </div>
+        
       {%- endfor -%}
       <div class="newest">
         <div class="newest-top">
@@ -74,13 +78,15 @@
 
     <div class="blog-articles">
       {%- for article in blog.articles -%}
-        <div class="blog-articles__article article">
+        
           {% for tag in article.tags %}
             {% if tag == "About us" %}
+            <div class="blog-articles__article article">
             {%- render 'article-card', article: article, image_height: "large", show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author -%}
+          </div>
             {% endif %}
           {% endfor %}
-        </div>
+        
       {%- endfor -%}
       <div class="newest">
         <div class="newest-top">
