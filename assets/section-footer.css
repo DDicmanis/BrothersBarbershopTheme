@@ -169,12 +169,12 @@
 .instagram-icon {
   width: 30px;
   height: 30px;
-  transform: translateY(20%);
+  /* transform: translateY(20%); */
 }
 .facebook-icon {
   width: 30px;
   height: 30px;
-  transform: translateY(20%);
+  /* transform: translateY(20%); */
 }
 }
 @media screen and (max-width:1210px){
@@ -229,12 +229,12 @@
   .instagram-icon {
     width: 20px;
     height: 20px;
-    transform: translateY(20%);
+    /* transform: translateY(20%); */
   }
   .facebook-icon {
     width: 20px;
     height: 20px;
-    transform: translateY(20%);
+    /* transform: translateY(20%); */
   }
   .footer-logo{
     max-width: 85px;
