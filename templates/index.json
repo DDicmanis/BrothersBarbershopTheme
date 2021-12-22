@@ -51,10 +51,10 @@
         "Transformation-text": "Sure, you come to our shops for a great cut. But, it’s our mission to be even more than that. We believe that when you look your best, you feel and do your best, too. So, when we say “how can I help?”, we mean it.",
         "beforeimage-1": "shopify:\/\/shop_images\/beforeEdited.jpg",
         "afterimage-1": "shopify:\/\/shop_images\/afterEdited.jpg",
-        "beforeimage-2": "shopify:\/\/shop_images\/background.jpg",
-        "afterimage-2": "shopify:\/\/shop_images\/foreground.jpg",
-        "beforeimage-3": "shopify:\/\/shop_images\/background.jpg",
-        "afterimage-3": "shopify:\/\/shop_images\/foreground.jpg"
+        "beforeimage-2": "shopify:\/\/shop_images\/afterEdited.jpg",
+        "afterimage-2": "shopify:\/\/shop_images\/beforeEdited.jpg",
+        "beforeimage-3": "shopify:\/\/shop_images\/beforeEdited.jpg",
+        "afterimage-3": "shopify:\/\/shop_images\/afterEdited.jpg"
       }
     },
     "expectations": {
