@@ -43,7 +43,6 @@ function showBlocks() {
   let imgs = document.getElementsByClassName("galery-image-wrapper")
   let imgLen = imgs.length
   for (let k = 0; k < imgLen; k++) {
-    console.log(k)
     imgs[k].style.display = "block";
   }
 }

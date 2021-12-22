@@ -141,7 +141,49 @@
     </div>
   </div>
 </div>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(document).on('click','.product-form__submit',function(){
+            var quantity = $(".quantity__input").val();
+            quantity = parseInt(quantity);
+            
+            var option=$('.select-selected').text();
+            console.log(option," ",quantity);
+            var id50="39824405332104"
+            var id75="39824405364872"
+            var id100="39824405397640"
+            var id200="39824405430408"
+            var id="";
+            switch (option) {
+              case "50 EUR":
+                id=id50;
+                break;
+              case "75 EUR":
+              id=id75;
+                break;
+              case "100 EUR":
+              id=id100;
+                break;
+              case "200 EUR":
+              id=id200;
+                break;
+              default:
+                id=id50;
+                break;
+            }
+            $.ajax({
+                type: 'POST',
+                url: '/cart/add.js',
+                dataType: 'json',
+                data: {id:id,quantity:quantity},
+                success: function(){
+                    location.href="/cart";
+                }
+            });
+        })
+    });    
+</script>
 
 {% javascript %}
   class ProductModal extends ModalDialog {

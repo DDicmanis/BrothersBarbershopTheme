@@ -8,8 +8,13 @@
       <h2 class="guarantee-title">{{ section.settings.guarantee-title }}</h2>
       <p class="guarantee-text">{{ section.settings.guarantee-text }}</p>
     </div>
-  <img src="{{'guarantee-right.png'| asset_url }}" alt="Guarantee badge" class="right-badge">
-  <img src="{{'guarantee-mobile.png'| asset_url }}" alt="Guarantee badge" class="mobile-badge">
+    <div class="badge-wrapper">
+      <img src="{{'SatisfactionsIcon.svg'| asset_url }}" alt="Guarantee badge" class="right-badge">
+    </div>
+  <div class="mobile-badge-wrapper">
+    <img src="{{'SatisfactionsIcon.svg'| asset_url }}" alt="Guarantee badge" class="mobile-badge">
+  </div>
+  
 </div>
 {% schema %}
   {
