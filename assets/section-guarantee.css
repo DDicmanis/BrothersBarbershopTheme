@@ -1,6 +1,8 @@
 .guarantee-section-wrapper{
   background-color: #A99797;
   display: flex;
+  position: relative;
+  overflow: hidden;
 }
 /* .guarantee-text-wrapper{
   display: flex;
@@ -14,6 +16,10 @@ line-height: 150%;
 text-align: center;
 color: #FFFFFF;
 margin-top: 0;
+}
+.badge-wrapper{
+  position: relative;
+  width: 400px;
 }
 .guarantee-text{
   font-family: Archivo Narrow,c;
@@ -40,19 +46,25 @@ color: #FFFFFF;
 .left-badge-wrapper{
 width: 300px;
 height: 300px;
-background-image: url(guarantee-left.png);
+background-image: url(SatisfactionsIcon.svg);
+opacity: 0.3;
+background-size: 400px 400px;
 background-repeat: no-repeat;
-background-position-y: 55px;
-/* background-size: 203px; */
+background-position-x: -260px;
 }
-
+.mobile-badge-wrapper{
+  display: none;
+}
 .mobile-badge{
   display: none;
 }
 .right-badge{
-  max-width: 300px;
-  max-height: 300px;
-  align-self: flex-end;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  position: absolute;
+  right: -90px;
 }
 }
 @media screen and (max-width:1210px){
@@ -76,7 +88,13 @@ background-position-y: 55px;
     .right-badge{
       display: none;
     }
+    .mobile-badge-wrapper{
+      width: 300px;
+      height: 190px;
+      position: relative;
+    }
     .mobile-badge{
+      top: 110px;
       width: 300px;
       height: 300px;
     }

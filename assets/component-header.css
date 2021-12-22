@@ -5,8 +5,13 @@
   width: 100%;
   background-color: rgba(255, 255, 255, 0.07);
   backdrop-filter: blur(10px);
-  transition: visibility 0s, opacity 0.5s linear;
+  display: none;
   justify-content: center;
+  transition: 0.5s linear;
+}
+.transition{
+  transition: 0.5s linear;
+  display: flex;
 }
 #header-div{
   width: 100%;
@@ -39,7 +44,7 @@
   font-size: 24px;
   line-height: 150%;
   text-transform: uppercase;
-  color: black;
+  color: white;
   margin:0
 }
 .header-logo{
@@ -69,7 +74,7 @@ font-size: 24px;
 line-height: 150%;
 text-transform: uppercase;
 text-decoration: none;
-color: black;
+color: white;
 }
 .header-inline>li>a:hover{
   color: #3798DB;
@@ -84,15 +89,24 @@ color: black;
   width: 100%;
   
 }
-.sticky .language-heading{
+.transition .language-heading{
   color: black;
 }
-.sticky .header-inline li a{
+.transition .header-inline li a{
   color: black;
 }
-.sticky + #MainContent {
+.transition + #MainContent {
   padding-top: 102px;
 }
+/* #blackBurger{
+  display: none;
+}
+.sticky #blackBurger{
+  display: block;
+}
+.sticky #whiteBurger{
+  display: none;
+} */
 #drawer { 
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */

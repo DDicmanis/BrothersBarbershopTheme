@@ -1,3 +1,49 @@
+.cart-items-wrapper{
+  padding-top: 100px;
+}
+.title{
+  font-family: Bebas Neue,sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 45px;
+  line-height: 150%;
+  color: #444444;
+}
+.cart-items-link{
+  font-family: Archivo Narrow,cursive;
+font-style: normal;
+font-weight: normal;
+font-size: 22px;
+line-height: 150%;
+text-align: center;
+text-decoration-line: underline;
+color: rgba(68, 68, 68, 0.7);
+}
+.caption-with-letter-spacing{
+  font-family: Archivo Narrow,cursive;
+}
+.cart-item__name{
+  font-family:Bebas Neue,sans-serif ;
+}
+.cart-item__quantity-wrapper{
+  align-items: center;
+}
+.remove-button{
+  padding:0;
+  width: 50px;
+  height: 50px;
+  min-width: unset;
+  min-height: unset;
+}
+.price{
+  font-family: Archivo Narrow,cursive;
+  font-size: 2rem;
+}
+.totals__subtotal{
+  font-family:Bebas Neue,sans-serif ;
+  font-size: 2rem;
+}
+
 .cart-items td,
 .cart-items th {
   padding: 0;
@@ -116,12 +162,8 @@
 }
 
 cart-remove-button .button {
-  box-shadow: none;
-  color: rgba(var(--color-base-text), 0.75);
   min-width: calc(4.5rem / var(--font-body-scale));
   min-height: 4.5rem;
-  padding: 0;
-  margin: 0 0.1rem 0.1rem 0;
 }
 
 cart-remove-button .button:not([disabled]):hover {
@@ -278,7 +320,6 @@ cart-remove-button .icon-remove {
   }
 
   .cart-items td {
-    vertical-align: top;
     padding-top: 4rem;
   }
 
@@ -302,9 +343,6 @@ cart-remove-button .icon-remove {
     margin: 0.5rem 0 0 1.5rem;
   }
 
-  .cart-item__price-wrapper > *:only-child:not(.cart-item__discounted-prices) {
-    margin-top: 1rem;
-  }
 }
 
 @media screen and (min-width: 990px) {
