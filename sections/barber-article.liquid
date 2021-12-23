@@ -9,7 +9,7 @@
       <div class="article-image-div">
         <div class="article-image-wrapper">
           <img
-            src="{{ article.image.src | img_url }}"
+            src="{{ article.image.src | img_url:'large' }}"
             alt="{{ article.image.src.alt | escape }}"
             class="barber-headshot"
           >

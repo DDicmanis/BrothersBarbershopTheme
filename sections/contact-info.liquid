@@ -1,7 +1,7 @@
 {{ 'section-contact-info.css' | asset_url | stylesheet_tag }}
 <div class="contact-wrapper">
   <div class="contact-content">
-    <h2 class="contact-title">OUR BARBERSHOPS in vienna</h2>
+    <h2 class="contact-title">{{section.settings.contact-title}}</h2>
     <div class="contact-controll-wrapper">
       <button class="contact-button" onclick="showConact(0)">barbershop 1070</button>
       <button class="contact-button-inactive" onclick="showConact(1)">barbershop 1220</button>
@@ -23,7 +23,7 @@
             </div>
             <div>
                 <p class="info-text">
-                  Neubaugasse 81, 1070
+                  {{section.settings.contact-location-1}}
                 </p>
             </div>
           </div>
@@ -38,9 +38,9 @@
             </div>
             <div>
               <ul class="icon-list-2">
-                <li>10:00-19:00 </li>
-                <li>09:30-19:00</li>
-                <li>09:30-17:00</li>
+                <li>{{section.settings.contact-time1-1}} </li>
+                <li>{{section.settings.contact-time2-1}}</li>
+                <li>{{section.settings.contact-time3-1}}</li>
               </ul>
             </div>
             
@@ -55,7 +55,7 @@
             </div>
             <div>
               <p class="info-text">
-                14:00-15:00
+                {{section.settings.contact-lunch-1}}
               </p>
             </div>
             
@@ -70,7 +70,7 @@
             </div>
             <div>
               <p class="info-text">
-                019908304 
+                {{section.settings.contact-phone-1}}
               </p>
             </div>
             
@@ -103,7 +103,7 @@
             </div>
             <div>
                 <p class="info-text">
-                  Neubaugasse 81, 1070
+                  {{section.settings.contact-location-2}}
                 </p>
             </div>
           </div>
@@ -118,9 +118,9 @@
             </div>
             <div>
               <ul class="icon-list-2">
-                <li>10:00-19:00 </li>
-                <li>09:30-19:00</li>
-                <li>09:30-17:00</li>
+                <li>{{section.settings.contact-time1-2}} </li>
+                <li>{{section.settings.contact-time2-2}}</li>
+                <li>{{section.settings.contact-time3-2}}</li>
               </ul>
             </div>
             
@@ -135,7 +135,7 @@
             </div>
             <div>
               <p class="info-text">
-                14:00-15:00
+                {{section.settings.contact-lunch-2}}
               </p>
             </div>
             
@@ -150,7 +150,7 @@
             </div>
             <div>
               <p class="info-text">
-                019908304 
+                {{section.settings.contact-phone-2}}
               </p>
             </div>
             
@@ -170,7 +170,104 @@
 </div>
 
 <script async
-    src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap">
+    src="https://maps.googleapis.com/maps/api/js?key={{section.settings.google-api-key}}&callback=initMap">
 </script>
 
 {{ 'contact-controll.js'  | asset_url | script_tag     }}
+{% schema %}
+  {
+    "name": "Contact info",
+    "settings": [
+      {
+        "id": "contact-title",
+        "type": "text",
+        "label": "Contact title",
+        "default":"OUR BARBERSHOPS in vienna"
+      },
+      {
+        "id": "contact-location-1",
+        "type": "text",
+        "label": "Location 1",
+        "default":"Neubaugasse 81, 1070"
+      },
+      {
+        "id": "contact-time1-1",
+        "type": "text",
+        "label": "Open on TU & WE ",
+        "default":"10:00-19:00"
+      },
+      {
+        "id": "contact-time2-1",
+        "type": "text",
+        "label": "Open on TH & FR ",
+        "default":"09:30-19:00"
+      },
+      {
+        "id": "contact-time3-1",
+        "type": "text",
+        "label": "Open on SA",
+        "default":"09:30-17:00"
+      },
+      {
+        "id": "contact-lunch-1",
+        "type": "text",
+        "label": "Lunch time",
+        "default":"14:00-15:00"
+      },
+      {
+        "id": "contact-phone-1",
+        "type": "text",
+        "label": "Contact phone",
+        "default":"019908304 "
+      },
+      {
+        "id": "contact-location-2",
+        "type": "text",
+        "label": "Location 2",
+        "default":"wagramer straße 17-19, 1220  (IZD TOWER) "
+      },
+      {
+        "id": "contact-time1-2",
+        "type": "text",
+        "label": "Open on TU & WE ",
+        "default":"10:00-19:00"
+      },
+      {
+        "id": "contact-time2-2",
+        "type": "text",
+        "label": "Open on TH & FR ",
+        "default":"09:30-19:00"
+      },
+      {
+        "id": "contact-time3-2",
+        "type": "text",
+        "label": "Open on SA",
+        "default":"09:30-17:00"
+      },
+      {
+        "id": "contact-lunch-2",
+        "type": "text",
+        "label": "Lunch time",
+        "default":"14:00-15:00"
+      },
+      {
+        "id": "contact-phone-2",
+        "type": "text",
+        "label": "Contact phone",
+        "default":"019908304 "
+      },
+      {
+        "id": "google-api-key",
+        "type": "text",
+        "label": "Google maps api key"
+        
+      }
+      
+    ],
+    "presets": [
+      {
+        "name": "Contact info"
+      }
+    ]
+  }
+{% endschema %}

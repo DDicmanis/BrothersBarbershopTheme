@@ -75,6 +75,7 @@ p{
   height: 208px;
   border-radius: 100%;
   box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
 }
 .info-does p:not(:first-child){
 display: none;
