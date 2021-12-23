@@ -2,7 +2,7 @@
 <div class="services-controlls-wrapper">
   <div>
     <h2 class="services-title">
-      our treatments
+      {{ section.settings.service-title }}
     </h2>
   </div>
   <div class="services-controlls">
@@ -23,25 +23,27 @@
     </select>
   </div>
 </div>
+
 <div class="services-wrapper">
+  {% if section.settings.haircut-1-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{'service1.jpg' | asset_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.haircut-image-1 | img_url }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-      <h3 class="service-heading">Service</h3>
-      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+      <h3 class="service-heading">{{ section.settings.haircut-name-1 }}</h3>
+      <p class="service-description">{{ section.settings.haircut-description-1 }}</p>
     </div>
     <div class="service-cost-wrapper">
       <div class="service-cost-icons">
         <div class="cost-inline">
           <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-          <p class="service-cost-span">30 min</p>
+          <p class="service-cost-span">{{ section.settings.haircut-time-1 }}</p>
         </div>
         <div class="cost-inline">
           <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-          <p class="service-cost-span">€40</p>  
+          <p class="service-cost-span">{{ section.settings.haircut-cost-1 }}</p>  
         </div>
       </div>
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
@@ -67,47 +69,49 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{'service1.jpg' | asset_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.haircut-image-1 | img_url }}" alt="service1" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-        <h3 class="service-heading">Service</h3>
+        <h3 class="service-heading">{{ section.settings.haircut-name-1 }}</h3>
         <div class="service-cost-icons">
           <div class="cost-inline">
             <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-            <p class="service-cost-span">30 min</p>
+            <p class="service-cost-span">{{ section.settings.haircut-time-1 }}</p>
           </div>
           <div class="cost-inline">
             <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-            <p class="service-cost-span">€40</p>  
+            <p class="service-cost-span">{{ section.settings.haircut-cost-1 }}</p>  
           </div>
         </div>
       </div>
       
     </div>
-    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    <p class="service-description">{{ section.settings.haircut-description-1 }}</p>
 
     <div class="service-cost-wrapper">
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
     </div>
   </div>
+  {% endif %}
+  {% if section.settings.haircut-2-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{'service2.jpg' | asset_url }}" alt="service2" class="service-image">
+      <img src="{{section.settings.haircut-image-2 | img_url }}" alt="service2" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-      <h3 class="service-heading">Service</h3>
-      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+      <h3 class="service-heading">{{ section.settings.haircut-name-2 }}</h3>
+      <p class="service-description">{{ section.settings.haircut-description-2 }}</p>
     </div>
     <div class="service-cost-wrapper">
       <div class="service-cost-icons">
         <div class="cost-inline">
           <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-          <p class="service-cost-span">30 min</p>
+          <p class="service-cost-span">{{ section.settings.haircut-time-2 }}</p>
         </div>
         <div class="cost-inline">
           <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-          <p class="service-cost-span">€40</p>  
+          <p class="service-cost-span">{{ section.settings.haircut-cost-2 }}</p>  
         </div>
       </div>
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
@@ -133,47 +137,49 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{'service2.jpg' | asset_url }}" alt="service2" class="service-image">
+      <img src="{{section.settings.haircut-image-2 | img_url }}" alt="service2" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-        <h3 class="service-heading">Service</h3>
+        <h3 class="service-heading">{{ section.settings.haircut-name-2 }}</h3>
         <div class="service-cost-icons">
           <div class="cost-inline">
             <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-            <p class="service-cost-span">30 min</p>
+            <p class="service-cost-span">{{ section.settings.haircut-time-2 }}</p>
           </div>
           <div class="cost-inline">
             <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-            <p class="service-cost-span">€40</p>  
+            <p class="service-cost-span">{{ section.settings.haircut-cost-2 }}</p>  
           </div>
         </div>
       </div>
       
     </div>
-    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    <p class="service-description">{{ section.settings.haircut-description-2 }}</p>
 
     <div class="service-cost-wrapper">
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
     </div>
   </div>
+  {% endif %}
+  {% if section.settings.haircut-3-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{'service3.jpg' | asset_url }}" alt="service3" class="service-image">
+      <img src="{{section.settings.haircut-image-3 | img_url }}" alt="service3" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-      <h3 class="service-heading">Service</h3>
-      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+      <h3 class="service-heading">{{ section.settings.haircut-name-3 }}</h3>
+      <p class="service-description">{{ section.settings.haircut-description-3 }}</p>
     </div>
     <div class="service-cost-wrapper">
       <div class="service-cost-icons">
         <div class="cost-inline">
           <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-          <p class="service-cost-span">30 min</p>
+          <p class="service-cost-span">{{ section.settings.haircut-time-3 }}</p>
         </div>
         <div class="cost-inline">
           <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-          <p class="service-cost-span">€40</p>  
+          <p class="service-cost-span">{{ section.settings.haircut-cost-3 }}</p>  
         </div>
       </div>
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
@@ -199,49 +205,187 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{'service3.jpg' | asset_url }}" alt="service3" class="service-image">
+      <img src="{{section.settings.haircut-image-3 | img_url }}" alt="service3" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-        <h3 class="service-heading">Service</h3>
+        <h3 class="service-heading">{{ section.settings.haircut-name-3 }}</h3>
         <div class="service-cost-icons">
           <div class="cost-inline">
             <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-            <p class="service-cost-span">30 min</p>
+            <p class="service-cost-span">{{ section.settings.haircut-time-3 }}</p>
           </div>
           <div class="cost-inline">
             <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-            <p class="service-cost-span">€40</p>  
+            <p class="service-cost-span">{{ section.settings.haircut-cost-3 }}</p>  
           </div>
         </div>
       </div>
       
     </div>
-    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    <p class="service-description">{{ section.settings.haircut-description-3 }}</p>
 
     <div class="service-cost-wrapper">
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
     </div>
   </div>
+  {% endif %}
+  {% if section.settings.haircut-4-show == true %}
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{section.settings.haircut-image-4 | img_url }}" alt="service1" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">{{ section.settings.haircut-name-4 }}</h3>
+      <p class="service-description">{{ section.settings.haircut-description-4 }}</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">{{ section.settings.haircut-time-4 }}</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">{{ section.settings.haircut-cost-4 }}</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{section.settings.haircut-image-4 | img_url }}" alt="service1" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">{{ section.settings.haircut-name-4 }}</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">{{ section.settings.haircut-time-4 }}</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">{{ section.settings.haircut-cost-4 }}</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">{{ section.settings.haircut-description-4 }}</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+  {% endif %}
+  {% if section.settings.haircut-5-show == true %}
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{section.settings.haircut-image-5 | img_url }}" alt="service1" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">{{ section.settings.haircut-name-5 }}</h3>
+      <p class="service-description">{{ section.settings.haircut-description-5 }}</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">{{ section.settings.haircut-time-5 }}</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">{{ section.settings.haircut-cost-5 }}</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{section.settings.haircut-image-5 | img_url }}" alt="service1" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">{{ section.settings.haircut-name-5 }}</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">{{ section.settings.haircut-time-5 }}</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">{{ section.settings.haircut-cost-5 }}</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">{{ section.settings.haircut-description-5 }}</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+  {% endif %}
 </div>
 <div class="services-wrapper">
+  {% if section.settings.trim-1-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{'service1.jpg' | asset_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.trim-image-1 | img_url }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-      <h3 class="service-heading">Service</h3>
-      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+      <h3 class="service-heading">{{ section.settings.trim-name-1 }}</h3>
+      <p class="service-description">{{ section.settings.trim-description-1 }}</p>
     </div>
     <div class="service-cost-wrapper">
       <div class="service-cost-icons">
         <div class="cost-inline">
           <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-          <p class="service-cost-span">30 min</p>
+          <p class="service-cost-span">{{ section.settings.trim-time-1 }}</p>
         </div>
         <div class="cost-inline">
           <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-          <p class="service-cost-span">€40</p>  
+          <p class="service-cost-span">{{ section.settings.trim-cost-1 }}</p>  
         </div>
       </div>
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
@@ -267,47 +411,49 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{'service1.jpg' | asset_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.trim-image-1 | img_url }}" alt="service1" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-        <h3 class="service-heading">Service</h3>
+        <h3 class="service-heading">{{ section.settings.trim-name-1 }}</h3>
         <div class="service-cost-icons">
           <div class="cost-inline">
             <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-            <p class="service-cost-span">30 min</p>
+            <p class="service-cost-span">{{ section.settings.trim-time-1 }}</p>
           </div>
           <div class="cost-inline">
             <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-            <p class="service-cost-span">€40</p>  
+            <p class="service-cost-span">{{ section.settings.trim-cost-1 }}</p>  
           </div>
         </div>
       </div>
       
     </div>
-    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    <p class="service-description">{{ section.settings.trim-description-1 }}</p>
 
     <div class="service-cost-wrapper">
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
     </div>
   </div>
+  {% endif %}
+  {% if section.settings.trim-2-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{'service2.jpg' | asset_url }}" alt="service2" class="service-image">
+      <img src="{{section.settings.trim-image-2 | img_url }}" alt="service2" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-      <h3 class="service-heading">Service</h3>
-      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+      <h3 class="service-heading">{{ section.settings.trim-name-2 }}</h3>
+      <p class="service-description">{{ section.settings.trim-description-2 }}</p>
     </div>
     <div class="service-cost-wrapper">
       <div class="service-cost-icons">
         <div class="cost-inline">
           <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-          <p class="service-cost-span">30 min</p>
+          <p class="service-cost-span">{{ section.settings.trim-time-2 }}</p>
         </div>
         <div class="cost-inline">
           <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-          <p class="service-cost-span">€40</p>  
+          <p class="service-cost-span">{{ section.settings.trim-cost-2 }}</p>  
         </div>
       </div>
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
@@ -333,47 +479,49 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{'service2.jpg' | asset_url }}" alt="service2" class="service-image">
+      <img src="{{section.settings.trim-image-2 | img_url }}" alt="service2" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-        <h3 class="service-heading">Service</h3>
+        <h3 class="service-heading">{{ section.settings.trim-name-2 }}</h3>
         <div class="service-cost-icons">
           <div class="cost-inline">
             <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-            <p class="service-cost-span">30 min</p>
+            <p class="service-cost-span">{{ section.settings.trim-time-2 }}</p>
           </div>
           <div class="cost-inline">
             <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-            <p class="service-cost-span">€40</p>  
+            <p class="service-cost-span">{{ section.settings.trim-cost-2 }}</p>  
           </div>
         </div>
       </div>
       
     </div>
-    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    <p class="service-description">{{ section.settings.trim-description-2 }}</p>
 
     <div class="service-cost-wrapper">
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
     </div>
   </div>
+  {% endif %}
+  {% if section.settings.trim-3-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{'service3.jpg' | asset_url }}" alt="service3" class="service-image">
+      <img src="{{section.settings.trim-image-3 | img_url }}" alt="service3" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-      <h3 class="service-heading">Service</h3>
-      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+      <h3 class="service-heading">{{ section.settings.trim-name-3 }}</h3>
+      <p class="service-description">{{ section.settings.trim-description-3 }}</p>
     </div>
     <div class="service-cost-wrapper">
       <div class="service-cost-icons">
         <div class="cost-inline">
           <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-          <p class="service-cost-span">30 min</p>
+          <p class="service-cost-span">{{ section.settings.trim-time-3 }}</p>
         </div>
         <div class="cost-inline">
           <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-          <p class="service-cost-span">€40</p>  
+          <p class="service-cost-span">{{ section.settings.trim-cost-3 }}</p>  
         </div>
       </div>
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
@@ -399,49 +547,188 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{'service3.jpg' | asset_url }}" alt="service3" class="service-image">
+      <img src="{{section.settings.trim-image-3 | img_url }}" alt="service3" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-        <h3 class="service-heading">Service</h3>
+        <h3 class="service-heading">{{ section.settings.trim-name-3 }}</h3>
         <div class="service-cost-icons">
           <div class="cost-inline">
             <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-            <p class="service-cost-span">30 min</p>
+            <p class="service-cost-span">{{ section.settings.trim-time-3 }}</p>
           </div>
           <div class="cost-inline">
             <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-            <p class="service-cost-span">€40</p>  
+            <p class="service-cost-span">{{ section.settings.trim-cost-3 }}</p>  
           </div>
         </div>
       </div>
       
     </div>
-    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    <p class="service-description">{{ section.settings.trim-description-3 }}</p>
 
     <div class="service-cost-wrapper">
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
     </div>
   </div>
+  {% endif %}
+  {% if section.settings.trim-4-show == true %}
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{section.settings.trim-image-4 | img_url }}" alt="service1" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">{{ section.settings.trim-name-4 }}</h3>
+      <p class="service-description">{{ section.settings.trim-description-4 }}</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">{{ section.settings.trim-time-4 }}</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">{{ section.settings.trim-cost-4 }}</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{section.settings.trim-image-4 | img_url }}" alt="service1" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">{{ section.settings.trim-name-4 }}</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">{{ section.settings.trim-time-4 }}</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">{{ section.settings.trim-cost-4 }}</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">{{ section.settings.trim-description-4 }}</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+  {% endif %}
+  {% if section.settings.trim-5-show == true %}
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{section.settings.trim-image-5 | img_url }}" alt="service1" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">{{ section.settings.trim-name-5 }}</h3>
+      <p class="service-description">{{ section.settings.trim-description-5 }}</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">{{ section.settings.trim-time-5 }}</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">{{ section.settings.trim-cost-5 }}</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{section.settings.trim-image-5 | img_url }}" alt="service1" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">{{ section.settings.trim-name-5 }}</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">{{ section.settings.trim-time-5 }}</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">{{ section.settings.trim-cost-5 }}</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">{{ section.settings.trim-description-5 }}</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+  {% endif %}
 </div>
+
 <div class="services-wrapper">
+  {% if section.settings.shave-1-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{'service1.jpg' | asset_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.shave-image-1 | img_url }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-      <h3 class="service-heading">Service</h3>
-      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+      <h3 class="service-heading">{{ section.settings.shave-name-1 }}</h3>
+      <p class="service-description">{{ section.settings.shave-description-1 }}</p>
     </div>
     <div class="service-cost-wrapper">
       <div class="service-cost-icons">
         <div class="cost-inline">
           <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-          <p class="service-cost-span">30 min</p>
+          <p class="service-cost-span">{{ section.settings.shave-time-1 }}</p>
         </div>
         <div class="cost-inline">
           <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-          <p class="service-cost-span">€40</p>  
+          <p class="service-cost-span">{{ section.settings.shave-cost-1 }}</p>  
         </div>
       </div>
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
@@ -467,47 +754,49 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{'service1.jpg' | asset_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.shave-image-1 | img_url }}" alt="service1" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-        <h3 class="service-heading">Service</h3>
+        <h3 class="service-heading">{{ section.settings.shave-name-1 }}</h3>
         <div class="service-cost-icons">
           <div class="cost-inline">
             <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-            <p class="service-cost-span">30 min</p>
+            <p class="service-cost-span">{{ section.settings.shave-time-1 }}</p>
           </div>
           <div class="cost-inline">
             <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-            <p class="service-cost-span">€40</p>  
+            <p class="service-cost-span">{{ section.settings.shave-cost-1 }}</p>  
           </div>
         </div>
       </div>
       
     </div>
-    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    <p class="service-description">{{ section.settings.shave-description-1 }}</p>
 
     <div class="service-cost-wrapper">
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
     </div>
   </div>
+  {% endif %}
+  {% if section.settings.shave-2-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{'service2.jpg' | asset_url }}" alt="service2" class="service-image">
+      <img src="{{section.settings.shave-image-2 | img_url }}" alt="service2" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-      <h3 class="service-heading">Service</h3>
-      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+      <h3 class="service-heading">{{ section.settings.shave-name-2 }}</h3>
+      <p class="service-description">{{ section.settings.shave-description-2 }}</p>
     </div>
     <div class="service-cost-wrapper">
       <div class="service-cost-icons">
         <div class="cost-inline">
           <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-          <p class="service-cost-span">30 min</p>
+          <p class="service-cost-span">{{ section.settings.shave-time-2 }}</p>
         </div>
         <div class="cost-inline">
           <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-          <p class="service-cost-span">€40</p>  
+          <p class="service-cost-span">{{ section.settings.shave-cost-2 }}</p>  
         </div>
       </div>
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
@@ -533,47 +822,49 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{'service2.jpg' | asset_url }}" alt="service2" class="service-image">
+      <img src="{{section.settings.shave-image-2 | img_url }}" alt="service2" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-        <h3 class="service-heading">Service</h3>
+        <h3 class="service-heading">{{ section.settings.shave-name-2 }}</h3>
         <div class="service-cost-icons">
           <div class="cost-inline">
             <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-            <p class="service-cost-span">30 min</p>
+            <p class="service-cost-span">{{ section.settings.shave-time-2 }}</p>
           </div>
           <div class="cost-inline">
             <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-            <p class="service-cost-span">€40</p>  
+            <p class="service-cost-span">{{ section.settings.shave-cost-2 }}</p>  
           </div>
         </div>
       </div>
       
     </div>
-    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    <p class="service-description">{{ section.settings.shave-description-2 }}</p>
 
     <div class="service-cost-wrapper">
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
     </div>
   </div>
+  {% endif %}
+  {% if section.settings.shave-3-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{'service3.jpg' | asset_url }}" alt="service3" class="service-image">
+      <img src="{{section.settings.shave-image-3 | img_url }}" alt="service3" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-      <h3 class="service-heading">Service</h3>
-      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+      <h3 class="service-heading">{{ section.settings.shave-name-3 }}</h3>
+      <p class="service-description">{{ section.settings.shave-description-3 }}</p>
     </div>
     <div class="service-cost-wrapper">
       <div class="service-cost-icons">
         <div class="cost-inline">
           <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-          <p class="service-cost-span">30 min</p>
+          <p class="service-cost-span">{{ section.settings.shave-time-3 }}</p>
         </div>
         <div class="cost-inline">
           <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-          <p class="service-cost-span">€40</p>  
+          <p class="service-cost-span">{{ section.settings.shave-cost-3 }}</p>  
         </div>
       </div>
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
@@ -599,49 +890,189 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{'service3.jpg' | asset_url }}" alt="service3" class="service-image">
+      <img src="{{section.settings.shave-image-3 | img_url }}" alt="service3" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-        <h3 class="service-heading">Service</h3>
+        <h3 class="service-heading">{{ section.settings.shave-name-3 }}</h3>
         <div class="service-cost-icons">
           <div class="cost-inline">
             <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-            <p class="service-cost-span">30 min</p>
+            <p class="service-cost-span">{{ section.settings.shave-time-3 }}</p>
           </div>
           <div class="cost-inline">
             <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-            <p class="service-cost-span">€40</p>  
+            <p class="service-cost-span">{{ section.settings.shave-cost-3 }}</p>  
           </div>
         </div>
       </div>
       
     </div>
-    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    <p class="service-description">{{ section.settings.shave-description-3 }}</p>
 
     <div class="service-cost-wrapper">
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
     </div>
   </div>
+  {% endif %}
+  {% if section.settings.shave-4-show == true %}
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{section.settings.shave-image-4 | img_url }}" alt="service1" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">{{ section.settings.shave-name-4 }}</h3>
+      <p class="service-description">{{ section.settings.shave-description-4 }}</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">{{ section.settings.shave-time-4 }}</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">{{ section.settings.shave-cost-4 }}</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{section.settings.shave-image-4 | img_url }}" alt="service1" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">{{ section.settings.shave-name-4 }}</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">{{ section.settings.shave-time-4 }}</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">{{ section.settings.shave-cost-4 }}</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">{{ section.settings.shave-description-4 }}</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+  {% endif %}
+  {% if section.settings.shave-5-show == true %}
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{section.settings.shave-image-5 | img_url }}" alt="service1" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">{{ section.settings.shave-name-5 }}</h3>
+      <p class="service-description">{{ section.settings.shave-description-5 }}</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">{{ section.settings.shave-time-5 }}</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">{{ section.settings.shave-cost-5 }}</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{section.settings.shave-image-5 | img_url }}" alt="service1" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">{{ section.settings.shave-name-5 }}</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">{{ section.settings.shave-time-5 }}</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">{{ section.settings.shave-cost-5 }}</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">{{ section.settings.shave-description-5 }}</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+  {% endif %}
 </div>
+
+
 <div class="services-wrapper">
+  {% if section.settings.combo-1-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{'service1.jpg' | asset_url }}" alt="service1" class="service-image">
+      <img src="{{ section.settings.combo-image-1 | img_url }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-      <h3 class="service-heading">Service</h3>
-      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+      <h3 class="service-heading">{{ section.settings.combo-name-1 }}</h3>
+      <p class="service-description">{{ section.settings.combo-description-1 }}</p>
     </div>
     <div class="service-cost-wrapper">
       <div class="service-cost-icons">
         <div class="cost-inline">
           <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-          <p class="service-cost-span">30 min</p>
+          <p class="service-cost-span">{{ section.settings.combo-time-1 }}</p>
         </div>
         <div class="cost-inline">
           <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-          <p class="service-cost-span">€40</p>  
+          <p class="service-cost-span">{{ section.settings.combo-cost-1 }}</p>  
         </div>
       </div>
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
@@ -667,47 +1098,49 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{'service1.jpg' | asset_url }}" alt="service1" class="service-image">
+      <img src="{{ section.settings.combo-image-1 | img_url }}" alt="service1" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-        <h3 class="service-heading">Service</h3>
+        <h3 class="service-heading">{{ section.settings.combo-name-1 }}</h3>
         <div class="service-cost-icons">
           <div class="cost-inline">
             <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-            <p class="service-cost-span">30 min</p>
+            <p class="service-cost-span">{{ section.settings.combo-time-1 }}</p>
           </div>
           <div class="cost-inline">
             <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-            <p class="service-cost-span">€40</p>  
+            <p class="service-cost-span">{{ section.settings.combo-cost-1 }}</p>  
           </div>
         </div>
       </div>
       
     </div>
-    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    <p class="service-description">{{ section.settings.combo-description-1 }}</p>
 
     <div class="service-cost-wrapper">
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
     </div>
   </div>
+  {% endif %}
+  {% if section.settings.combo-2-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{'service2.jpg' | asset_url }}" alt="service2" class="service-image">
+      <img src="{{ section.settings.combo-image-2 | img_url }}" alt="service2" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-      <h3 class="service-heading">Service</h3>
-      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+      <h3 class="service-heading">{{ section.settings.combo-name-2 }}</h3>
+      <p class="service-description">{{ section.settings.combo-description-2 }}</p>
     </div>
     <div class="service-cost-wrapper">
       <div class="service-cost-icons">
         <div class="cost-inline">
           <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-          <p class="service-cost-span">30 min</p>
+          <p class="service-cost-span">{{ section.settings.combo-time-2 }}</p>
         </div>
         <div class="cost-inline">
           <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-          <p class="service-cost-span">€40</p>  
+          <p class="service-cost-span">{{ section.settings.combo-cost-2 }}</p>  
         </div>
       </div>
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
@@ -733,47 +1166,49 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{'service2.jpg' | asset_url }}" alt="service2" class="service-image">
+      <img src="{{ section.settings.combo-image-2 | img_url }}" alt="service2" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-        <h3 class="service-heading">Service</h3>
+        <h3 class="service-heading">{{ section.settings.combo-name-2 }}</h3>
         <div class="service-cost-icons">
           <div class="cost-inline">
             <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-            <p class="service-cost-span">30 min</p>
+            <p class="service-cost-span">{{ section.settings.combo-time-2 }}</p>
           </div>
           <div class="cost-inline">
             <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-            <p class="service-cost-span">€40</p>  
+            <p class="service-cost-span">{{ section.settings.combo-cost-2 }}</p>  
           </div>
         </div>
       </div>
       
     </div>
-    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    <p class="service-description">{{ section.settings.combo-description-2 }}</p>
 
     <div class="service-cost-wrapper">
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
     </div>
   </div>
+  {% endif %}
+  {% if section.settings.combo-3-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{'service3.jpg' | asset_url }}" alt="service3" class="service-image">
+      <img src="{{ section.settings.combo-image-3 | img_url }}" alt="service3" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-      <h3 class="service-heading">Service</h3>
-      <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+      <h3 class="service-heading">{{ section.settings.combo-name-3 }}</h3>
+      <p class="service-description">{{ section.settings.combo-description-3 }}</p>
     </div>
     <div class="service-cost-wrapper">
       <div class="service-cost-icons">
         <div class="cost-inline">
           <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-          <p class="service-cost-span">30 min</p>
+          <p class="service-cost-span">{{ section.settings.combo-time-3 }}</p>
         </div>
         <div class="cost-inline">
           <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-          <p class="service-cost-span">€40</p>  
+          <p class="service-cost-span">{{ section.settings.combo-cost-3 }}</p>  
         </div>
       </div>
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
@@ -799,28 +1234,883 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{'service3.jpg' | asset_url }}" alt="service3" class="service-image">
+      <img src="{{ section.settings.combo-image-3 | img_url }}" alt="service3" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
-        <h3 class="service-heading">Service</h3>
+        <h3 class="service-heading">{{ section.settings.combo-name-3 }}</h3>
         <div class="service-cost-icons">
           <div class="cost-inline">
             <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
-            <p class="service-cost-span">30 min</p>
+            <p class="service-cost-span">{{ section.settings.combo-time-3 }}</p>
           </div>
           <div class="cost-inline">
             <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
-            <p class="service-cost-span">€40</p>  
+            <p class="service-cost-span">{{ section.settings.combo-cost-3 }}</p>  
           </div>
         </div>
       </div>
       
     </div>
-    <p class="service-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.</p>
+    <p class="service-description">{{ section.settings.combo-description-3 }}</p>
 
     <div class="service-cost-wrapper">
       <button class="button button-primary">BOOK AN APPOINTMENT</button>
     </div>
   </div>
+  {% endif %}
+  {% if section.settings.combo-4-show == true %}
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{ section.settings.combo-image-4 | img_url }}" alt="service1" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">{{ section.settings.combo-name-4 }}</h3>
+      <p class="service-description">{{ section.settings.combo-description-4 }}</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">{{ section.settings.combo-time-4 }}</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">{{ section.settings.combo-cost-4 }}</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{ section.settings.combo-image-4 | img_url }}" alt="service1" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">{{ section.settings.combo-name-4 }}</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">{{ section.settings.combo-time-4 }}</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">{{ section.settings.combo-cost-4 }}</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">{{ section.settings.combo-description-4 }}</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+  {% endif %}
+  {% if section.settings.combo-5-show == true %}
+  <div class="service-card">
+    <div class="service-image-wrapper">
+      <img src="{{ section.settings.combo-image-5 | img_url }}" alt="service1" class="service-image">
+    </div>
+    <div class="service-description-wrapper">
+      <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+      <h3 class="service-heading">{{ section.settings.combo-name-5 }}</h3>
+      <p class="service-description">{{ section.settings.combo-description-5 }}</p>
+    </div>
+    <div class="service-cost-wrapper">
+      <div class="service-cost-icons">
+        <div class="cost-inline">
+          <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+          <p class="service-cost-span">{{ section.settings.combo-time-5 }}</p>
+        </div>
+        <div class="cost-inline">
+          <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+          <p class="service-cost-span">{{ section.settings.combo-cost-5 }}</p>  
+        </div>
+      </div>
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+  </div>
+  <div class="service-card-mobile">
+    <div class="circle-wrapper">
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-big"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+      <div class="circle-small"></div>
+    </div>
+    <div class="service-image-wrapper">
+      <img src="{{ section.settings.combo-image-5 | img_url }}" alt="service1" class="service-image">
+      <div class="service-description-wrapper">
+        <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
+        <h3 class="service-heading">{{ section.settings.combo-name-5 }}</h3>
+        <div class="service-cost-icons">
+          <div class="cost-inline">
+            <img src="{{'serviceTimeIcon.svg' | asset_url }}" alt="Time icon" class="service-time-icon">
+            <p class="service-cost-span">{{ section.settings.combo-time-5 }}</p>
+          </div>
+          <div class="cost-inline">
+            <img src="{{'serviceCostIcon.svg' | asset_url }}" alt="Cost icon" class="service-time-icon">
+            <p class="service-cost-span">{{ section.settings.combo-cost-5 }}</p>  
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <p class="service-description">{{ section.settings.combo-description-5 }}</p>
+
+    <div class="service-cost-wrapper">
+      <button class="button button-primary">BOOK AN APPOINTMENT</button>
+    </div>
+  </div>
+  {% endif %}
 </div>
 {{ 'services-controll.js'  | asset_url | script_tag     }}
+{% schema %}
+  {
+    "name": "Service",
+    "settings": [
+      {
+        "id": "service-title",
+        "type": "text",
+        "label": "Section title",
+        "default":"our treatments"
+      },
+      {
+        "type": "checkbox",
+        "id": "haircut-1-show",
+        "label": "Show haircut 1",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "haircut-image-1",
+        "label": "Haircut 1 image"
+      },
+      {
+        "id": "haircut-name-1",
+        "type": "text",
+        "label": "Haircut 1 name",
+        "default":"Service1"
+      },
+      {
+        "id": "haircut-description-1",
+        "type": "textarea",
+        "label": "Haircut 1 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "id": "haircut-time-1",
+        "type": "text",
+        "label": "Haircut 1 time",
+        "default":"30 min"
+      },
+      {
+        "id": "haircut-cost-1",
+        "type": "text",
+        "label": "Haircut 1 cost",
+        "default":"€40"
+      },
+      {
+        "type": "checkbox",
+        "id": "haircut-2-show",
+        "label": "Show haircut 2",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "haircut-image-2",
+        "label": "Haircut 2 image"
+      },
+      {
+        "id": "haircut-name-2",
+        "type": "text",
+        "label": "Haircut 2 name",
+        "default":"Service"
+      },
+      {
+        "id": "haircut-description-2",
+        "type": "textarea",
+        "label": "Haircut 2 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "id": "haircut-time-2",
+        "type": "text",
+        "label": "Haircut 2 time",
+        "default":"30 min"
+      },
+      {
+        "id": "haircut-cost-2",
+        "type": "text",
+        "label": "Haircut 2 cost",
+        "default":"€50"
+      },
+      {
+        "type": "checkbox",
+        "id": "haircut-3-show",
+        "label": "Show haircut 3",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "haircut-image-3",
+        "label": "Haircut 3 image"
+      },
+      {
+        "id": "haircut-name-3",
+        "type": "text",
+        "label": "Haircut 3 name",
+        "default":"Service"
+      },
+      {
+        "id": "haircut-description-3",
+        "type": "textarea",
+        "label": "Haircut 3 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "id": "haircut-time-3",
+        "type": "text",
+        "label": "Haircut 3 time",
+        "default":"60 min"
+      },
+      {
+        "id": "haircut-cost-3",
+        "type": "text",
+        "label": "Haircut 3 cost",
+        "default":"€40"
+      },
+      {
+        "type": "checkbox",
+        "id": "haircut-4-show",
+        "label": "Show haircut 4",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "haircut-image-4",
+        "label": "Haircut 4 image"
+      },
+      {
+        "id": "haircut-name-4",
+        "type": "text",
+        "label": "Haircut 4 name",
+        "default":"Service"
+      },
+      {
+        "id": "haircut-description-4",
+        "type": "textarea",
+        "label": "Haircut 4 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "id": "haircut-time-4",
+        "type": "text",
+        "label": "Haircut 4 time",
+        "default":"30 min"
+      },
+      {
+        "id": "haircut-cost-4",
+        "type": "text",
+        "label": "Haircut 4 cost",
+        "default":"€40"
+      },
+      {
+        "type": "checkbox",
+        "id": "haircut-5-show",
+        "label": "Show haircut 5",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "haircut-image-5",
+        "label": "Haircut 5 image"
+      },
+      {
+        "id": "haircut-name-5",
+        "type": "text",
+        "label": "Haircut 5 name",
+        "default":"Service"
+      },
+      {
+        "id": "haircut-time-5",
+        "type": "text",
+        "label": "Haircut 5 time",
+        "default":"50 min"
+      },
+      {
+        "id": "haircut-cost-5",
+        "type": "text",
+        "label": "Haircut 5 cost",
+        "default":"€50"
+      },
+      {
+        "id": "haircut-description-5",
+        "type": "textarea",
+        "label": "Haircut 5 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "type": "checkbox",
+        "id": "trim-1-show",
+        "label": "Show trim 1",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "trim-image-1",
+        "label": "Trim 1 image"
+      },
+      {
+        "id": "trim-name-1",
+        "type": "text",
+        "label": "Trim 1 name",
+        "default":"Service1"
+      },
+      {
+        "id": "trim-description-1",
+        "type": "textarea",
+        "label": "Trim 1 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "id": "trim-time-1",
+        "type": "text",
+        "label": "Trim 1 time",
+        "default":"30 min"
+      },
+      {
+        "id": "trim-cost-1",
+        "type": "text",
+        "label": "Trim 1 cost",
+        "default":"€40"
+      },
+      {
+        "type": "checkbox",
+        "id": "trim-2-show",
+        "label": "Show trim 2",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "trim-image-2",
+        "label": "Trim 2 image"
+      },
+      {
+        "id": "trim-name-2",
+        "type": "text",
+        "label": "Trim 2 name",
+        "default":"Service"
+      },
+      {
+        "id": "trim-description-2",
+        "type": "textarea",
+        "label": "Trim 2 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "id": "trim-time-2",
+        "type": "text",
+        "label": "Trim 2 time",
+        "default":"30 min"
+      },
+      {
+        "id": "trim-cost-2",
+        "type": "text",
+        "label": "Trim 2 cost",
+        "default":"€50"
+      },
+      {
+        "type": "checkbox",
+        "id": "trim-3-show",
+        "label": "Show trim 3",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "trim-image-3",
+        "label": "Trim 3 image"
+      },
+      {
+        "id": "trim-name-3",
+        "type": "text",
+        "label": "Trim 3 name",
+        "default":"Service"
+      },
+      {
+        "id": "trim-description-3",
+        "type": "textarea",
+        "label": "Trim 3 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "id": "trim-time-3",
+        "type": "text",
+        "label": "Trim 3 time",
+        "default":"60 min"
+      },
+      {
+        "id": "trim-cost-3",
+        "type": "text",
+        "label": "Trim 3 cost",
+        "default":"€40"
+      },
+      {
+        "type": "checkbox",
+        "id": "trim-4-show",
+        "label": "Show trim 4",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "trim-image-4",
+        "label": "Trim 4 image"
+      },
+      {
+        "id": "trim-name-4",
+        "type": "text",
+        "label": "Trim 4 name",
+        "default":"Service"
+      },
+      {
+        "id": "trim-description-4",
+        "type": "textarea",
+        "label": "Trim 4 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "id": "trim-time-4",
+        "type": "text",
+        "label": "Trim 4 time",
+        "default":"30 min"
+      },
+      {
+        "id": "trim-cost-4",
+        "type": "text",
+        "label": "Trim 4 cost",
+        "default":"€40"
+      },
+      {
+        "type": "checkbox",
+        "id": "trim-5-show",
+        "label": "Show trim 5",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "trim-image-5",
+        "label": "Trim 5 image"
+      },
+      {
+        "id": "trim-name-5",
+        "type": "text",
+        "label": "Trim 5 name",
+        "default":"Service"
+      },
+      {
+        "id": "trim-time-5",
+        "type": "text",
+        "label": "Trim 5 time",
+        "default":"50 min"
+      },
+      {
+        "id": "trim-cost-5",
+        "type": "text",
+        "label": "Trim 5 cost",
+        "default":"€50"
+      },
+      {
+        "id": "trim-description-5",
+        "type": "textarea",
+        "label": "Trim 5 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "type": "checkbox",
+        "id": "shave-1-show",
+        "label": "Show shave 1",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "shaves-image-1",
+        "label": "Shaves 1 image"
+      },
+      {
+        "id": "shave-name-1",
+        "type": "text",
+        "label": "Shave 1 name",
+        "default":"Service1"
+      },
+      {
+        "id": "shave-description-1",
+        "type": "textarea",
+        "label": "Shave 1 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "id": "shave-time-1",
+        "type": "text",
+        "label": "Shave 1 time",
+        "default":"30 min"
+      },
+      {
+        "id": "shave-cost-1",
+        "type": "text",
+        "label": "Shave 1 cost",
+        "default":"€40"
+      },
+      {
+        "type": "checkbox",
+        "id": "shave-2-show",
+        "label": "Show shave 2",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "shaves-image-2",
+        "label": "Shaves 2 image"
+      },
+      {
+        "id": "shave-name-2",
+        "type": "text",
+        "label": "Shave 2 name",
+        "default":"Service"
+      },
+      {
+        "id": "shave-description-2",
+        "type": "textarea",
+        "label": "Shave 2 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "id": "shave-time-2",
+        "type": "text",
+        "label": "Shave 2 time",
+        "default":"30 min"
+      },
+      {
+        "id": "shave-cost-2",
+        "type": "text",
+        "label": "Shave 2 cost",
+        "default":"€50"
+      },
+      {
+        "type": "checkbox",
+        "id": "shave-3-show",
+        "label": "Show shave 3",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "shaves-image-3",
+        "label": "Shaves 3 image"
+      },
+      {
+        "id": "shave-name-3",
+        "type": "text",
+        "label": "Shave 3 name",
+        "default":"Service"
+      },
+      {
+        "id": "shave-description-3",
+        "type": "textarea",
+        "label": "Shave 3 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "id": "shave-time-3",
+        "type": "text",
+        "label": "Shave 3 time",
+        "default":"60 min"
+      },
+      {
+        "id": "shave-cost-3",
+        "type": "text",
+        "label": "Shave 3 cost",
+        "default":"€40"
+      },
+      {
+        "type": "checkbox",
+        "id": "shave-4-show",
+        "label": "Show shave 4",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "shaves-image-4",
+        "label": "Shaves 4 image"
+      },
+      {
+        "id": "shave-name-4",
+        "type": "text",
+        "label": "Shave 4 name",
+        "default":"Service"
+      },
+      {
+        "id": "shave-description-4",
+        "type": "textarea",
+        "label": "Shave 4 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "id": "shave-time-4",
+        "type": "text",
+        "label": "Shave 4 time",
+        "default":"30 min"
+      },
+      {
+        "id": "shave-cost-4",
+        "type": "text",
+        "label": "Shave 4 cost",
+        "default":"€40"
+      },
+      {
+        "type": "checkbox",
+        "id": "shave-5-show",
+        "label": "Show shave 5",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "shaves-image-5",
+        "label": "Shaves 5 image"
+      },
+      {
+        "id": "shave-name-5",
+        "type": "text",
+        "label": "Shave 5 name",
+        "default":"Service"
+      },
+      {
+        "id": "shave-time-5",
+        "type": "text",
+        "label": "Shave 5 time",
+        "default":"50 min"
+      },
+      {
+        "id": "shave-cost-5",
+        "type": "text",
+        "label": "Shave 5 cost",
+        "default":"€50"
+      },
+      {
+        "id": "shave-description-5",
+        "type": "textarea",
+        "label": "Shave 5 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "type": "checkbox",
+        "id": "combo-1-show",
+        "label": "Show combo 1",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "combo-image-1",
+        "label": "Combo 1 image"
+      },
+      {
+        "id": "combo-name-1",
+        "type": "text",
+        "label": "Combo 1 name",
+        "default":"Service1"
+      },
+      {
+        "id": "combo-description-1",
+        "type": "textarea",
+        "label": "Combo 1 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "id": "combo-time-1",
+        "type": "text",
+        "label": "Combo 1 time",
+        "default":"30 min"
+      },
+      {
+        "id": "combo-cost-1",
+        "type": "text",
+        "label": "Combo 1 cost",
+        "default":"€40"
+      },
+      {
+        "type": "checkbox",
+        "id": "combo-2-show",
+        "label": "Show combo 2",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "combo-image-2",
+        "label": "Combo 2 image"
+      },
+      {
+        "id": "combo-name-2",
+        "type": "text",
+        "label": "Combo 2 name",
+        "default":"Service"
+      },
+      {
+        "id": "combo-description-2",
+        "type": "textarea",
+        "label": "Combo 2 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "id": "combo-time-2",
+        "type": "text",
+        "label": "Combo 2 time",
+        "default":"30 min"
+      },
+      {
+        "id": "combo-cost-2",
+        "type": "text",
+        "label": "Combo 2 cost",
+        "default":"€50"
+      },
+      {
+        "type": "checkbox",
+        "id": "combo-3-show",
+        "label": "Show combo 3",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "combo-image-3",
+        "label": "Combo 3 image"
+      },
+      {
+        "id": "combo-name-3",
+        "type": "text",
+        "label": "Combo 3 name",
+        "default":"Service"
+      },
+      {
+        "id": "combo-description-3",
+        "type": "textarea",
+        "label": "Combo 3 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "id": "combo-time-3",
+        "type": "text",
+        "label": "Combo 3 time",
+        "default":"60 min"
+      },
+      {
+        "id": "combo-cost-3",
+        "type": "text",
+        "label": "Combo 3 cost",
+        "default":"€40"
+      },
+      {
+        "type": "checkbox",
+        "id": "combo-4-show",
+        "label": "Show combo 4",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "combo-image-4",
+        "label": "Combo 4 image"
+      },
+      {
+        "id": "combo-name-4",
+        "type": "text",
+        "label": "Combo 4 name",
+        "default":"Service"
+      },
+      {
+        "id": "combo-description-4",
+        "type": "textarea",
+        "label": "Combo 4 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      },
+      {
+        "id": "combo-time-4",
+        "type": "text",
+        "label": "Combo 4 time",
+        "default":"30 min"
+      },
+      {
+        "id": "combo-cost-4",
+        "type": "text",
+        "label": "Combo 4 cost",
+        "default":"€40"
+      },
+      {
+        "type": "checkbox",
+        "id": "combo-5-show",
+        "label": "Show combo 5",
+        "default": true
+      },
+      {
+        "type": "image_picker",
+        "id": "combo-image-5",
+        "label": "Combo 5 image"
+      },
+      {
+        "id": "combo-name-5",
+        "type": "text",
+        "label": "Combo 5 name",
+        "default":"Service"
+      },
+      {
+        "id": "combo-time-5",
+        "type": "text",
+        "label": "Combo 5 time",
+        "default":"50 min"
+      },
+      {
+        "id": "combo-cost-5",
+        "type": "text",
+        "label": "Combo 5 cost",
+        "default":"€50"
+      },
+      {
+        "id": "combo-description-5",
+        "type": "textarea",
+        "label": "Combo 5 description",
+        "default":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text."
+      }
+    ],
+    "presets": [
+      {
+        "name": "Services"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,7 +1,7 @@
 {{ 'section-cuts.css' | asset_url | stylesheet_tag }}
 <div class="cuts-wrapper">
   <div class="cuts-content">
-    <h2 class="cuts-title">our styles</h2>
+    <h2 class="cuts-title">{{ section.settings.service-styles-title }}</h2>
     <div class="slides-wrapper">
       <div class="card-wrapper">
         <div class="video-card">
@@ -15,8 +15,8 @@
               </div>
             </div>
           </div>
-          <h3 class="video-title">The style1</h3>
-          <p class="video-description">Short description  Short description</p>
+          <h3 class="video-title">{{ section.settings.service-styles-heading1 }}</h3>
+          <p class="video-description">{{ section.settings.service-styles-description1 }}</p>
           <p class="video-link">Learn More</p>
         </div>
   
@@ -31,8 +31,8 @@
               </div>
             </div>
           </div>
-          <h3 class="video-title">The style2</h3>
-          <p class="video-description">Short description  Short description</p>
+          <h3 class="video-title">{{ section.settings.service-styles-heading2 }}</h3>
+          <p class="video-description">{{ section.settings.service-styles-description2 }}</p>
           <p class="video-link">Learn More</p>
         </div>
   
@@ -47,8 +47,8 @@
               </div>
             </div>
           </div>
-          <h3 class="video-title">The style3</h3>
-          <p class="video-description">Short description  Short description</p>
+          <h3 class="video-title">{{ section.settings.service-styles-heading3 }}</h3>
+          <p class="video-description">{{ section.settings.service-styles-description3 }}</p>
           <p class="video-link">Learn More</p>
         </div>
   
@@ -63,8 +63,8 @@
               </div>
             </div>
           </div>
-          <h3 class="video-title">The style4</h3>
-          <p class="video-description">Short description  Short description</p>
+          <h3 class="video-title">{{ section.settings.service-styles-heading4 }}</h3>
+          <p class="video-description">{{ section.settings.service-styles-description4 }}</p>
           <p class="video-link">Learn More</p>
         </div>
   
@@ -79,8 +79,8 @@
               </div>
             </div>
           </div>
-          <h3 class="video-title">The style5</h3>
-          <p class="video-description">Short description  Short description</p>
+          <h3 class="video-title">{{ section.settings.service-styles-heading5 }}</h3>
+          <p class="video-description">{{ section.settings.service-styles-description5 }}</p>
           <p class="video-link">Learn More</p>
         </div>
       </div>
@@ -94,3 +94,81 @@
   </div>
 </div>
 {{ 'cuts-controll.js'  | asset_url | script_tag     }}
+{% schema %}
+  {
+    "name": "Servicestyles",
+    "settings": [
+      {
+        "id": "service-styles-title",
+        "type": "text",
+        "label": "Section title",
+        "default":"our styles"
+      },
+      {
+        "id": "service-styles-heading1",
+        "type": "text",
+        "label": "Style 1 heading",
+        "default":"The style"
+      },
+      {
+        "id": "service-styles-description1",
+        "type": "text",
+        "label": "Style 1 description",
+        "default":"Short description  Short description"
+      },
+      {
+        "id": "service-styles-heading2",
+        "type": "text",
+        "label": "Style 2 heading",
+        "default":"The style"
+      },
+      {
+        "id": "service-styles-description2",
+        "type": "text",
+        "label": "Style 2 description",
+        "default":"Short description  Short description"
+      },
+      {
+        "id": "service-styles-heading3",
+        "type": "text",
+        "label": "Style 3 heading",
+        "default":"The style"
+      },
+      {
+        "id": "service-styles-description3",
+        "type": "text",
+        "label": "Style 3 description",
+        "default":"Short description  Short description"
+      },
+      {
+        "id": "service-styles-heading4",
+        "type": "text",
+        "label": "Style 4 heading",
+        "default":"The style"
+      },
+      {
+        "id": "service-styles-description4",
+        "type": "text",
+        "label": "Style 4 description",
+        "default":"Short description  Short description"
+      },
+      {
+        "id": "service-styles-heading5",
+        "type": "text",
+        "label": "Style 5 heading",
+        "default":"The style"
+      },
+      {
+        "id": "service-styles-description5",
+        "type": "text",
+        "label": "Style 5 description",
+        "default":"Short description  Short description"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Servicestyles"
+      }
+    ]
+  }
+{% endschema %}
