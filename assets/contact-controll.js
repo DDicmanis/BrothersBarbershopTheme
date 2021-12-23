@@ -18,7 +18,7 @@ function showConact(index) {
 }
 
 initMap()
-var url2 = "https://www.google.com/maps/place/Brothers'+Barbershop/@48.2059329,16.3493743,18.92z/data=!3m1!5s0x476d079328443219:0xf4b7d37a8946a0c8!4m5!3m4!1s0x476d079328165a2f:0xda62389dcfc51ff4!8m2!3d48.2060493!4d16.3491734"
+var url2 = "https://www.google.com/maps/place/Brothers'+Barbershop/@48.2346927,16.4209242,20.25z/data=!3m1!5s0x476d06e86a347c5b:0x9787a410ce5fa308!4m12!1m6!3m5!1s0x0:0xf7a9b06931e117eb!2sIZD+Tower!8m2!3d48.2347117!4d16.4208567!3m4!1s0x476d07158e5745fd:0x375c572b8f377023!8m2!3d48.234889!4d16.4208783"
 
 var url1 = "https://www.google.com/maps/place/Brothers'+Barbershop/@48.2059329,16.3493743,18.92z/data=!3m1!5s0x476d079328443219:0xf4b7d37a8946a0c8!4m5!3m4!1s0x476d079328165a2f:0xda62389dcfc51ff4!8m2!3d48.2060493!4d16.3491734"
 function initMap() {
@@ -42,9 +42,9 @@ function initMap() {
 }
 initMap2()
 function initMap2() {
-  const uluru = { lat: -25.344, lng: 131.036 };
+  const uluru = { lat: 48.2346927, lng: 16.4209242 };
   const map = new google.maps.Map(document.getElementById("map2"), {
-    zoom: 4,
+    zoom: 17,
     center: uluru,
     zoomControl: false,
     scaleControl: false,
