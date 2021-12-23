@@ -5,6 +5,7 @@
       "settings": {
         "service-title": "our treatments",
         "haircut-1-show": true,
+        "haircut-image-1": "shopify:\/\/shop_images\/20210925-DSC03387-min.jpg",
         "haircut-name-1": "Service1",
         "haircut-description-1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown. Lorem Ipsum is simply dummy text.",
         "haircut-time-1": "30 min",
