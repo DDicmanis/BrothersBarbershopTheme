@@ -1,13 +1,25 @@
 {
   "sections": {
     "services": {
-      "type": "services-services"
+      "type": "services-services",
+      "settings": {
+      }
     },
     "rules": {
-      "type": "services-rules"
+      "type": "services-rules",
+      "settings": {
+        "rule1-title": "LATE POLICy",
+        "rule1-text": "<p>If you are more then <strong>10 minutes<\/strong> late your appointment may be cancelled, as it’s not possible to give adequate service in the remaining time. If you are permanently late for your scheduled appointments, the Cancellation or No Show policies described below may be applied.<\/p>",
+        "rule2-title": "CANCELLATION POLICy",
+        "rule2-text": "<p>If you are more then <strong>10 minutes<\/strong> late your appointment may be cancelled, as it’s not possible to give adequate service in the remaining time. If you are permanently late for your scheduled appointments, the Cancellation or No Show policies described below may be applied.<\/p>",
+        "rule3-title": "NO SHOW POLICy",
+        "rule3text": "<p>If you are more then <strong>10 minutes<\/strong> late your appointment may be cancelled, as it’s not possible to give adequate service in the remaining time. If you are permanently late for your scheduled appointments, the Cancellation or No Show policies described below may be applied.<\/p>"
+      }
     },
     "styles": {
-      "type": "services-styles"
+      "type": "services-styles",
+      "settings": {
+      }
     }
   },
   "order": [
