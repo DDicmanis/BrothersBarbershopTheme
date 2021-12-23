@@ -170,7 +170,7 @@ display: none;
   grid-auto-rows: auto;
 }
 .galery-image-wrapper img{
-    object-fit: fill;
+    object-fit: cover;
     width: 360px;
     height: 360px;
     position: relative;
