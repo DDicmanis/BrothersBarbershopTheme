@@ -63,6 +63,8 @@ myFunction()
 function myFunction() {
   var burgerWhite = document.getElementById("whiteBurger")
   var burgerBlack = document.getElementById("blackBurger")
+  var cartWhite = document.getElementById("cart-white")
+  var cartBlack = document.getElementById("cart-black")
   var st = window.pageYOffset || document.documentElement.scrollTop;
   if (st > lastScrollTop && st > 500) {
     header.classList.remove("transition")
@@ -72,6 +74,8 @@ function myFunction() {
     burgerWhite.style.display = "none"
     languge.style.color = "black"
     burgerBlack.style.display = "block"
+    cartWhite.style.display = "none"
+    cartBlack.style.display = "block"
     navLi[0].style.color = "black"
     navLi[1].style.color = "black"
   } else {
@@ -89,6 +93,8 @@ function myFunction() {
     if (window.location.pathname === '/') {
       burgerWhite.style.display = "block"
       burgerBlack.style.display = "none"
+      cartWhite.style.display = "block"
+      cartBlack.style.display = "none"
       languge.style.color = "white"
       navLi[0].style.color = "white"
       navLi[1].style.color = "white"
@@ -96,6 +102,8 @@ function myFunction() {
     } else {
       burgerWhite.style.display = "none"
       burgerBlack.style.display = "block"
+      cartWhite.style.display = "none"
+      cartBlack.style.display = "block"
       languge.style.color = "black"
       navLi[0].style.color = "black"
       navLi[1].style.color = "black"
