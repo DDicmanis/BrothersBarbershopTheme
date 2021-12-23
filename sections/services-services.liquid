@@ -28,7 +28,7 @@
   {% if section.settings.haircut-1-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{section.settings.haircut-image-1 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.haircut-image-1 | img_url: 'large' }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
