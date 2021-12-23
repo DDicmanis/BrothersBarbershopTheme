@@ -47,11 +47,16 @@
   color: white;
   margin:0
 }
+#cart-white{
+  background-image: url(icon-cart-white.png);
+}
+#cart-black{
+  background-image: url(icon-cart.png);
+}
 .cart-page-link{
   position: relative;
   width: 40px;
   height: 40px;
-  background-image: url(icon-cart.png);
 }
 .cart-count{
   color: white;
@@ -196,6 +201,17 @@ color: white;
   .burger-icon{
     height: 100%;
     width: 37px;
+    margin-left: 20px;
+  }
+  .cart-page-link{
+    background-size: cover;
+    width: 28px;
+    height: 28px;
+  }
+  .cart-count{
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
   }
   .close-icon{
     width: 26px;

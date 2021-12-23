@@ -87,11 +87,14 @@
           </li>
         {% endfor %}
         </ul>
-        <a href="/cart" class="cart-page-link">
-          <span class="icon icon-cart header-bar__cart-icon" aria-hidden="true"></span>
-                     
-                      <span class="cart-count header-bar__cart-count{% if cart.item_count == 0 %} hidden-count{% endif %}">{{ cart.item_count }}</span>
-                    </a>
+        <a href="/cart" class="cart-page-link" id="cart-white">
+          <span class="icon icon-cart header-bar__cart-icon" aria-hidden="true"></span>                   
+          <span class="cart-count header-bar__cart-count{% if cart.item_count == 0 %} hidden-count{% endif %}">{{ cart.item_count }}</span>
+        </a>
+        <a href="/cart" class="cart-page-link" id="cart-black">
+          <span class="icon icon-cart header-bar__cart-icon" aria-hidden="true"></span>                                
+          <span class="cart-count header-bar__cart-count{% if cart.item_count == 0 %} hidden-count{% endif %}">{{ cart.item_count }}</span>
+        </a>
         <img id="blackBurger" src="{{'burger-menu.svg'| asset_url }}" alt="Open menu" class="burger-icon" onclick="openNav()">
         <img id="whiteBurger" src="{{'burger-menuWhite.svg'| asset_url }}" alt="Open menu" class="burger-icon" onclick="openNav()">
       </div>
