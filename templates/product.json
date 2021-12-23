@@ -2,7 +2,6 @@
   "sections": {
     "16393893201e315466": {
       "type": "apps",
-      "class": "rating-margin",
       "blocks": {
         "b425fe80-cb0f-441b-aa88-18590c4f2085": {
           "type": "shopify:\/\/apps\/product-reviews\/blocks\/star_rating\/bae150af-8da8-48b2-9867-398188115e5f",
@@ -24,75 +23,25 @@
     },
     "main": {
       "type": "main-product",
-      "blocks": {
-        "vendor": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "uppercase"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {}
-        },
-        "subtitle": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.metafields.descriptors.subtitle.value }}",
-            "text_style": "subtitle"
-          }
-        },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button"
-          }
-        },
-        "quantity_selector": {
-          "type": "quantity_selector",
-          "settings": {}
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
-        }
-      },
-      "block_order": [
-        "vendor",
-        "title",
-        "subtitle",
-        "price",
-        "variant_picker",
-        "quantity_selector",
-        "buy_buttons",
-        "description",
-        "share"
-      ],
       "settings": {
-        "enable_sticky_info": true,
-        "hide_variants": false,
-        "enable_video_looping": false
+        "giftcards-title": "GIVE GREAT CUT AND BIG SMILE TO YOUR FRIEND",
+        "giftcard-image-1": "shopify:\/\/shop_images\/20210921-DSC03159.jpg",
+        "giftcard-image-2": "shopify:\/\/shop_images\/20211019-DSC03918.jpg",
+        "giftcard-image-3": "shopify:\/\/shop_images\/20211021-DSC04330.jpg",
+        "giftcard-image-4": "shopify:\/\/shop_images\/20211021-DSC04797_7042fb54-7ba8-4b63-addb-b27dda618a5b.jpg"
       }
     },
     "cupon-videos": {
-      "type": "cupon-videos"
+      "type": "cupon-videos",
+      "settings": {
+        "videos-title": "YOUS SAID IT BEST",
+        "videos-video-title-1": "TITLE TITLE TITLE",
+        "videos-video-description-1": "Short description Short description",
+        "videos-video-title-2": "TITLE TITLE TITLE",
+        "videos-video-description-2": "Short description Short description",
+        "videos-video-title-3": "TITLE TITLE TITLE",
+        "videos-video-description-3": "Short description Short description"
+      }
     }
   },
   "order": [
