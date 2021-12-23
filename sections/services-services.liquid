@@ -28,7 +28,7 @@
   {% if section.settings.haircut-1-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{section.settings.haircut-image-1 | img_url: 'large' }}" alt="service1" class="service-image">
+      <img src="{{section.settings.haircut-image-1 | img_url: 'large': 'large' }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -69,7 +69,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{section.settings.haircut-image-1 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.haircut-image-1 | img_url: 'large': 'large' }}" alt="service1" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.haircut-name-1 }}</h3>
@@ -96,7 +96,7 @@
   {% if section.settings.haircut-2-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{section.settings.haircut-image-2 | img_url }}" alt="service2" class="service-image">
+      <img src="{{section.settings.haircut-image-2 | img_url: 'large': 'large' }}" alt="service2" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -137,7 +137,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{section.settings.haircut-image-2 | img_url }}" alt="service2" class="service-image">
+      <img src="{{section.settings.haircut-image-2 | img_url: 'large': 'large' }}" alt="service2" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.haircut-name-2 }}</h3>
@@ -164,7 +164,7 @@
   {% if section.settings.haircut-3-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{section.settings.haircut-image-3 | img_url }}" alt="service3" class="service-image">
+      <img src="{{section.settings.haircut-image-3 | img_url: 'large': 'large' }}" alt="service3" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -205,7 +205,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{section.settings.haircut-image-3 | img_url }}" alt="service3" class="service-image">
+      <img src="{{section.settings.haircut-image-3 | img_url: 'large': 'large' }}" alt="service3" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.haircut-name-3 }}</h3>
@@ -232,7 +232,7 @@
   {% if section.settings.haircut-4-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{section.settings.haircut-image-4 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.haircut-image-4 | img_url: 'large' }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -273,7 +273,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{section.settings.haircut-image-4 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.haircut-image-4 | img_url: 'large' }}" alt="service1" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.haircut-name-4 }}</h3>
@@ -300,7 +300,7 @@
   {% if section.settings.haircut-5-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{section.settings.haircut-image-5 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.haircut-image-5 | img_url: 'large' }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -341,7 +341,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{section.settings.haircut-image-5 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.haircut-image-5 | img_url: 'large' }}" alt="service1" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.haircut-name-5 }}</h3>
@@ -370,7 +370,7 @@
   {% if section.settings.trim-1-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{section.settings.trim-image-1 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.trim-image-1 | img_url: 'large' }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -411,7 +411,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{section.settings.trim-image-1 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.trim-image-1 | img_url: 'large' }}" alt="service1" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.trim-name-1 }}</h3>
@@ -438,7 +438,7 @@
   {% if section.settings.trim-2-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{section.settings.trim-image-2 | img_url }}" alt="service2" class="service-image">
+      <img src="{{section.settings.trim-image-2 | img_url: 'large' }}" alt="service2" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -479,7 +479,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{section.settings.trim-image-2 | img_url }}" alt="service2" class="service-image">
+      <img src="{{section.settings.trim-image-2 | img_url: 'large' }}" alt="service2" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.trim-name-2 }}</h3>
@@ -506,7 +506,7 @@
   {% if section.settings.trim-3-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{section.settings.trim-image-3 | img_url }}" alt="service3" class="service-image">
+      <img src="{{section.settings.trim-image-3 | img_url: 'large' }}" alt="service3" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -547,7 +547,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{section.settings.trim-image-3 | img_url }}" alt="service3" class="service-image">
+      <img src="{{section.settings.trim-image-3 | img_url: 'large' }}" alt="service3" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.trim-name-3 }}</h3>
@@ -574,7 +574,7 @@
   {% if section.settings.trim-4-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{section.settings.trim-image-4 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.trim-image-4 | img_url: 'large' }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -615,7 +615,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{section.settings.trim-image-4 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.trim-image-4 | img_url: 'large' }}" alt="service1" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.trim-name-4 }}</h3>
@@ -642,7 +642,7 @@
   {% if section.settings.trim-5-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{section.settings.trim-image-5 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.trim-image-5 | img_url: 'large' }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -683,7 +683,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{section.settings.trim-image-5 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.trim-image-5 | img_url: 'large' }}" alt="service1" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.trim-name-5 }}</h3>
@@ -713,7 +713,7 @@
   {% if section.settings.shave-1-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{section.settings.shave-image-1 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.shave-image-1 | img_url: 'large' }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -754,7 +754,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{section.settings.shave-image-1 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.shave-image-1 | img_url: 'large' }}" alt="service1" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.shave-name-1 }}</h3>
@@ -781,7 +781,7 @@
   {% if section.settings.shave-2-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{section.settings.shave-image-2 | img_url }}" alt="service2" class="service-image">
+      <img src="{{section.settings.shave-image-2 | img_url: 'large' }}" alt="service2" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -822,7 +822,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{section.settings.shave-image-2 | img_url }}" alt="service2" class="service-image">
+      <img src="{{section.settings.shave-image-2 | img_url: 'large' }}" alt="service2" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.shave-name-2 }}</h3>
@@ -849,7 +849,7 @@
   {% if section.settings.shave-3-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{section.settings.shave-image-3 | img_url }}" alt="service3" class="service-image">
+      <img src="{{section.settings.shave-image-3 | img_url: 'large' }}" alt="service3" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -890,7 +890,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{section.settings.shave-image-3 | img_url }}" alt="service3" class="service-image">
+      <img src="{{section.settings.shave-image-3 | img_url: 'large' }}" alt="service3" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.shave-name-3 }}</h3>
@@ -917,7 +917,7 @@
   {% if section.settings.shave-4-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{section.settings.shave-image-4 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.shave-image-4 | img_url: 'large' }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -958,7 +958,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{section.settings.shave-image-4 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.shave-image-4 | img_url: 'large' }}" alt="service1" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.shave-name-4 }}</h3>
@@ -985,7 +985,7 @@
   {% if section.settings.shave-5-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{section.settings.shave-image-5 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.shave-image-5 | img_url: 'large' }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -1026,7 +1026,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{section.settings.shave-image-5 | img_url }}" alt="service1" class="service-image">
+      <img src="{{section.settings.shave-image-5 | img_url: 'large' }}" alt="service1" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.shave-name-5 }}</h3>
@@ -1057,7 +1057,7 @@
   {% if section.settings.combo-1-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{ section.settings.combo-image-1 | img_url }}" alt="service1" class="service-image">
+      <img src="{{ section.settings.combo-image-1 | img_url: 'large' }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -1098,7 +1098,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{ section.settings.combo-image-1 | img_url }}" alt="service1" class="service-image">
+      <img src="{{ section.settings.combo-image-1 | img_url: 'large' }}" alt="service1" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.combo-name-1 }}</h3>
@@ -1125,7 +1125,7 @@
   {% if section.settings.combo-2-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{ section.settings.combo-image-2 | img_url }}" alt="service2" class="service-image">
+      <img src="{{ section.settings.combo-image-2 | img_url: 'large' }}" alt="service2" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -1166,7 +1166,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{ section.settings.combo-image-2 | img_url }}" alt="service2" class="service-image">
+      <img src="{{ section.settings.combo-image-2 | img_url: 'large' }}" alt="service2" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.combo-name-2 }}</h3>
@@ -1193,7 +1193,7 @@
   {% if section.settings.combo-3-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{ section.settings.combo-image-3 | img_url }}" alt="service3" class="service-image">
+      <img src="{{ section.settings.combo-image-3 | img_url: 'large' }}" alt="service3" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -1234,7 +1234,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{ section.settings.combo-image-3 | img_url }}" alt="service3" class="service-image">
+      <img src="{{ section.settings.combo-image-3 | img_url: 'large' }}" alt="service3" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.combo-name-3 }}</h3>
@@ -1261,7 +1261,7 @@
   {% if section.settings.combo-4-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{ section.settings.combo-image-4 | img_url }}" alt="service1" class="service-image">
+      <img src="{{ section.settings.combo-image-4 | img_url: 'large' }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -1302,7 +1302,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{ section.settings.combo-image-4 | img_url }}" alt="service1" class="service-image">
+      <img src="{{ section.settings.combo-image-4 | img_url: 'large' }}" alt="service1" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.combo-name-4 }}</h3>
@@ -1329,7 +1329,7 @@
   {% if section.settings.combo-5-show == true %}
   <div class="service-card">
     <div class="service-image-wrapper">
-      <img src="{{ section.settings.combo-image-5 | img_url }}" alt="service1" class="service-image">
+      <img src="{{ section.settings.combo-image-5 | img_url: 'large' }}" alt="service1" class="service-image">
     </div>
     <div class="service-description-wrapper">
       <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
@@ -1370,7 +1370,7 @@
       <div class="circle-small"></div>
     </div>
     <div class="service-image-wrapper">
-      <img src="{{ section.settings.combo-image-5 | img_url }}" alt="service1" class="service-image">
+      <img src="{{ section.settings.combo-image-5 | img_url: 'large' }}" alt="service1" class="service-image">
       <div class="service-description-wrapper">
         <img src="{{'servicesIcon.svg' | asset_url }}" alt="Service icon" class="service-icon">
         <h3 class="service-heading">{{ section.settings.combo-name-5 }}</h3>
