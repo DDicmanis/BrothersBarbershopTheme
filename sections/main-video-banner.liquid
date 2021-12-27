@@ -12,12 +12,32 @@
 <div class="video-section-wrapper">
   
   <div class="frame-container">
-    <video id="bannerVid" muted autoplay loop>
+    <img class="bannerImg" src="{{section.settings.banner-image1| img_url: 'medium'}}" style="width:100%">
+    <img class="bannerImg" src="{{section.settings.banner-image2| img_url: 'medium'}}" style="width:100%">
+    <img class="bannerImg" src="{{section.settings.banner-image3| img_url: 'medium'}}" style="width:100%">
+    <!-- <video id="bannerVid" muted autoplay loop>
       <source src="{{'walkIn.mp4' | asset_url }}" type="video/mp4" >
-    </video>    
+    </video>     -->
   </div>
   
-</div> 
+</div>
+<script>
+  var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("bannerImg");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  // console.log(x.length)
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 {% schema %}
   {
     "name": "Banner",
@@ -34,6 +54,24 @@
         "type": "text",
         "label": "Banner subtitle",
         "default":"Look and feel like your best self."
+      },
+      {
+        "id": "banner-image1",
+        "type": "image_picker",
+        "label": "Banner image slider 1st image"
+        
+      }
+      {
+        "id": "banner-image2",
+        "type": "image_picker",
+        "label": "Banner image slider 2nd image"
+        
+      }
+      {
+        "id": "banner-image3",
+        "type": "image_picker",
+        "label": "Banner image slider 3rd image"
+        
       }
     ],
     "presets": [
