@@ -35,13 +35,15 @@
   margin-bottom: 0;
 }
 .footer-link {
+  display: inline-block;
+  height: 48px;
   font-family: Archivo Narrow, cursive;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
   line-height: 150%;
   color: #ffffff;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
   text-decoration: none;
 }
 .legal-link:last-child {
