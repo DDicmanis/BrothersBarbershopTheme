@@ -114,12 +114,12 @@
     "rules": {
       "type": "services-rules",
       "settings": {
-        "rule1-title": "LATE POLICy",
-        "rule1-text": "<p>If you are more then <strong>10 minutes<\/strong> late your appointment may be cancelled, as it’s not possible to give adequate service in the remaining time. If you are permanently late for your scheduled appointments, the Cancellation or No Show policies described below may be applied.<\/p>",
-        "rule2-title": "CANCELLATION POLICy",
-        "rule2-text": "<p>If you are more then <strong>10 minutes<\/strong> late your appointment may be cancelled, as it’s not possible to give adequate service in the remaining time. If you are permanently late for your scheduled appointments, the Cancellation or No Show policies described below may be applied.<\/p>",
+        "rule1-title": "LATE POLICY",
+        "rule1-text": "<p>If you are more then <strong>10 minutes late<\/strong> your appointment may be cancelled, as it’s not possible to give adequate service in the remaining time. If you are permanently late for your scheduled appointments, the <strong>Cancellation or No Show policies<\/strong> described below may be applied. <\/p>",
+        "rule2-title": "CANCELLATION POLICY",
+        "rule2-text": "<p>If you need to cancel your scheduled appointment, please just let us know asap. We fully understand appointments sometimes need to be rescheduled or cancelled, and do not charge you if you cannot make it. However please try to understand that if you don't attend or let us know, it really hurts our barbers' livelihoods, so we just ask that you try to let us know asap.<\/p>",
         "rule3-title": "NO SHOW POLICy",
-        "rule3text": "<p>If you are more then <strong>10 minutes<\/strong> late your appointment may be cancelled, as it’s not possible to give adequate service in the remaining time. If you are permanently late for your scheduled appointments, the Cancellation or No Show policies described below may be applied.<\/p>"
+        "rule3text": "<p>As above, please try to let us know as soon as possible, so we can try to rebook someone else for your slot. We will not charge you for no-shows but we do reserve the right to refuse further bookings for repeat offenders.<\/p>"
       }
     },
     "styles": {
