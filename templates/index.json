@@ -14,8 +14,8 @@
       "type": "main-counter",
       "settings": {
         "counter-clients": "50'000+",
-        "counter-reviews": "2500",
-        "counter-votes": "6000"
+        "counter-reviews": "2500+",
+        "counter-votes": "6000+"
       }
     },
     "feeling": {
