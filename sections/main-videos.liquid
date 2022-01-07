@@ -6,11 +6,11 @@
     <div class="video-grid">
       <div class="video-div1">
         <div class="video-wrapper">
-          <video id="video1" muted>
+          <video id="video1" >
             <source src="{{'videoCompressed1.mp4' | asset_url }}" type="video/mp4" id="vid">
           </video>
           <div class="video-controll-overlay" id="overlay1">
-            <p class="video-length">2:35</p>
+            <p class="video-length">{{section.settings.videos-video-length-1}}</p>
             <div class="play-icon-wrapper video-section"id="play1">
               <img src="{{'playIcon.svg'| asset_url }}"  class="play-button" alt="play button">
             </div>
@@ -21,11 +21,11 @@
       </div>
       <div class="video-div2">
         <div class="video-wrapper">
-          <video id="video2" muted>
+          <video id="video2" >
             <source src="{{'videoCompressed2.mp4' | asset_url }}" type="video/mp4" id="vid">
           </video>
           <div class="video-controll-overlay" id="overlay2">
-            <p class="video-length">1:05</p>
+            <p class="video-length">{{section.settings.videos-video-length-1}}</p>
             <div class="play-icon-wrapper video-section"id="play2">
               <img src="{{'playIcon.svg'| asset_url }}"  class="play-button" alt="play button">
             </div>
@@ -36,11 +36,11 @@
       </div>
       <div class="video-div3">
         <div class="video-wrapper">
-          <video id="video3" muted>
+          <video id="video3" >
             <source src="{{'videoCompressed3.mp4' | asset_url }}" type="video/mp4" id="vid">
           </video>
           <div class="video-controll-overlay" id="overlay3">
-            <p class="video-length">1:00</p>
+            <p class="video-length">{{section.settings.videos-video-length-1}}</p>
             <div class="play-icon-wrapper video-section"id="play3">
               <img src="{{'playIcon.svg'| asset_url }}"  class="play-button" alt="play button">
             </div>
@@ -76,6 +76,12 @@
         "default":"Short description Short description"
       },
       {
+        "id": "videos-video-length-1",
+        "type": "text",
+        "label": "Video 1 length",
+        "default":"2:35"
+      },
+      {
         "id": "videos-video-title-2",
         "type": "text",
         "label": "Video 2 title",
@@ -88,6 +94,12 @@
         "default":"Short description Short description"
       },
       {
+        "id": "videos-video-length-2",
+        "type": "text",
+        "label": "Video 1 length",
+        "default":"2:35"
+      },
+      {
         "id": "videos-video-title-3",
         "type": "text",
         "label": "Video 3 title",
@@ -98,6 +110,12 @@
         "type": "textarea",
         "label": "Video 3 description",
         "default":"Short description Short description"
+      },
+      {
+        "id": "videos-video-length-3",
+        "type": "text",
+        "label": "Video 1 length",
+        "default":"2:35"
       }
     ],
     "presets": [
