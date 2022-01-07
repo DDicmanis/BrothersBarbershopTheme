@@ -33,12 +33,12 @@
       "type": "main-videos",
       "settings": {
         "videos-title": "YOU SAID IT BESt",
-        "videos-video-title-1": "TITLE TITLE TITLe",
-        "videos-video-description-1": "Short description Short description",
-        "videos-video-title-2": "TITLE TITLE TITLe",
-        "videos-video-description-2": "Short description Short description",
-        "videos-video-title-3": "TITLE TITLE TITLe",
-        "videos-video-description-3": "Short description Short description"
+        "videos-video-title-1": "Hear what Franz says",
+        "videos-video-description-1": "",
+        "videos-video-title-2": "Hear what Lukas says",
+        "videos-video-description-2": "",
+        "videos-video-title-3": "hear what patrick says",
+        "videos-video-description-3": ""
       }
     },
     "awards": {
