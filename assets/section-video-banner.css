@@ -30,7 +30,7 @@ a.banner-button{
 .frame-container {
   position: relative;
   width: 100%; /* enlarge beyond browser width */
-  height: 100%;
+  height: 680px;
 }
 
 .frame-container iframe {
@@ -103,6 +103,9 @@ h1.banner-heading-h1{
   }
   .video-section-wrapper{
     max-height: 577px;
+    height: 577px;
+  }
+  .frame-container{
     height: 577px;
   }
   
