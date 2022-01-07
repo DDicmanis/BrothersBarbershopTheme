@@ -29,7 +29,7 @@
         "haircut-time-4": "30 min",
         "haircut-cost-4": "€22",
         "haircut-5-show": true,
-        "haircut-image-5": "shopify:\/\/shop_images\/20211021-DSC04797.jpg",
+        "haircut-image-5": "shopify:\/\/shop_images\/3rdbanner.jpg",
         "haircut-name-5": "THE YOUNG GENTLEMAN'S CUT",
         "haircut-time-5": "50 min",
         "haircut-cost-5": "€30",
@@ -120,7 +120,7 @@
         "rule2-title": "CANCELLATION POLICY",
         "rule2-text": "<p>If you need to cancel your scheduled appointment, please just let us know asap. We fully understand appointments sometimes need to be rescheduled or cancelled, and do not charge you if you cannot make it. However please try to understand that if you don't attend or let us know, it really hurts our barbers' livelihoods, so we just ask that you try to let us know asap.<\/p>",
         "rule3-title": "NO SHOW POLICy",
-        "rule3text": "<p>As above, please try to let us know as soon as possible, so we can try to rebook someone else for your slot. We will not charge you for no-shows but we do reserve the right to refuse further bookings for repeat offenders.<\/p>"
+        "rule3-text": "<p>If you are more then 10 minutes late your appointment may be cancelled, as it’s not possible to give adequate service in the remaining time. If you are permanently late for your scheduled appointments, the Cancellation or No Show policies described below may be applied.<\/p>"
       }
     },
     "styles": {
