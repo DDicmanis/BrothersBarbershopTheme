@@ -30,7 +30,7 @@
       
         <div class="slide-preview-row">
           <div class="slide-preview">
-            <img class="slide-preview-image opacity-off" src="{{section.settings.giftcard-image-1 | img_url: 'large'}}" style="cursor:pointer" onclick="currentDiv(1)">
+            <img class="slide-preview-image opacity-off" src="{{section.settings.giftcard-image-1 | img_url: 'large' }}" style="cursor:pointer" onclick="currentDiv(1)">
           </div>
           <div class="slide-preview">
             <img class="slide-preview-image" src="{{section.settings.giftcard-image-2 | img_url: 'large'}}" style="cursor:pointer" onclick="currentDiv(2)">
@@ -43,10 +43,10 @@
           </div>
         </div>
         <div style="position: relative;">
-          <img class="mySlides" src="{{section.settings.giftcard-image-1 | img_url: 'large'}}" >
-          <img class="mySlides" src="{{section.settings.giftcard-image-2 | img_url: 'large'}}" style="display:none">
-          <img class="mySlides" src="{{section.settings.giftcard-image-3 | img_url: 'large'}}" style="display:none">
-          <img class="mySlides" src="{{section.settings.giftcard-image-4 | img_url: 'large'}}" style="display:none">
+          <img class="mySlides" src="{{section.settings.giftcard-image-1 | image_url: width:580, height:580 }}" >
+          <img class="mySlides" src="{{section.settings.giftcard-image-2 | image_url: width:580, height:580 }}" style="display:none">
+          <img class="mySlides" src="{{section.settings.giftcard-image-3 | image_url: width:580, height:580 }}" style="display:none">
+          <img class="mySlides" src="{{section.settings.giftcard-image-4 | image_url: width:580, height:580 }}" style="display:none">
           <button id="prev" class="slider-controll-icons prev" onclick="plusDivs(-1)">&#10094;</button>
           <button id="next" class="slider-controll-icons next" onclick="plusDivs(1)">&#10095;</button>
         </div>
