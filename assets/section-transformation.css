@@ -202,10 +202,10 @@ margin-right: 20px;
     flex-direction: row;
   }
   .overlay-col1{
-    width: 50%;
+    width: 40%;
   }
   .overlay-col2{
-    width: 50%;
+    width: 60%;
     flex-direction: column;
     align-items: flex-end;
     justify-content: flex-end;
