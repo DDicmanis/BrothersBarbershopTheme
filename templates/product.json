@@ -35,11 +35,15 @@
       "type": "cupon-videos",
       "settings": {
         "videos-title": "YOUS SAID IT BEST",
+        "videos-text": "Few juicy sentences why this is the best gift ever you can buy + why this is the best barbershop in the city to go. Little explanation how it works, in which barber shops they can redeem gift cards, etc Little explanation how it works, in which barber shops they can redeem gift cards, etc.",
         "videos-video-title-1": "TITLE TITLE TITLE",
+        "videos-video-length-1": "2:35",
         "videos-video-description-1": "Short description Short description",
         "videos-video-title-2": "TITLE TITLE TITLE",
+        "videos-video-length-2": "1:05",
         "videos-video-description-2": "Short description Short description",
         "videos-video-title-3": "TITLE TITLE TITLE",
+        "videos-video-length-3": "1:00",
         "videos-video-description-3": "Short description Short description"
       }
     }
