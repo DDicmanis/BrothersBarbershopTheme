@@ -35,10 +35,13 @@
         "videos-title": "YOU SAID IT BESt",
         "videos-video-title-1": "Hear what Franz says",
         "videos-video-description-1": "",
+        "videos-video-length-1": "2:35",
         "videos-video-title-2": "Hear what Lukas says",
         "videos-video-description-2": "",
+        "videos-video-length-2": "2:35",
         "videos-video-title-3": "hear what patrick says",
-        "videos-video-description-3": ""
+        "videos-video-description-3": "",
+        "videos-video-length-3": "2:35"
       }
     },
     "awards": {
@@ -107,13 +110,13 @@
       "type": "main-faq",
       "settings": {
         "faq-title": "FREQUENTLY ASKED QUESTIONS",
-        "faq-question-1": "QUESTION?",
+        "faq-question-1": "What payment do we accept?",
         "faq-answer-1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-        "faq-question-2": "QUESTION?",
+        "faq-question-2": "are drinks included?",
         "faq-answer-2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-        "faq-question-3": "QUESTION?",
+        "faq-question-3": "what if i'm not entirely satisfied?",
         "faq-answer-3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
-        "faq-question-4": "QUESTION?",
+        "faq-question-4": "do your barbers speak english?",
         "faq-answer-4": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
         "faq-question-5": "QUESTION?",
         "faq-answer-5": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
