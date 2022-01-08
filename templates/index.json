@@ -5,9 +5,7 @@
       "settings": {
         "banner-title": "GREAT CUTS. BIG SMILEs.",
         "banner-subtitle": "Look and feel like your best self.",
-        "banner-image1": "shopify:\/\/shop_images\/1stbanner.jpg",
-        "banner-image2": "shopify:\/\/shop_images\/2ndbanner.jpg",
-        "banner-image3": "shopify:\/\/shop_images\/3rdbanner.jpg"
+        "banner-image1": "shopify:\/\/shop_images\/home_page_image.jpg"
       }
     },
     "counter": {
