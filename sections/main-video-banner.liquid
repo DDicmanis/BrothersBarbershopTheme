@@ -12,9 +12,15 @@
 <div class="video-section-wrapper">
   
   <div class="frame-container">
+    {% if section.settings.show_banner_1 %}
     <img class="bannerImg" src="{{section.settings.banner-image1| image_url: width:1440 ,height:680 }}" style="width:100%;height: 100%;object-fit: cover;" alt="Banner slider image">
+    {% endif %}
+    {% if section.settings.show_banner_2 %}
     <img class="bannerImg" src="{{section.settings.banner-image2| image_url: width:1440 ,height:680 }}" style="width:100%;height: 100%;object-fit: cover;"alt="Banner slider image">
+    {% endif %}
+    {% if section.settings.show_banner_3 %}
     <img class="bannerImg" src="{{section.settings.banner-image3| image_url: width:1440 ,height:680 }}" style="width:100%;height: 100%;object-fit: cover;"alt="Banner slider image">
+    {% endif %}
     <!-- <video id="bannerVid" muted autoplay loop>
       <source src="{{'walkIn.mp4' | asset_url }}" type="video/mp4" >
     </video>     -->
@@ -62,16 +68,33 @@ function carousel() {
         
       },
       {
+        "type": "checkbox",
+        "id": "show_banner_1",
+        "label": "Show banner 1",
+        "default": true
+      },
+      {
         "id": "banner-image2",
         "type": "image_picker",
         "label": "Banner image slider 2nd image"
         
       },
       {
+        "type": "checkbox",
+        "id": "show_banner_2",
+        "label": "Show banner 2",
+        "default": false
+      },
+      {
         "id": "banner-image3",
         "type": "image_picker",
         "label": "Banner image slider 3rd image"
-        
+      },
+      {
+        "type": "checkbox",
+        "id": "show_banner_3",
+        "label": "Show banner 3",
+        "default": false
       }
     ],
     "presets": [
