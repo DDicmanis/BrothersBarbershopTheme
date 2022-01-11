@@ -60,6 +60,7 @@ margin-right: 20px;
   color: #FFFFFF;
   margin-top: 0;
   margin-bottom: 0;
+  text-shadow: 2px 2px black;
 }
 .transform-text{
   font-family: Archivo Narrow,cursive;
@@ -68,6 +69,7 @@ margin-right: 20px;
   margin-top: 0;
   line-height: 150%;
   color: #FFFFFF;
+  text-shadow: 2px 2px black;
 }
 .slider-controlls{
   position: absolute;
