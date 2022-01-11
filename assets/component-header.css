@@ -48,10 +48,12 @@
   margin:0
 }
 #cart-white{
-  background-image: url(icon-cart-white.png);
+  background-image: url(icon-cart-white.svg);
+  background-repeat:no-repeat ;
 }
 #cart-black{
-  background-image: url(icon-cart.png);
+  background-image: url(icon-cart.svg);
+  background-repeat:no-repeat ;
 }
 .cart-page-link{
   position: relative;
