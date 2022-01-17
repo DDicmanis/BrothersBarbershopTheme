@@ -96,7 +96,7 @@ margin: 0;
       grid-column-gap: 20px;
       grid-row-gap: 30px;
       margin-bottom:40px;
-      justify-items: center;
+      
       }
       
       .booking-div1 { grid-area: 1 / 1 / 2 / 3; }
