@@ -46,6 +46,7 @@
           </ul>
         </div>
         <div class="line"></div>
+        {% if section.settings.legal_links %}
         <ul class="footer-list horizontal">
           {% for link in linklists.legal-menu.links %}
             <li class="legal-link">
@@ -54,6 +55,8 @@
           {% endfor %}
           
         </ul>
+        {% endif %}
+        
         
         
       </div>
@@ -470,6 +473,12 @@
           "default": "Quick links",
           "label": "t:sections.footer.blocks.link_list.settings.heading.label",
           "info": "t:sections.footer.blocks.link_list.settings.heading.info"
+        },
+        {
+          "type":"checkbox",
+          "id":"legal_links",
+          "default":false,
+          "label":"Show legal links?"
         },
         {
           "type": "link_list",
