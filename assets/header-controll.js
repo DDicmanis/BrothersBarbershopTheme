@@ -77,7 +77,7 @@ function myFunction() {
     cartWhite.style.display = "none"
     cartBlack.style.display = "block"
     navLi[0].style.color = "black"
-    navLi[1].style.color = "black"
+    //navLi[1].style.color = "black"
   } else {
     header.classList.add("transition")
     // header.style.display = "flex"
@@ -97,7 +97,7 @@ function myFunction() {
       cartBlack.style.display = "none"
       languge.style.color = "white"
       navLi[0].style.color = "white"
-      navLi[1].style.color = "white"
+      //navLi[1].style.color = "white"
 
     } else {
       burgerWhite.style.display = "none"
@@ -106,7 +106,7 @@ function myFunction() {
       cartBlack.style.display = "block"
       languge.style.color = "black"
       navLi[0].style.color = "black"
-      navLi[1].style.color = "black"
+      //navLi[1].style.color = "black"
     }
 
   }
