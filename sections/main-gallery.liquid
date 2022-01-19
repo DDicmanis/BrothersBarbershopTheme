@@ -1,0 +1,9 @@
+{{ 'section-gallery.css' | asset_url | stylesheet_tag }}
+<div class="gallery-wrapper">
+  <div class="gallery-content">
+    <h2 class="gallery-heading">Our Gallery</h2>
+      <div class="gallery-grid">
+        {{page.content}}
+      </div>
+  </div>
+</div>
