@@ -58,6 +58,7 @@ function enableScroll() {
   document.removeEventListener('wheel', DomUtils.preventDefault, { passive: false });
 }
 var languge = document.querySelector('.wgcurrent');
+console.log(languge)
 languge = languge.firstChild
 console.log(languge)
 var navLi = document.querySelectorAll(".header .header-inline li a")
