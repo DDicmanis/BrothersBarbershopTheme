@@ -57,7 +57,7 @@ function enableScroll() {
   document.body.removeEventListener('touchmove', preventDefault, { passive: false });
   document.removeEventListener('wheel', DomUtils.preventDefault, { passive: false });
 }
-var languge = document.querySelector(".header .language-heading")
+var languge = document.querySelector('.wgcurrent').firstChild;
 var navLi = document.querySelectorAll(".header .header-inline li a")
 myFunction()
 function myFunction() {
