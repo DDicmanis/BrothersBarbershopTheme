@@ -41,6 +41,7 @@
             "type": "link_list",
             "settings": {
               "heading": "Quick links",
+              "legal_links": true,
               "menu": "footer"
             }
           },
