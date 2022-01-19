@@ -4,10 +4,13 @@
   
   <h3 class="banner-heading-h3">{{ section.settings.banner-subtitle }}</h3>
   <a class="button button-primary banner-button" href="https://phorest.com/book/salons/brothersbarbershop" target="blank">BOOK AN APPOINTMENT</a>
+  {% if section.settings.show_scroll %}
   <div class="circle1"></div>
   <div class="circle2"></div>
   <div class="circle3"></div>
   <p class="banner-text-small">SCROLL</p>
+  {% endif %}
+ 
 </div>
 <div class="video-section-wrapper">
   
@@ -94,6 +97,12 @@ function carousel() {
         "type": "checkbox",
         "id": "show_banner_3",
         "label": "Show banner 3",
+        "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "show_scroll",
+        "label": "Show scroll",
         "default": false
       }
     ],
