@@ -57,8 +57,12 @@ margin-top: 0;
   }
   .gallery-grid{
     grid-auto-rows: auto;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
+  }
+  .gallery-grid img {
+    max-width: 300px;
+    max-height: 300px;
   }
 }
