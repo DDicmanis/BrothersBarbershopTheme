@@ -51,14 +51,14 @@ font-size: 30px;
 }
 @media screen and (min-width:1211px){
   .awards-section-wrapper{
-    padding-bottom: 70px;
+    padding-bottom: 40px;
     padding-left: 140px;
     padding-right: 140px;
   }
   .award-text{
     font-size: 45px;
     margin-bottom:80px;
-    margin-top:152px;
+    margin-top:40px;
   }
   /* .awards-content-wrapper{
    
