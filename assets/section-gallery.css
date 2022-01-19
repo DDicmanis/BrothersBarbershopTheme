@@ -1,5 +1,5 @@
 
-  .expectations-title{
+  .gallery-title{
     font-family: Bebas Neue,sans-serif;
 font-style: normal;
 font-weight: normal;
@@ -12,21 +12,35 @@ margin-top: 0;
   .gallery-wrapper{
     display: flex;
     justify-content: center;
+    margin-top: 80px;
   }
   .gallery-content{
     max-width: 1140px;
   }
+  .gallery-grid{
+    display: grid;
+  }
 @media screen and (max-width:1210px){
-  .galley-wrapper{
+  .gallery-wrapper{
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 40px;
     padding-top: 40px;
 
   }
-  .expectations-title{
+  .gallery-title{
     font-size: 30px;
     margin-bottom:15px;
+  }
+  .gallery-grid{
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+  .gallery-grid img{
+    max-width: 250px;
+    max-height: 250px;
   }
 
 }
@@ -41,13 +55,10 @@ margin-top: 0;
     font-size: 45px;
     margin-bottom:20px;
   }
-  /* .awards-content-wrapper{
-   
-    
-  } */
-  .award-badge{
-    width: 280px;
-  height: 280px;
-  bottom: 0%;
+  .gallery-grid{
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
   }
 }
