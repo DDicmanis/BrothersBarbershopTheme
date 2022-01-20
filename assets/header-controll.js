@@ -59,6 +59,7 @@ function enableScroll() {
 }
 var languge1 = document.getElementById('weglot-language-en');
 var languge2 = document.getElementById('weglot-language-de');
+console.log(languge1, languge2)
 var navLi = document.querySelectorAll(".header .header-inline li a")
 myFunction()
 function myFunction() {
