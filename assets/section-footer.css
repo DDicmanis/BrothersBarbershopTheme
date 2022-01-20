@@ -179,6 +179,9 @@
   /* transform: translateY(20%); */
 }
 }
+.social-icon-wrapper a{
+  line-height: 100%;
+}
 @media screen and (max-width:1210px){
   .footer{
     padding: 40px 20px 40px 20px;
