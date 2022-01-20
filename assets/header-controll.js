@@ -57,9 +57,9 @@ function enableScroll() {
   document.body.removeEventListener('touchmove', preventDefault, { passive: false });
   document.removeEventListener('wheel', DomUtils.preventDefault, { passive: false });
 }
-var languge1 = document.getElementById('weglot-language-en');
-var languge2 = document.getElementById('weglot-language-de');
-console.log(languge1, languge2)
+// var languge1 = document.getElementById('weglot-language-en');
+// var languge2 = document.getElementById('weglot-language-de');
+// console.log(languge1, languge2)
 var navLi = document.querySelectorAll(".header .header-inline li a")
 myFunction()
 function myFunction() {
@@ -74,8 +74,8 @@ function myFunction() {
     header.style.visibility = "hidden"
     header.style.opacity = "0"
     burgerWhite.style.display = "none"
-    languge1.style.color = "black"
-    languge2.style.color = "black"
+    // languge1.style.color = "black"
+    // languge2.style.color = "black"
     burgerBlack.style.display = "block"
     cartWhite.style.display = "none"
     cartBlack.style.display = "block"
@@ -98,8 +98,8 @@ function myFunction() {
       burgerBlack.style.display = "none"
       cartWhite.style.display = "block"
       cartBlack.style.display = "none"
-      languge1.style.color = "white"
-      languge2.style.color = "white"
+      // languge1.style.color = "white"
+      // languge2.style.color = "white"
       navLi[0].style.color = "white"
       //navLi[1].style.color = "white"
 
@@ -108,8 +108,8 @@ function myFunction() {
       burgerBlack.style.display = "block"
       cartWhite.style.display = "none"
       cartBlack.style.display = "block"
-      languge1.style.color = "black"
-      languge2.style.color = "black"
+      // languge1.style.color = "black"
+      // languge2.style.color = "black"
       navLi[0].style.color = "black"
       //navLi[1].style.color = "black"
     }
