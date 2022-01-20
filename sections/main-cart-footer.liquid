@@ -59,13 +59,16 @@
                   </button>
                 </noscript>
 
-                <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+                <!-- <button type="submit" id="checkout" class="cart__checkout-button button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
                   {{ 'sections.cart.checkout' | t }}
-                </button>
+                </button> -->
               </div>
 
               {%- if additional_checkout_buttons -%}
                 <div class="cart__dynamic-checkout-buttons additional-checkout-buttons">
+                  <button type="submit" id="checkout" class="cart__checkout-button button checkout-button" name="checkout"{% if cart == empty %} disabled{% endif %} form="cart">
+                    {{ 'sections.cart.checkout' | t }}
+                  </button>
                   {{ content_for_additional_checkout_buttons }}
                 </div>
               {%- endif -%}
