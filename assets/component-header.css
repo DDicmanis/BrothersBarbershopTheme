@@ -48,12 +48,14 @@
   margin:0
 }
 #cart-white{
+  background-size: contain;
   background-image: url(icon-cart-white.svg);
   background-repeat:no-repeat ;
 }
 #cart-black{
   background-image: url(icon-cart.svg);
   background-repeat:no-repeat ;
+  background-size: contain;
 }
 .cart-page-link{
   position: relative;
@@ -143,7 +145,7 @@ color: white;
   z-index: 999; /* Stay on top */
   top: 0; /* Stay at the top */
   right: 0;
-  background-color: rgba(48, 48, 48, 0.59);
+  background-color: rgba(48, 48, 48, 0.79);
   backdrop-filter: blur(10px);
   overflow-x: hidden; /* Disable horizontal scroll */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
