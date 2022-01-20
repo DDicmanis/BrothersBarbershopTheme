@@ -56,7 +56,7 @@ h1.banner-heading-h1{
   top: 0;
   left: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: column;
   overflow-wrap: break-word;
@@ -108,6 +108,9 @@ h1.banner-heading-h1{
   }
   .frame-container{
     height: 577px;
+  }
+  .frame-container img{
+    object-position: 80% center;
   }
   
 }
