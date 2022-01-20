@@ -9,7 +9,7 @@
     "colors_background_2": "#F3F3F3",
     "type_header_font": "assistant_n4",
     "type_body_font": "assistant_n4",
-    "favicon": "shopify:\/\/shop_images\/Logo.png",
+    "favicon": "shopify:\/\/shop_images\/Screenshot_2022-01-07_at_14.24.35_ee3c3356-61e9-44f2-941a-cfd36798f36e.png",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
@@ -41,7 +41,6 @@
             "type": "link_list",
             "settings": {
               "heading": "Quick links",
-              "legal_links": true,
               "menu": "footer"
             }
           },
@@ -58,6 +57,7 @@
           "footer-1"
         ],
         "settings": {
+          "legal_links": false,
           "color_scheme": "background-1",
           "newsletter_enable": true,
           "newsletter_heading": "Subscribe to our emails",
