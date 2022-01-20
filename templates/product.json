@@ -46,11 +46,28 @@
         "videos-video-length-3": "1:00",
         "videos-video-description-3": "Short description Short description"
       }
+    },
+    "1642691320bffd4740": {
+      "type": "apps",
+      "blocks": {
+        "2dab9555-1621-4cd0-9d9a-533f8d79022e": {
+          "type": "shopify:\/\/apps\/product-reviews\/blocks\/reviews\/bae150af-8da8-48b2-9867-398188115e5f",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "2dab9555-1621-4cd0-9d9a-533f8d79022e"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "16393893201e315466",
     "main",
-    "cupon-videos"
+    "cupon-videos",
+    "1642691320bffd4740"
   ]
 }
