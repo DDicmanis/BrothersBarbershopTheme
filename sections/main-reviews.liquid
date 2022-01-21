@@ -28,19 +28,9 @@
     childrenNew[i-1]=children[i];
   }
   var length=childrenNew.length
-  console.log("length=",length)
-  while(slideIndex!=length-3){
-    setInterval(showDivs,500,1)
-  }
-showDivs(slideIndex);
-while(slideIndex!=length-3){
-    setInterval(test,10000,1)
-  }
-function test (o){
-  console.log(o);
-}
+  //console.log("length=",length)
 function plusDivs(n) {
-  console.log("plusDiv",slideIndex+n)
+  //console.log("plusDiv",slideIndex+n)
   if (n == (-1) && slideIndex != 0) {
     showDivs(slideIndex += n);
   }
