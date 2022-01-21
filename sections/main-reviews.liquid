@@ -1,0 +1,150 @@
+{{ 'section-reviews.css' | asset_url | stylesheet_tag }}
+<div class="cuts-wrapper">
+  <div class="cuts-content">
+    <h2 class="cuts-title">{{ section.settings.service-styles-title }}</h2>
+    <h3 class="expectations-text">{{section.settings.review-text}}</h3>
+    <div class="slides-wrapper">
+      <div class="card-wrapper">
+        {{page.content}}
+      </div>
+      
+
+      
+        <button id="prev" class="slider-controll-icons prev" onclick="plusDivs(-1)">&#10094;</button>
+        <button id="next" class="slider-controll-icons next" onclick="plusDivs(1)">&#10095;</button>
+      
+    </div>
+  </div>
+</div>
+<!-- {{ 'reviews-controll.js'  | asset_url | script_tag     }} -->
+<script>
+  var slideIndex = 0;
+  var parent = document.getElementsByClassName('card-wrapper')[0]
+  var children=parent.childNodes;
+  var childrenNew=[]
+  var length=childrenNew.length
+  
+  for(let i=1;i<children.length-1;i++){
+    childrenNew[i-1]=children[i];
+  }
+  var length=childrenNew.length
+  console.log("length=",length)
+  while(slideIndex!=length-3){
+    setInterval(showDivs,500,1)
+  }
+showDivs(slideIndex);
+while(slideIndex!=length-3){
+    setInterval(test,10000,1)
+  }
+function test (o){
+  console.log(o);
+}
+function plusDivs(n) {
+  console.log("plusDiv",slideIndex+n)
+  if (n == (-1) && slideIndex != 0) {
+    showDivs(slideIndex += n);
+  }
+  var scd = window.innerWidth;
+  if (scd > 1180) {
+  if (n == 1 && slideIndex != length-3) {
+    showDivs(slideIndex += n);
+  }
+  }else{
+  if (n == 1 && slideIndex != length-1) {
+    showDivs(slideIndex += n);
+  }
+}
+}
+
+function showDivs(n) {
+  var i;
+  var x = childrenNew;
+  var prev = document.getElementById('prev')
+  var next = document.getElementById('next')
+  var sc = window.innerWidth;
+  if (sc > 1180) {
+    for (i = 0; i < x.length; i++) {
+
+      if (i < n) {
+        x[i].style.display = "none";
+        continue
+      }
+      if (i > (n + 2)) {
+        x[i].style.display = "none";
+        continue
+      }
+      x[i].style.display = "block"
+
+    }
+    if (slideIndex == 0) {
+      prev.classList.add("icon-disaebled")
+    }
+    if (slideIndex != 0 && slideIndex != length-3) {
+      prev.classList.remove("icon-disaebled");
+      next.classList.remove("icon-disaebled");
+    }
+    if (slideIndex == length-3) {
+      next.classList.add("icon-disaebled");
+    }
+  } else {
+    for (i = 0; i < x.length; i++) {
+
+      if (i < n) {
+        x[i].style.display = "none";
+        continue
+      }
+      if (i > n) {
+        x[i].style.display = "none";
+        continue
+      }
+      x[i].style.display = "block"
+
+    }
+    if (slideIndex == 0) {
+      prev.classList.add("icon-disaebled")
+    }
+    if (slideIndex != 0 && slideIndex != length-1) {
+      prev.classList.remove("icon-disaebled");
+      next.classList.remove("icon-disaebled");
+    }
+    if (slideIndex == length-1) {
+      next.classList.add("icon-disaebled");
+    }
+  }
+}
+
+function resetSlider() {
+  if (window.innerWidth < 1180) {
+    showDivs(slideIndex);
+  }
+  if (window.innerWidth > 1180) {
+    showDivs(slideIndex);
+  }
+}
+
+window.onresize = resetSlider;
+</script>
+{% schema %}
+  {
+    "name": "reviews",
+    "settings": [
+      {
+        "id": "service-styles-title",
+        "type": "text",
+        "label": "Section title",
+        "default":"Our reviews"
+      },
+      {
+        "id": "review-text",
+        "type": "text",
+        "label": "Section text",
+        "default":"Read our 5 star reviews"
+      }
+    ],
+    "presets": [
+      {
+        "name": "rewievs"
+      }
+    ]
+  }
+{% endschema %}
