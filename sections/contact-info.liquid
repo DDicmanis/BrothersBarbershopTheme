@@ -112,15 +112,13 @@
             <div class="icon-wrapper">
               <img class="info-icon" src="{{'calendarIcon.svg' | asset_url }}" alt="Calendar icon">
               <ul class="icon-list">
-                <li>Tu & We:</li>
-                <li>Th & Fr:</li>
+                <li>Mo & Fr:</li>
                 <li>Sa:</li>
               </ul>
             </div>
             <div>
               <ul class="icon-list-2">
                 <li>{{section.settings.contact-time1-2}} </li>
-                <li>{{section.settings.contact-time2-2}}</li>
                 <li>{{section.settings.contact-time3-2}}</li>
               </ul>
             </div>
@@ -295,14 +293,8 @@ function initMap2() {
       {
         "id": "contact-time1-2",
         "type": "text",
-        "label": "Open on TU & WE ",
+        "label": "Open on Mo & Fr ",
         "default":"10:00-19:00"
-      },
-      {
-        "id": "contact-time2-2",
-        "type": "text",
-        "label": "Open on TH & FR ",
-        "default":"09:30-19:00"
       },
       {
         "id": "contact-time3-2",
