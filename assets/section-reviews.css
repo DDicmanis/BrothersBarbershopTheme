@@ -192,3 +192,8 @@ video{
   }
   
 }
+@media screen and (max-width:797px){
+  .card-wrapper img{
+    max-width: 250px;
+  }
+}
