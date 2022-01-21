@@ -129,6 +129,7 @@
     },
     "styles": {
       "type": "services-styles",
+      "disabled": true,
       "settings": {
         "service-styles-title": "our styles",
         "service-styles-heading1": "The style",
