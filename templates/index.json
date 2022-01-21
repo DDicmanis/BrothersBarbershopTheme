@@ -5,7 +5,11 @@
       "settings": {
         "banner-title": "GREAT CUTS. BIG SMILEs.",
         "banner-subtitle": "Look and feel like your best self.",
-        "banner-image1": "shopify:\/\/shop_images\/home_page_image.jpg"
+        "banner-image1": "shopify:\/\/shop_images\/home_page_image.jpg",
+        "show_banner_1": true,
+        "show_banner_2": false,
+        "show_banner_3": false,
+        "show_scroll": false
       }
     },
     "counter": {
@@ -53,8 +57,12 @@
       "settings": {
         "Transformation-title": "THE BROTHERS EXPERIENCe",
         "Transformation-text": "Sure, you come to our shops for a great cut. But, it’s our mission to be even more than that. We believe that when you look your best, you feel and do your best, too. So, when we say “how can I help?”, we mean it.",
+        "slide_number": 1,
+        "show_slider_1": true,
         "beforeimage-1": "shopify:\/\/shop_images\/Before_d0a68852-267e-4339-92d1-3e6106b3e855.jpg",
-        "afterimage-1": "shopify:\/\/shop_images\/after_d177889f-85a3-4574-8cc6-3b4781c6dff8.jpg"
+        "afterimage-1": "shopify:\/\/shop_images\/after_d177889f-85a3-4574-8cc6-3b4781c6dff8.jpg",
+        "show_slider_2": false,
+        "show_slider_3": false
       }
     },
     "expectations": {
@@ -75,6 +83,7 @@
     "values": {
       "type": "main-values",
       "settings": {
+        "values-title": "As seen in",
         "icon-1": "shopify:\/\/shop_images\/Group_127.png",
         "icon-2": "shopify:\/\/shop_images\/2560px-DER_STANDARD_1.png",
         "icon-3": "shopify:\/\/shop_images\/1000things_1.png",
@@ -105,11 +114,11 @@
       "settings": {
         "faq-title": "FREQUENTLY ASKED QUESTIONS",
         "faq-question-1": "What payment methods do you accept?",
-        "faq-answer-1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+        "faq-answer-1": "We accept all major bank cards in our shops and online payments for gift cards.",
         "faq-question-2": "are drinks included?",
-        "faq-answer-2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+        "faq-answer-2": "Yes! You will be offered a complimentary drink when you arrive for your service. We have a great selection of drinks on offer, ranging from barista quality coffee, soft drinks (redbull etc), craft beers or a gin & tonic!",
         "faq-question-3": "what if i'm not entirely satisfied?",
-        "faq-answer-3": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
+        "faq-answer-3": "Customer satisfaction is what we build our reputation on. We have a triple check policy ensuring you are fully satisfied. Firstly, your barber will check before leaving the chair, next our reception will ask before payment and then a follow up email will be sent. If you are not satisfied at any stage, we will of course make a correction or any final adjustments you require.",
         "faq-question-4": "do your barbers speak english?",
         "faq-answer-4": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.",
         "faq-question-5": "QUESTION?",
