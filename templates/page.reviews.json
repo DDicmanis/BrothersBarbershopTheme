@@ -1,7 +1,11 @@
 {
   "sections": {
     "main": {
-      "type": "main-reviews"
+      "type": "main-reviews",
+      "settings": {
+        "service-styles-title": "Our reviews",
+        "review-text": "With 2500+ 5 star reviews, we are proud to hear what our customer say about us"
+      }
     }
   },
   "order": [
