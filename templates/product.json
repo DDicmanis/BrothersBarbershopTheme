@@ -24,7 +24,7 @@
     "main": {
       "type": "main-product",
       "settings": {
-        "giftcards-title": "GIVE GREAT CUT AND BIG SMILE TO YOUR FRIEND",
+        "giftcards-title": "What better gift than giving someone a GREAT CUT AND BIG SMILE?",
         "giftcard-image-1": "shopify:\/\/shop_images\/20210921-DSC03159.jpg",
         "giftcard-image-2": "shopify:\/\/shop_images\/20211019-DSC03918.jpg",
         "giftcard-image-3": "shopify:\/\/shop_images\/20211021-DSC04330.jpg",
@@ -34,10 +34,10 @@
     "cupon-videos": {
       "type": "cupon-videos",
       "settings": {
-        "videos-title": "YOUS SAID IT BEST",
-        "videos-text": "Few juicy sentences why this is the best gift ever you can buy + why this is the best barbershop in the city to go. Little explanation how it works, in which barber shops they can redeem gift cards, etc Little explanation how it works, in which barber shops they can redeem gift cards, etc.",
+        "videos-title": "YOU SAID IT BEST",
+        "videos-text": "Hear what our customers have to say about Brothers' and why it will put a smile",
         "videos-video-title-1": "TITLE TITLE TITLE",
-        "videos-video-length-1": "2:35",
+        "videos-video-length-1": "",
         "videos-video-description-1": "Short description Short description",
         "videos-video-title-2": "TITLE TITLE TITLE",
         "videos-video-length-2": "1:05",
