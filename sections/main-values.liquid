@@ -17,7 +17,7 @@
       </div>
     </div>
     <div class="values-video-wrapper">
-      <video id="valuesVideo" playsinline>
+      <video id="valuesVideo" playsinline poster="{{section.settings.video-thumbnail | image_url 'large' }}>
         <source src="{{'walkIn.mp4' | asset_url }}" type="video/mp4" id="valuesVid">
       </video>
       <div class="video-controll-overlay" id="valuesOverlay">
@@ -40,6 +40,11 @@
       "type": "text",
       "label": "Title",
       "default":"As seen in"
+    },
+    {
+      "type": "image_picker",
+      "id": "video-thumbnail",
+      "label": "Video 1 thumbnail image"
     },
       {
         "id": "icon-1",
