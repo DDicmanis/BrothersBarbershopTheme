@@ -6,7 +6,7 @@
     <div class="video-grid">
       <div class="video-div1">
         <div class="video-wrapper">
-          <video id="video1" playsinline>
+          <video id="video1" playsinline poster="{{section.settings.video-thumbnail-1 | image_url: width:360, height:360 }}">
             <source src="{{'videoCompressed1.mp4' | asset_url }}" type="video/mp4" id="vid">
           </video>
           <div class="video-controll-overlay" id="overlay1">
@@ -21,7 +21,7 @@
       </div>
       <div class="video-div2">
         <div class="video-wrapper">
-          <video id="video2" playsinline>
+          <video id="video2" playsinline poster="{{section.settings.video-thumbnail-2 | image_url: width:360, height:360 }}">
             <source src="{{'videoCompressed2.mp4' | asset_url }}" type="video/mp4" id="vid">
           </video>
           <div class="video-controll-overlay" id="overlay2">
@@ -36,7 +36,7 @@
       </div>
       <div class="video-div3">
         <div class="video-wrapper">
-          <video id="video3" playsinline>
+          <video id="video3" playsinline poster="{{section.settings.video-thumbnail-3 | image_url: width:360, height:360 }}">
             <source src="{{'videoCompressed3.mp4' | asset_url }}" type="video/mp4" id="vid">
           </video>
           <div class="video-controll-overlay" id="overlay3">
@@ -82,6 +82,11 @@
         "default":"2:35"
       },
       {
+        "type": "image_picker",
+        "id": "video-thumbnail-1",
+        "label": "Video 1 thumbnail image"
+      },
+      {
         "id": "videos-video-title-2",
         "type": "text",
         "label": "Video 2 title",
@@ -94,9 +99,14 @@
         "default":"Short description Short description"
       },
       {
+        "type": "image_picker",
+        "id": "video-thumbnail-2",
+        "label": "Video 2 thumbnail image"
+      },
+      {
         "id": "videos-video-length-2",
         "type": "text",
-        "label": "Video 1 length",
+        "label": "Video 2 length",
         "default":"2:35"
       },
       {
@@ -112,9 +122,14 @@
         "default":"Short description Short description"
       },
       {
+        "type": "image_picker",
+        "id": "video-thumbnail-3",
+        "label": "Video 3 thumbnail image"
+      },
+      {
         "id": "videos-video-length-3",
         "type": "text",
-        "label": "Video 1 length",
+        "label": "Video 3 length",
         "default":"2:35"
       }
     ],
