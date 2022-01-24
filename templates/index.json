@@ -87,6 +87,7 @@
       "type": "main-values",
       "settings": {
         "values-title": "As seen in",
+        "video-thumbnail": "shopify:\/\/shop_images\/main.png",
         "icon-1": "shopify:\/\/shop_images\/Group_127.png",
         "icon-2": "shopify:\/\/shop_images\/2560px-DER_STANDARD_1.png",
         "icon-3": "shopify:\/\/shop_images\/1000things_1.png",
