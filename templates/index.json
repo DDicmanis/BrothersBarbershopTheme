@@ -130,6 +130,16 @@
         "faq-question-6": "Do you have free parking?",
         "faq-answer-6": "Free parking is available at our 1220 location in the underground garage in the IZD tower. Make sure to get your ticket stamped when checking out. Regular street parking for Neubaugasse."
       }
+    },
+    "164888399402f9d9f2": {
+      "type": "video",
+      "settings": {
+        "heading": "Video",
+        "cover_image": "shopify:\/\/shop_images\/Screenshot_2022-04-02_at_09.25.37.png",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=doGlS5ut90s",
+        "description": "",
+        "full_width": true
+      }
     }
   },
   "order": [
@@ -143,6 +153,7 @@
     "values",
     "guarantee",
     "booking",
-    "faq"
+    "faq",
+    "164888399402f9d9f2"
   ]
 }
