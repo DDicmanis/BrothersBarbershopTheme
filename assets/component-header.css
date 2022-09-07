@@ -9,6 +9,23 @@
   justify-content: center;
   transition: 0.5s linear;
 }
+.header.sticky .languageSelect{
+  color: black;
+}
+.languageSelect{
+  background-color: transparent;
+  border:none;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.languageSelect option{
+  color: black;
+}
 .transition{
   transition: 0.5s linear;
   display: flex;
@@ -230,6 +247,9 @@ color: white;
   }
   .drawer-last{
     margin-top: 30px;
+  }
+  .languageSelect{
+    font-size: 20px;
   }
 }
 @media screen and (min-width:915px){
