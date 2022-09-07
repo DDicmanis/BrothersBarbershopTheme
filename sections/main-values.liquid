@@ -17,14 +17,25 @@
       </div>
     </div>
     <div class="values-video-wrapper">
-      <video id="valuesVideo" playsinline poster="{{section.settings.video-thumbnail | image_url }}">
+      <iframe
+        class="valuesVideo"
+        width="560"
+        height="315"
+        controls=0
+        src="{{ section.settings.values-video-url }}?controls=0&modestbranding=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+      <!-- <video id="valuesVideo" playsinline poster="{{section.settings.video-thumbnail | image_url }}">
         <source src="{{'walkIn.mp4' | asset_url }}" type="video/mp4" id="valuesVid">
-      </video>
-      <div class="video-controll-overlay" id="valuesOverlay">
+      </video> -->
+      <!-- <div class="video-controll-overlay" id="valuesOverlay">
         <div class="play-icon-wrapper" id="values-play">
           <img src="{{'playIcon.svg'| asset_url }}" id="play3" class="values-play-button" alt="play button">
         </div>
-      </div>
+      </div> -->
     </div>
     <a href="https://phorest.com/book/salons/brothersbarbershop" target="blank" class="button button-primary" style="text-align: center;">BOOK AN APPOINTMENT</a>
   </div>
@@ -40,6 +51,12 @@
       "type": "text",
       "label": "Title",
       "default":"As seen in"
+    },
+    {
+      "id": "values-video-url",
+      "type": "text",
+      "label": "Video URL",
+      "default":"https://www.youtube.com/embed/doGlS5ut90s"
     },
     {
       "type": "image_picker",
