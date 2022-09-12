@@ -105,7 +105,7 @@
     "166299361330bfb1f9": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<script src=\"https:\/\/apps.elfsight.com\/p\/platform.js\" defer><\/script>\n<div class=\"elfsight-app-ab142e0a-3f35-4b64-bda0-bd1084b25b3c\"><\/div>"
+        "custom_liquid": "<script src=\"https:\/\/apps.elfsight.com\/p\/platform.js\" defer crossorigin=\"anonymous\"><\/script>\n<div class=\"elfsight-app-ab142e0a-3f35-4b64-bda0-bd1084b25b3c\"><\/div>"
       }
     },
     "booking": {
