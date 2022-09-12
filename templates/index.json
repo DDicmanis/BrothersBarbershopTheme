@@ -87,6 +87,7 @@
       "type": "main-values",
       "settings": {
         "values-title": "As seen in",
+        "values-video-url": "https:\/\/www.youtube.com\/embed\/doGlS5ut90s",
         "video-thumbnail": "shopify:\/\/shop_images\/main.png",
         "icon-1": "shopify:\/\/shop_images\/Group_127.png",
         "icon-2": "shopify:\/\/shop_images\/2560px-DER_STANDARD_1.png",
@@ -99,6 +100,12 @@
       "settings": {
         "guarantee-title": "our satisfaction guarantee",
         "guarantee-text": "Your satisfaction is our priority! If for any reason you are not 100% thrilled with your service, you can come back again, and we’ll make it right."
+      }
+    },
+    "166299361330bfb1f9": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<script src=\"https:\/\/apps.elfsight.com\/p\/platform.js\" defer><\/script>\n<div class=\"elfsight-app-ab142e0a-3f35-4b64-bda0-bd1084b25b3c\"><\/div>"
       }
     },
     "booking": {
@@ -153,6 +160,7 @@
     "expectations",
     "values",
     "guarantee",
+    "166299361330bfb1f9",
     "booking",
     "faq",
     "164888399402f9d9f2"
