@@ -119,7 +119,7 @@
         "0dfcddac-16d2-446c-acc9-f30ee31e7183"
       ],
       "settings": {
-        "include_margins": true
+        "include_margins": false
       }
     },
     "booking": {
