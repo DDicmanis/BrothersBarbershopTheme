@@ -102,10 +102,24 @@
         "guarantee-text": "Your satisfaction is our priority! If for any reason you are not 100% thrilled with your service, you can come back again, and we’ll make it right."
       }
     },
-    "166299361330bfb1f9": {
-      "type": "custom-liquid",
+    "166315751416d4ea05": {
+      "type": "apps",
+      "blocks": {
+        "0dfcddac-16d2-446c-acc9-f30ee31e7183": {
+          "type": "shopify:\/\/apps\/social-media-feeds\/blocks\/app-block\/16930ea9-fb6e-46ac-90fd-526ff0431478",
+          "settings": {
+            "tagembed_widget": "63498",
+            "tagembed_widget_position": "center",
+            "tagembed_widget_height": "300",
+            "tagembed_widget_width": 100
+          }
+        }
+      },
+      "block_order": [
+        "0dfcddac-16d2-446c-acc9-f30ee31e7183"
+      ],
       "settings": {
-        "custom_liquid": "<script src=\"https:\/\/apps.elfsight.com\/p\/platform.js\" defer crossorigin=\"anonymous\"><\/script>\n<div class=\"elfsight-app-ab142e0a-3f35-4b64-bda0-bd1084b25b3c\"><\/div>"
+        "include_margins": true
       }
     },
     "booking": {
@@ -160,7 +174,7 @@
     "expectations",
     "values",
     "guarantee",
-    "166299361330bfb1f9",
+    "166315751416d4ea05",
     "booking",
     "faq",
     "164888399402f9d9f2"
