@@ -9,7 +9,7 @@
       <div class="video-div1">
         <div class="video-wrapper">
           <video id="video1" playsinline>
-            <source src="{{'videoCompressed1.mp4' | asset_url }}" type="video/mp4" id="vid">
+            <source src="{{section.settings.videos-video-src-1 }}" type="video/mp4" id="vid">
           </video>
           <div class="video-controll-overlay" id="overlay1">
             <p class="video-length">{{section.settings.videos-video-length-1}}</p>
@@ -24,7 +24,7 @@
       <div class="video-div2">
         <div class="video-wrapper">
           <video id="video2" playsinline>
-            <source src="{{'videoCompressed2.mp4' | asset_url }}" type="video/mp4" id="vid">
+            <source src="{{section.settings.videos-video-src-2 }}" type="video/mp4" id="vid">
           </video>
           <div class="video-controll-overlay" id="overlay2">
             <p class="video-length">{{section.settings.videos-video-length-2}}</p>
@@ -39,7 +39,7 @@
       <div class="video-div3">
         <div class="video-wrapper">
           <video id="video3" playsinline>
-            <source src="{{'videoCompressed3.mp4' | asset_url }}" type="video/mp4" id="vid">
+            <source src="{{section.settings.videos-video-src-3 }}" type="video/mp4" id="vid">
           </video>
           <div class="video-controll-overlay" id="overlay3">
             <p class="video-length">{{section.settings.videos-video-length-3}}</p>
@@ -78,6 +78,12 @@
         "default":"TITLE TITLE TITLE"
       },
       {
+        "type": "text",
+        "id": "videos-video-src-1",
+        "label": "Video 1 source",
+        "default":"https://cdn.shopify.com/videos/c/o/v/c81bfe6a6b4d44dd9ee83fd2dcd8d8c8.mp4"
+      },
+      {
         "id": "videos-video-length-1",
         "type": "text",
         "label": "Video 1 length",
@@ -96,6 +102,12 @@
         "default":"TITLE TITLE TITLE"
       },
       {
+        "type": "text",
+        "id": "videos-video-src-2",
+        "label": "Video 2 source",
+        "default":"https://cdn.shopify.com/videos/c/o/v/9e51b9d484164e5db20c0ad7f03b92a3.mp4"
+      },
+      {
         "id": "videos-video-length-2",
         "type": "text",
         "label": "Video 2 length",
@@ -112,6 +124,12 @@
         "type": "text",
         "label": "Video 3 title",
         "default":"TITLE TITLE TITLE"
+      },
+      {
+        "type": "text",
+        "id": "videos-video-src-3",
+        "label": "Video 3 source",
+        "default":"https://cdn.shopify.com/videos/c/o/v/27a25ff3704b4a4199b82cf0aeeba546.mp4"
       },
       {
         "id": "videos-video-length-3",
