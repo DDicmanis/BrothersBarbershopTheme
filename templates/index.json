@@ -60,6 +60,7 @@
     },
     "transformation": {
       "type": "main-transformation",
+      "disabled": true,
       "settings": {
         "Transformation-title": "THE BROTHERS EXPERIENCe",
         "Transformation-text": "Sure, you come to our shops for a great cut. But, it’s our mission to be even more than that. We believe that when you look your best, you feel and do your best, too. So, when we say “how can I help?”, we mean it.",
