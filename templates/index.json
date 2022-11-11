@@ -128,6 +128,7 @@
     },
     "booking": {
       "type": "main-booking",
+      "disabled": true,
       "settings": {
         "booking-title": "how it works",
         "booking-heading-1": "CHOOSE A LOCATION",
