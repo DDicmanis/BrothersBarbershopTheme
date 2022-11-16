@@ -58,6 +58,18 @@
         "awards-title": "Consistent Winner of the client experience award"
       }
     },
+    "values": {
+      "type": "main-values",
+      "settings": {
+        "values-title": "As seen in",
+        "values-video-url": "https:\/\/www.youtube.com\/embed\/doGlS5ut90s",
+        "video-thumbnail": "shopify:\/\/shop_images\/main.png",
+        "icon-1": "shopify:\/\/shop_images\/Group_127.png",
+        "icon-2": "shopify:\/\/shop_images\/2560px-DER_STANDARD_1.png",
+        "icon-3": "shopify:\/\/shop_images\/1000things_1.png",
+        "icon-4": "shopify:\/\/shop_images\/1200px-Die_Presse_logo_1_2eed520f-0811-4cb1-8f04-d9c8e16f9fa5.png"
+      }
+    },
     "transformation": {
       "type": "main-transformation",
       "disabled": true,
@@ -85,18 +97,6 @@
         "expectation-3": "GOOD CONVERSATION",
         "icon-4": "shopify:\/\/shop_images\/barber-chair_1.png",
         "expectation-4": "A PLACE TO RELAX"
-      }
-    },
-    "values": {
-      "type": "main-values",
-      "settings": {
-        "values-title": "As seen in",
-        "values-video-url": "https:\/\/www.youtube.com\/embed\/doGlS5ut90s",
-        "video-thumbnail": "shopify:\/\/shop_images\/main.png",
-        "icon-1": "shopify:\/\/shop_images\/Group_127.png",
-        "icon-2": "shopify:\/\/shop_images\/2560px-DER_STANDARD_1.png",
-        "icon-3": "shopify:\/\/shop_images\/1000things_1.png",
-        "icon-4": "shopify:\/\/shop_images\/1200px-Die_Presse_logo_1_2eed520f-0811-4cb1-8f04-d9c8e16f9fa5.png"
       }
     },
     "guarantee": {
@@ -175,9 +175,9 @@
     "feeling",
     "videos",
     "awards",
+    "values",
     "transformation",
     "expectations",
-    "values",
     "guarantee",
     "166315751416d4ea05",
     "booking",
