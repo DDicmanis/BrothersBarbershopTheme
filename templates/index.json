@@ -88,7 +88,7 @@
       "type": "image-banner",
       "settings": {
         "image": "shopify:\/\/shop_images\/Service_Menu-1.jpg",
-        "image_height": "medium",
+        "image_height": "small",
         "adapt_height_first_image": true,
         "desktop_text_box_position": "center",
         "show_text_box": false,
