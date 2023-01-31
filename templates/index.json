@@ -126,6 +126,7 @@
       "blocks": {
         "0dfcddac-16d2-446c-acc9-f30ee31e7183": {
           "type": "shopify:\/\/apps\/social-media-feeds\/blocks\/app-block\/16930ea9-fb6e-46ac-90fd-526ff0431478",
+          "disabled": true,
           "settings": {
             "tagembed_widget": "63498",
             "tagembed_widget_position": "center",
