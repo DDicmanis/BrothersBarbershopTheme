@@ -3,19 +3,19 @@
     "info": {
       "type": "contact-info",
       "settings": {
-        "contact-title": "OUR BARBERSHOPS in vienna",
+        "contact-title": "OUR BARBERSHOP in vienna",
         "contact-location-1": "Neubaugasse 81, 1070",
         "contact-time1-1": "09:00-19:00",
         "contact-time2-1": "09:00-19:00",
         "contact-time3-1": "09:00-17:00",
         "contact-lunch-1": "14:00-15:00",
         "contact-phone-1": "019908304",
-        "contact-location-2": "wagramer straße 17-19, 1220  (IZD TOWER)",
-        "contact-time1-2": "09:00-18:00",
+        "contact-location-2": "",
+        "contact-time1-2": "",
         "contact-time3-2": "",
-        "contact-lunch-2": "13:00-14:00",
-        "contact-phone-2": "019908304",
-        "google-api-key": "AIzaSyAcZFNIoS_J5lw7v_yW05525FnCA6eNaqE"
+        "contact-lunch-2": "",
+        "contact-phone-2": "",
+        "google-api-key": ""
       }
     },
     "form": {
