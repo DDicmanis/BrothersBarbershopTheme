@@ -24,7 +24,7 @@
       "type": "main-feeling",
       "settings": {
         "feeling-title": "Get ready for that “best cut ever” feeling.",
-        "feeling-text": "As soon as you step foot inside one of our shops, you’re home. At Brothers’ Barbershop, we’re not satisfied until you are. Find a moment respite from city life, or simply a welcoming atmosphere to take a load off, while you get the best cut of your life. Kick back, and have a drink on us – we’re glad you’re here!",
+        "feeling-text": "As soon as you step foot inside our shop, you’re home. At Brothers’ Barbershop, we’re not satisfied until you are. Find a moment respite from city life, or simply a welcoming atmosphere to take a load off, while you get the best cut of your life. Kick back, and have a drink on us – we’re glad you’re here!",
         "feeling-icon-1": "shopify:\/\/shop_images\/Group_187_1_Traced.png",
         "feeling-icon-2": "shopify:\/\/shop_images\/icon-mustache.png",
         "feeling-icon-3": "shopify:\/\/shop_images\/icon-heands.png",
@@ -125,7 +125,7 @@
       "type": "apps",
       "blocks": {
         "0dfcddac-16d2-446c-acc9-f30ee31e7183": {
-          "type": "shopify:\/\/apps\/social-media-feeds\/blocks\/app-block\/16930ea9-fb6e-46ac-90fd-526ff0431478",
+          "type": "shopify:\/\/apps\/youtube-google-reviews-te\/blocks\/app-block\/16930ea9-fb6e-46ac-90fd-526ff0431478",
           "disabled": true,
           "settings": {
             "tagembed_widget": "63498",
